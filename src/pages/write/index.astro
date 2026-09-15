@@ -105,7 +105,8 @@ const dayList = (await getCollection('days')).map((d) => ({
     </div>
   </div>
 
-  <script define:vars={{ dayList }}>
+  <!-- data-astro-rerun：内联脚本在软切换时按内容去重，不加它第二次进写作工作室会整体失活（页签点不动、URL 参数不读） -->
+  <script define:vars={{ dayList }} data-astro-rerun>
     const CHECK = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
     const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
     const panes = document.querySelectorAll<HTMLElement>('.pane');

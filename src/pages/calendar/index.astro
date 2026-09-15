@@ -74,8 +74,11 @@ const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
     </div>
   </div>
 
-  <!-- 便签删除：走 /api/github 的 deletions；无 token 时给出手动删除指引 -->
+  <!-- 便签删除：走 /api/github 的 deletions；无 token 时给出手动删除指引。
+       window 守卫：脚本若在软切换后重跑，避免 document 委托叠加（确认框弹两次） -->
   <script>
+    if (!(window as any).__xixiCalDel) {
+      (window as any).__xixiCalDel = true;
     document.addEventListener('click', async function (e) {
       var btn = e.target && e.target.closest ? e.target.closest('.cs-del') : null;
       if (!btn) return;
@@ -107,5 +110,6 @@ const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
       }
       btn.disabled = false;
     });
+    }
   </script>
 </Base>

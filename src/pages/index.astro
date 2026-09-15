@@ -109,8 +109,8 @@ const dayItems = (await getCollection('days')).map((d) => ({
     </section>
   </div>
 
-  <!-- 每次进入首页：随机换一句标题；右上角亮起"今天是什么日子" -->
-  <script define:vars={{ lines: HERO_LINES }}>
+  <!-- data-astro-rerun：每次回到首页都要重新抽签换句、重算今日日子角标；不加会被软切换去重跳过 -->
+  <script define:vars={{ lines: HERO_LINES }} data-astro-rerun>
     (function () {
       var el = document.getElementById('heroLine');
       if (el && lines.length) {
