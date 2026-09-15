@@ -43,6 +43,24 @@ async function putFile(f: FilePayload, message: string) {
   return f.path;
 }
 
+async function delFile(path: string, message: string) {
+  const existing = await fetch(`${API}/${path}?ref=${BRANCH}`, {
+    headers: { Authorization: `Bearer ${TOKEN}`, 'User-Agent': 'xixi-blog' },
+  });
+  if (!existing.ok) throw new Error(`${path}: GitHub ${existing.status}（文件不存在？）`);
+  const { sha } = await existing.json();
+  const r = await fetch(`${API}/${path}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${TOKEN}`, 'User-Agent': 'xixi-blog', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, branch: BRANCH, sha }),
+  });
+  if (!r.ok) throw new Error(`${path}: GitHub ${r.status} ${(await r.text()).slice(0, 200)}`);
+  return path;
+}
+
+// 防路径穿越：只允许白名单目录（新增与删除共用）
+const PATH_RE = /^(src\/content\/(posts|trips|movies|memos|days)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/;
+
 export async function GET() {
   return Response.json({ enabled: Boolean(TOKEN), repo: REPO, branch: BRANCH });
 }
@@ -50,18 +68,31 @@ export async function GET() {
 export async function POST({ request }: { request: Request }) {
   if (!TOKEN) return Response.json({ error: 'GITHUB_TOKEN 未配置', code: 'no-token' }, { status: 501 });
   try {
-    const { files, message } = await request.json();
-    if (!Array.isArray(files) || files.length === 0 || files.length > 10) {
-      return Response.json({ error: 'files 须为 1-10 项的数组' }, { status: 400 });
-    }
+    const { files, deletions, message } = await request.json();
     const done: string[] = [];
-    for (const f of files as FilePayload[]) {
-      // 防路径穿越：只允许白名单目录
-      if (!/^(src\/content\/(posts|trips|movies|memos|days)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/.test(f.path)) {
-        return Response.json({ error: `路径不被允许: ${f.path}` }, { status: 400 });
+    if (Array.isArray(files)) {
+      if (files.length === 0 || files.length > 10) {
+        return Response.json({ error: 'files 须为 1-10 项的数组' }, { status: 400 });
       }
-      done.push(await putFile(f, message ?? `write: ${f.path}`));
+      for (const f of files as FilePayload[]) {
+        if (!PATH_RE.test(f.path)) {
+          return Response.json({ error: `路径不被允许: ${f.path}` }, { status: 400 });
+        }
+        done.push(await putFile(f, message ?? `write: ${f.path}`));
+      }
     }
+    if (Array.isArray(deletions)) {
+      if (deletions.length === 0 || deletions.length > 10) {
+        return Response.json({ error: 'deletions 须为 1-10 项的数组' }, { status: 400 });
+      }
+      for (const p of deletions as string[]) {
+        if (!PATH_RE.test(p)) {
+          return Response.json({ error: `路径不被允许: ${p}` }, { status: 400 });
+        }
+        done.push(await delFile(p, message ?? `delete: ${p}`));
+      }
+    }
+    if (!done.length) return Response.json({ error: 'files 或 deletions 至少提供一项' }, { status: 400 });
     return Response.json({ ok: true, committed: done });
   } catch (e: any) {
     return Response.json({ error: String(e?.message ?? e) }, { status: 502 });

@@ -740,6 +740,23 @@ a.day-badge:hover { border-color: var(--seal); box-shadow: 0 8px 22px rgba(181, 
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   transition: transform .18s cubic-bezier(.34, 1.56, .64, 1), box-shadow .18s; }
 .cal-sticker:hover { transform: rotate(0deg) scale(1.06); box-shadow: 0 5px 12px rgba(30, 22, 10, .28); z-index: 3; }
+/* 便签上的「编辑 / 删除」：悬停显现 */
+.cal-sticker .cs-text { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cal-sticker .cs-acts { position: absolute; right: 2px; top: 50%; translate: 0 -50%; display: none; gap: 3px; }
+.cal-sticker { position: relative; }
+.cal-sticker:hover .cs-acts { display: inline-flex; }
+.cal-sticker:hover .cs-text { padding-right: 38px; }
+.cs-act { width: 17px; height: 17px; display: grid; place-items: center; padding: 0; cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--ink2) 30%, transparent); border-radius: 4px;
+  background: var(--card); color: var(--ink2); transition: background .15s, color .15s, border-color .15s; }
+.cs-act:hover { background: var(--seal); border-color: var(--seal); color: var(--paper); }
+
+/* 写作工作室：日子编辑模式提示条 */
+.edit-banner { border: 1px dashed color-mix(in srgb, var(--seal) 65%, transparent);
+  background: color-mix(in srgb, var(--seal) 7%, var(--card));
+  color: var(--ink2); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; }
+.edit-banner b { color: var(--ink); }
+.edit-banner a { color: var(--seal); font-weight: 600; margin-left: 6px; }
 
 @media (prefers-reduced-motion: reduce) {
   .btn::after, .writebtn, #player .p-ctrl .play { animation: none !important; }

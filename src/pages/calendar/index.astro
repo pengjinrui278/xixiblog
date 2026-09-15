@@ -9,6 +9,7 @@ const p2 = (n: number) => String(n).padStart(2, '0');
 const todayYmd = `${year}-${p2(now.getMonth() + 1)}-${p2(now.getDate())}`;
 
 const items = (await getCollection('days')).map((d) => ({
+  slug: d.id,
   title: d.data.title,
   date: d.data.date,
   color: d.data.color ?? '#B5432C',
@@ -37,8 +38,11 @@ const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
     <div style="padding:52px 0 0">
       <div class="eyebrow">Calendar</div>
       <h1 class="pagetitle">{year} 日历墙</h1>
-      <p class="lede">十二个月挂成一面墙。特别的日子是一枚枚便签贴——生日、节日、只属于某一天的纪念。点右上「记一个日子」新增。</p>
-      <a class="btn solid" href="/write/?type=day" style="margin-top:16px"><Icon name="plus" size={14} /> 记一个日子</a>
+      <p class="lede">十二个月挂成一面墙。特别的日子是一枚枚便签贴——生日、节日、只属于某一天的纪念。点右上「记一个日子」新增；悬停任意便签可改可删。</p>
+      <div style="display:flex;gap:10px;margin-top:16px;align-items:center;flex-wrap:wrap">
+        <a class="btn solid" href="/write/?type=day"><Icon name="plus" size={14} /> 记一个日子</a>
+        <span class="hint" id="calHint"></span>
+      </div>
     </div>
 
     <div class="cal-wall">
@@ -54,7 +58,13 @@ const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
                 <i class="d">{d}</i>
                 {stickersOf(m, d).map((s, k) => (
                   <span class="cal-sticker" style={`--c:${s.color};--r:${((d * 7 + k * 13) % 5) - 2}deg`}
-                    title={s.note || s.title}>{s.title}</span>
+                    title={s.note || s.title} data-slug={s.slug}>
+                    <span class="cs-text">{s.title}</span>
+                    <span class="cs-acts">
+                      <a class="cs-act" href={`/write/?type=day&edit=${s.slug}`} title="编辑这个日子" aria-label="编辑"><Icon name="pen" size={11} /></a>
+                      <button class="cs-act cs-del" type="button" data-path={`src/content/days/${s.slug}.md`} data-title={s.title} title="删除这个日子" aria-label="删除"><Icon name="x" size={11} /></button>
+                    </span>
+                  </span>
                 ))}
               </span>
             ))}
@@ -63,4 +73,39 @@ const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
       ))}
     </div>
   </div>
+
+  <!-- 便签删除：走 /api/github 的 deletions；无 token 时给出手动删除指引 -->
+  <script>
+    document.addEventListener('click', async function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('.cs-del') : null;
+      if (!btn) return;
+      e.preventDefault();
+      var hint = document.getElementById('calHint');
+      var title = btn.getAttribute('data-title') || '';
+      if (!window.confirm('删掉「' + title + '」这个日子？\n删除后首页倒计时与日历便签都会移除。')) return;
+      btn.disabled = true;
+      if (hint) hint.textContent = '正在删除……';
+      try {
+        var r = await fetch('/api/github', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ deletions: [btn.getAttribute('data-path')], message: 'day: 删除 ' + title }),
+        });
+        if (r.ok) {
+          var st = btn.closest('.cal-sticker');
+          if (st) st.remove();
+          if (hint) hint.textContent = '已删除「' + title + '」，约 1 分钟后全站生效';
+          return;
+        }
+        if (r.status === 501) {
+          if (hint) hint.textContent = '未配置 GITHUB_TOKEN：请手动删除仓库里的 ' + btn.getAttribute('data-path');
+        } else {
+          var j = await r.json().catch(function () { return {}; });
+          if (hint) hint.textContent = '删除失败：' + (j.error || r.status);
+        }
+      } catch (err) {
+        if (hint) hint.textContent = '网络错误，删除失败';
+      }
+      btn.disabled = false;
+    });
+  </script>
 </Base>

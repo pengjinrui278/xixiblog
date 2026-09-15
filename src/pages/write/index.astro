@@ -1,6 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import { getCollection } from 'astro:content';
+
+// 「日子」编辑模式：把已有日子嵌进页面，?type=day&edit=<slug> 时预填，无需网络
+const dayList = (await getCollection('days')).map((d) => ({
+  slug: d.id,
+  title: d.data.title,
+  date: d.data.date,
+  color: d.data.color ?? '',
+  note: d.data.note ?? '',
+}));
 ---
 <Base title="写作工作室" current="" bleed="write">
   <div class="wrap">
@@ -78,6 +88,11 @@ import Icon from '../../components/Icon.astro';
       </div>
     </div>
 
+    <div id="editBanner" class="edit-banner" style="max-width:760px;margin:18px 0 0" hidden>
+      正在编辑日子「<b id="editName"></b>」——提交将覆盖原便签，不会新建。
+      <a href="/write/?type=day">取消编辑</a>
+    </div>
+
     <div id="songBox" class="search-results" style="position:static;width:min(420px,100%);margin:8px 0"></div>
 
     <div class="record-actions" style="max-width:760px">
@@ -90,11 +105,15 @@ import Icon from '../../components/Icon.astro';
     </div>
   </div>
 
-  <script>
+  <script define:vars={{ dayList }}>
     const CHECK = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
     const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
     const panes = document.querySelectorAll<HTMLElement>('.pane');
     let type = new URLSearchParams(location.search).get('type') ?? 'post';
+    // 编辑模式：仅当 slug 真实存在时才生效，避免把未知 slug 当成文件名提交
+    const editSlug = new URLSearchParams(location.search).get('edit');
+    const editItem = editSlug ? (dayList ?? []).find((d) => d.slug === editSlug) : undefined;
+    let editTarget: string | null = null;
     const tabs = document.querySelectorAll<HTMLButtonElement>('#tabs button');
     function show(t: string) {
       type = t;
@@ -105,6 +124,18 @@ import Icon from '../../components/Icon.astro';
     if (['post', 'trip', 'movie', 'memo', 'day'].includes(type)) show(type);
     ($('p_date') as HTMLInputElement).value = new Date().toISOString().slice(0, 10);
     ($('t_date') as HTMLInputElement).value = new Date().toISOString().slice(0, 10);
+
+    /* 日子编辑模式：预填已有便签，提交时覆盖原文件（不新建） */
+    if (editItem) {
+      editTarget = editItem.slug;
+      show('day');
+      $('d_title').value = editItem.title ?? '';
+      $('d_date').value = editItem.date ?? '';
+      $('d_color').value = editItem.color ?? '';
+      $('d_note').value = editItem.note ?? '';
+      ($('editBanner') as HTMLElement).hidden = false;
+      $('editName').textContent = editItem.title ?? editItem.slug;
+    }
 
     /* 歌曲搜索补全（文章 BGM / 旅程那首歌） */
     async function pickSong(target: HTMLInputElement) {
@@ -218,6 +249,8 @@ ${$('m_quote').value}`;
       }
       if (type === 'day') {
         // date 必须带引号输出：YAML 会把未加引号的日期键解析成 Date 对象
+        // 编辑模式沿用原 slug，改名不另建文件
+        const id = editTarget ?? slug($('d_title').value);
         const md = `---
 title: ${$('d_title').value || '未命名'}
 date: '${$('d_date').value.trim()}'${$('d_color').value.trim() ? `
@@ -226,7 +259,7 @@ note: ${$('d_note').value.trim()}` : ''}
 ---
 
 `;
-        const path = `src/content/days/${slug($('d_title').value)}.md`;
+        const path = `src/content/days/${id}.md`;
         return { files: [{ path, content: md, encoding: 'utf8' }], md, path, title: $('d_title').value };
       }
       const md = `---
