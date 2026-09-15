@@ -100,12 +100,19 @@ const pageTitle = title ? `${title} · ${SITE.name}` : `${SITE.name}的博客`;
     <VinylPlayer />
 
     <script is:inline>
-      // 日夜切换：写 localStorage + 打 data-theme，CSS 三态 token 接管全部颜色；图标纯 CSS 切换
-      document.getElementById('themeBtn').addEventListener('click', function () {
+      // 日夜切换：事件委托。header 在软切换中会被重建，委托挂在 document 上，
+      // 无论按钮何时重建、脚本何时执行，点击必达。
+      document.addEventListener('click', function (e) {
+        var btn = e.target && e.target.closest ? e.target.closest('#themeBtn') : null;
+        if (!btn) return;
         var root = document.documentElement;
-        var dark = root.getAttribute('data-theme') === 'dark';
-        if (dark) { root.removeAttribute('data-theme'); localStorage.setItem('xixi-theme', 'light'); }
-        else { root.setAttribute('data-theme', 'dark'); localStorage.setItem('xixi-theme', 'dark'); }
+        if (root.getAttribute('data-theme') === 'dark') {
+          root.removeAttribute('data-theme');
+          try { localStorage.setItem('xixi-theme', 'light'); } catch (err) {}
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          try { localStorage.setItem('xixi-theme', 'dark'); } catch (err) {}
+        }
       });
 
       // 阅读进度条（window 级监听只挂一次，页面软切换不重复注册）

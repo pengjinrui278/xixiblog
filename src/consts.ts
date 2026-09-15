@@ -29,6 +29,18 @@ export const NAV = [
 // QQ_PLAYLIST_ID：你的 QQ 音乐歌单（8665716804），配置 Cookie 后整单并入。
 export const QQ_PLAYLIST_ID = '8665716804';
 
+// 首页大标题随机短句池：每次打开/刷新首页随机抽一句。
+// 想加新句子？往数组里添一行即可——一句诗、一段很美的话、你自己写的都行。
+export const HERO_LINES: string[] = [
+  '写代码，\n也写代码之外。',
+  '灯不灭，\n字不停。',
+  '竹杖芒鞋轻胜马，\n谁怕？一蓑烟雨任平生。',
+  '人生到处知何似，\n应似飞鸿踏雪泥。',
+  '且将新火试新茶，\n诗酒趁年华。',
+  '追风赶月莫停留，\n平芜尽处是春山。',
+  '凡是过往，\n皆为序章。',
+];
+
 export const PLAYLIST = [
   { mid: '', name: 'Forever Right Now', artist: 'Conor Matthews', file: '/music/Conor Matthews - Forever Right Now.ogg' },
   { mid: '', name: '24/7, 365', artist: 'Elijah Woods', file: '/music/Elijah Woods - 24_7, 365.ogg' },

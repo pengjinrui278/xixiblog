@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
-import { SITE } from '../consts';
+import { SITE, HERO_LINES } from '../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('posts', ({ data }) => !data.draft))
@@ -18,13 +18,24 @@ const memos = (await getCollection('memos'))
 const fmt = (d: Date) => d.toISOString().slice(0, 10);
 const latest = posts[0];
 const deskEmpty = !latest && !memos.length && !trips.length && !movies.length;
+// 特别的日子 → 交给前端与"今天"比对（MM-DD 每年重复 / YYYY-MM-DD 仅当年）
+const dayItems = (await getCollection('days')).map((d) => ({
+  title: d.data.title,
+  date: d.data.date,
+  color: d.data.color ?? '#B5432C',
+}));
 ---
 <Base current="首页" bleed="home">
   <div class="wrap">
-    <!-- B3 · 杂志大留白头版 -->
-    <div class="hero" style="min-height:62vh;display:flex;flex-direction:column;justify-content:center">
+    <!-- B3 · 杂志大留白头版；大标题 = HERO_LINES 随机一句（consts.ts 里维护句池） -->
+    <div class="hero" style="min-height:62vh;display:flex;flex-direction:column;justify-content:center;position:relative">
+      <!-- 今日是什么日子：匹配到才显示（数据来自 src/content/days/） -->
+      <div class="day-badge" id="dayBadge" hidden data-days={JSON.stringify(dayItems)}>
+        <span class="dot" style="background:var(--seal)"><Icon name="calendar" size={12} /></span>
+        <span>今天是 <b id="dayTitle"></b></span>
+      </div>
       <div class="eyebrow">Under the Lamp · 曦曦</div>
-      <div class="hi" style="max-width:640px">写代码，<br/>也写代码<span class="seal-name">之外</span>。</div>
+      <div class="hi" id="heroLine" style="max-width:640px" set:html={HERO_LINES[0].replace(/\n/g, '<br/>')}></div>
       <p class="sub">{SITE.description}</p>
       <div class="quick">
         <a class="btn solid" href={latest ? `/posts/${latest.id}/` : '/write/?type=post'}>
@@ -97,4 +108,34 @@ const deskEmpty = !latest && !memos.length && !trips.length && !movies.length;
       </div>
     </section>
   </div>
+
+  <!-- 每次进入首页：随机换一句标题；右上角亮起"今天是什么日子" -->
+  <script define:vars={{ lines: HERO_LINES }}>
+    (function () {
+      var el = document.getElementById('heroLine');
+      if (el && lines.length) {
+        var pick = lines[Math.floor(Math.random() * lines.length)];
+        el.innerHTML = String(pick).replace(/\n/g, '<br/>');
+        el.classList.add('swapped');
+      }
+
+      var badge = document.getElementById('dayBadge');
+      if (badge) {
+        var items = [];
+        try { items = JSON.parse(badge.getAttribute('data-days') || '[]'); } catch (e) {}
+        var now = new Date();
+        var p2 = function (n) { return (n < 10 ? '0' : '') + n; };
+        var mmdd = p2(now.getMonth() + 1) + '-' + p2(now.getDate());
+        var ymd = now.getFullYear() + '-' + mmdd;
+        var hits = items.filter(function (d) { return d.date === mmdd || d.date === ymd; });
+        if (hits.length) {
+          badge.hidden = false;
+          document.getElementById('dayTitle').textContent =
+            hits.map(function (d) { return d.title; }).join(' · ');
+          var dot = badge.querySelector('.dot');
+          if (dot && hits[0].color) dot.style.background = hits[0].color;
+        }
+      }
+    })();
+  </script>
 </Base>

@@ -66,4 +66,17 @@ const memos = defineCollection({
   }),
 });
 
-export const collections = { posts, trips, movies, memos };
+// 特别的日子：'MM-DD' 每年重复（生日/节日），'YYYY-MM-DD' 仅那一年（纪念日）
+// ⚠️ frontmatter 里 date 必须加引号——未加引号会被 YAML 解析成 Date 对象
+const days = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/days' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.union([z.string(), z.date()]).transform((v) =>
+      typeof v === 'string' ? v : v.toISOString().slice(0, 10)),
+    color: z.string().optional(),
+    note: z.string().optional(),
+  }),
+});
+
+export const collections = { posts, trips, movies, memos, days };
