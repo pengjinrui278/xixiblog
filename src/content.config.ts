@@ -5,7 +5,7 @@ const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
+    description: z.string().nullish(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
@@ -28,7 +28,8 @@ const trips = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/trips' }),
   schema: z.object({
     title: z.string(),
-    place: z.string(),
+    // 网页表单可能产出空串/缺键（YAML 解析成 null）——nullish 容忍，绝不让单条坏数据炸掉整站构建
+    place: z.string().nullish(),
     // WGS-84 坐标（GPS 原始值），前端展示时转 GCJ-02 对齐高德瓦片
     coords: z.object({ lng: z.number(), lat: z.number() }),
     date: z.coerce.date(),
@@ -38,7 +39,7 @@ const trips = defineCollection({
       name: z.string(),
       artist: z.string(),
     }).optional(),
-    excerpt: z.string().optional(),
+    excerpt: z.string().nullish(),
   }),
 });
 

@@ -33,7 +33,6 @@ export const QQ_PLAYLIST_ID = '8665716804';
 // 首页大标题随机短句池：每次打开/刷新首页随机抽一句。
 // 想加新句子？往数组里添一行即可——一句诗、一段很美的话、你自己写的都行。
 export const HERO_LINES: string[] = [
-  '写代码，\n也写代码之外。',
   '灯不灭，\n字不停。',
   '竹杖芒鞋轻胜马，\n谁怕？一蓑烟雨任平生。',
   '人生到处知何似，\n应似飞鸿踏雪泥。',
@@ -48,10 +47,6 @@ export const PLAYLIST = [
   { mid: '', name: "where we're going", artist: 'Elijah Woods', file: "/music/Elijah Woods - where we're going.ogg" },
   { mid: '', name: 'Travel（极致氛围版）', artist: '卡司', file: '/music/卡司 - Travel (极致氛围版).ogg' },
   // QQ 在线曲目：配置 QQ_MUSIC_COOKIE 后可播放
-  { mid: '003ryaYw2nWz55', name: '山丘', artist: '李宗盛', file: '' },
-  { mid: '0039MnYb0qxYhV', name: '晴天', artist: '周杰伦', file: '' },
-  { mid: '003TLWoN0gQnP5', name: '成都', artist: '赵雷', file: '' },
-  { mid: '002NQLBN3zC2wV', name: '去大理', artist: '郝云', file: '' },
 ];
 
 // Giscus 评论区：填入你的 GitHub 仓库与 Discussion 分类后自动启用。

@@ -30,7 +30,7 @@ const next = pos >= 0 && pos < seriesPosts.length - 1 ? seriesPosts[pos + 1] : n
 const toc = headings.filter((h) => h.depth === 2);
 const giscusOn = Boolean(GISCUS.repo && GISCUS.repoId);
 ---
-<Base title={post.data.title} description={post.data.description} current="文章">
+<Base title={post.data.title} description={post.data.description ?? ''} current="文章">
   <div class="wrap">
     <div class="article-head">
       <div class="eyebrow">{post.data.series ? `系列「${post.data.series.name}」 · 第 ${post.data.series.order} 篇` : (post.data.tags[0] ?? '随笔')}</div>
@@ -90,7 +90,8 @@ const giscusOn = Boolean(GISCUS.repo && GISCUS.repoId);
     </div>
   </div>
 
-  <script is:inline>
+  <!-- data-astro-rerun：内联脚本按内容去重，文章页之间互跳时必须重跑，否则代码块增强不生效 -->
+  <script is:inline data-astro-rerun>
     var CHECK_SVG = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
     /* --- 代码块增强：file: 首行 → 文件名标签；一键复制 --- */
     document.querySelectorAll('.prose pre').forEach(function (pre) {

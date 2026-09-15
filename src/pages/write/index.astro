@@ -184,14 +184,16 @@ const dayList = (await getCollection('days')).map((d) => ({
     });
 
     const slug = (s) => s.toLowerCase().replace(/[^a-z0-9一-龥]+/g, '-').replace(/^-|-$/g, '') || Date.now().toString();
+    // YAML 单引号包裹字符串字段：空串不会被 YAML 解析成 null 弄炸构建（' 转义为 ''）
+    const yq = (s) => String(s).replace(/'/g, "''");
 
     function build() {
       if (type === 'post') {
         const [bName, bArtist, bMid] = $('p_bgm').value.split('—').map((s) => s.trim());
         const sName = $('p_series').value.trim(), sOrder = $('p_order').value;
         const front = `---
-title: ${$('p_title').value || '未命名'}
-description: ${$('p_desc').value || ''}
+title: '${yq($('p_title').value || '未命名')}'
+description: '${yq($('p_desc').value)}'
 pubDate: ${$('p_date').value || new Date().toISOString().slice(0, 10)}
 tags: [${$('p_tags').value.split(/[,，]/).map((s) => s.trim()).filter(Boolean).map((s) => (isNaN(Number(s)) ? s : `'${s}'`)).join(', ')}]${sName ? `
 series:
@@ -219,8 +221,8 @@ ${$('p_body').value}`;
           files.push({ path: `public/photos/${id}.${ext}`, content: photo.base64, encoding: 'base64' });
         }
         const md = `---
-title: ${$('t_title').value || '未命名'}
-place: ${$('t_place').value}
+title: '${yq($('t_title').value || '未命名')}'
+place: '${yq($('t_place').value)}'
 coords: { lng: ${lng || 0}, lat: ${lat || 0} }
 date: ${$('t_date').value || new Date().toISOString().slice(0, 10)}${photoPath ? `
 photo: ${photoPath}` : ''}${sName ? `
@@ -228,7 +230,7 @@ song:
   mid: '${sMid || ''}'
   name: ${sName}${sArtist ? `
   artist: ${sArtist}` : ''}` : ''}
-excerpt: ${$('t_body').value.split('\n')[0].slice(0, 60)}
+excerpt: '${yq($('t_body').value.split('\n')[0].slice(0, 60))}'
 ---
 
 ${$('t_body').value}`;
@@ -237,10 +239,10 @@ ${$('t_body').value}`;
       }
       if (type === 'movie') {
         const md = `---
-title: ${$('m_title').value || '未命名'}
+title: '${yq($('m_title').value || '未命名')}'
 year: ${Number($('m_year').value) || new Date().getFullYear()}
 rating: ${Number($('m_rating').value) || 0}
-quote: ${$('m_quote').value || '还没想好。'}${$('m_color').value ? `
+quote: '${yq($('m_quote').value || '还没想好。')}'${$('m_color').value ? `
 color: '${$('m_color').value}'` : ''}
 watchedDate: ${new Date().toISOString().slice(0, 10)}
 ---
@@ -254,10 +256,10 @@ ${$('m_quote').value}`;
         // 编辑模式沿用原 slug，改名不另建文件
         const id = editTarget ?? slug($('d_title').value);
         const md = `---
-title: ${$('d_title').value || '未命名'}
+title: '${yq($('d_title').value || '未命名')}'
 date: '${$('d_date').value.trim()}'${$('d_color').value.trim() ? `
 color: '${$('d_color').value.trim()}'` : ''}${$('d_note').value.trim() ? `
-note: ${$('d_note').value.trim()}` : ''}
+note: '${yq($('d_note').value.trim())}'` : ''}
 ---
 
 `;
@@ -265,7 +267,7 @@ note: ${$('d_note').value.trim()}` : ''}
         return { files: [{ path, content: md, encoding: 'utf8' }], md, path, title: $('d_title').value };
       }
       const md = `---
-text: ${$('n_text').value || '空白便签'}
+text: '${yq($('n_text').value || '空白便签')}'
 color: '${$('n_color').value || '#D9A441'}'
 date: ${new Date().toISOString().slice(0, 10)}
 ---

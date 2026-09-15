@@ -51,7 +51,8 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))];
     ))}
   </div>
 
-  <script>
+  <!-- data-astro-rerun：搜索脚本打包成外链模块，软切换按 src 去重；不加则第二次进归档搜索失活 -->
+  <script data-astro-rerun>
     // Pagefind：构建期生成的静态索引，无外部服务。dev 模式下文件不存在，静默降级为标题筛选。
     const input = document.getElementById('searchInput') as HTMLInputElement;
     const box = document.getElementById('searchResults')!;

@@ -7,10 +7,11 @@ const trips = (await getCollection('trips')).sort((a, b) => b.data.date.valueOf(
 const fmt = (d: Date) => d.toISOString().slice(0, 10);
 
 // 交给前端的数据：WGS-84 坐标原样输出，GCJ-02 纠偏在浏览器完成
+// 注意保持 date 降序（近期在前）——侧栏、地图首视野、首页桌面都依赖这个顺序
 const pins = trips.map((t) => ({
   slug: t.id,
   title: t.data.title,
-  place: t.data.place,
+  place: t.data.place ?? '',
   date: fmt(t.data.date),
   coords: t.data.coords,
   photo: t.data.photo ?? '',
@@ -43,9 +44,9 @@ const pins = trips.map((t) => ({
       <div class="jlist" id="jlist">
         {trips.map((t) => (
           <div class="jitem" data-slug={t.id}>
-            <div class="jh"><span>{fmt(t.data.date)} · {t.data.place}</span>{t.data.song && <span><Icon name="music" size={11} /> {t.data.song.name}</span>}</div>
+            <div class="jh"><span>{fmt(t.data.date)} · {t.data.place ?? ''}</span>{t.data.song && <span><Icon name="music" size={11} /> {t.data.song.name}</span>}</div>
             <b>{t.data.title}</b>
-            <p>{t.data.excerpt}</p>
+            <p>{t.data.excerpt ?? ''}</p>
             {t.data.song && (
               <div class="sg bgm-chip" style="cursor:pointer" data-mid={t.data.song.mid} data-name={t.data.song.name} data-artist={t.data.song.artist}>
                 <Icon name="music" size={12} /> 那天的歌：{t.data.song.name} — {t.data.song.artist}
@@ -92,7 +93,8 @@ const pins = trips.map((t) => ({
     </div>
   </div>
 
-  <script>
+  <!-- data-astro-rerun：地图脚本被打包成外链模块，软切换按 src 去重；不加则第二次进旅程页地图不初始化 -->
+  <script data-astro-rerun>
     import maplibregl from 'maplibre-gl';
     import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -286,6 +288,8 @@ const pins = trips.map((t) => ({
     });
 
     /* ---------- 提交：GitHub API 或降级复制 ---------- */
+    // YAML 单引号包裹：空串/冒号/特殊字符都不会再把 frontmatter 弄坏（' 转义为 ''）
+    const yq = (s: string) => String(s).replace(/'/g, "''");
     function buildMd(slug: string, photoPath: string | null): string {
       const [lng, lat] = (document.getElementById('fCoords') as HTMLInputElement).value.split(',').map((s: string) => parseFloat(s));
       const [sName, sArtist, sMid] = (document.getElementById('fSong') as HTMLInputElement).value.split('—').map((s: string) => s.trim());
@@ -294,15 +298,15 @@ const pins = trips.map((t) => ({
       const date = (document.getElementById('fDate') as HTMLInputElement).value || new Date().toISOString().slice(0, 10);
       const body = (document.getElementById('fBody') as HTMLTextAreaElement).value;
       return `---
-title: ${title}
-place: ${place}
+title: '${yq(title)}'
+place: '${yq(place)}'
 coords: { lng: ${lng.toFixed(5)}, lat: ${lat.toFixed(5)} }
 date: ${date}${photoPath ? `\nphoto: ${photoPath}` : ''}${sName ? `
 song:
   mid: '${sMid || ''}'
   name: ${sName}${sArtist ? `
   artist: ${sArtist}` : ''}` : ''}
-excerpt: ${body.split('\n')[0].slice(0, 60)}
+excerpt: '${yq(body.split('\n')[0].slice(0, 60))}'
 ---
 
 ${body}
