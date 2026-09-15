@@ -51,11 +51,14 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))];
     ))}
   </div>
 
-  <!-- data-astro-rerun：搜索脚本打包成外链模块，软切换按 src 去重；不加则第二次进归档搜索失活 -->
-  <script data-astro-rerun>
-    // Pagefind：构建期生成的静态索引，无外部服务。dev 模式下文件不存在，静默降级为标题筛选。
-    const input = document.getElementById('searchInput') as HTMLInputElement;
-    const box = document.getElementById('searchResults')!;
+  <!-- 初始化包成函数：模块脚本软切换按 src 去重，重访时由内联脚本调 window.__xixiArchiveInit 补跑。
+       data-astro-rerun 直接加模块脚本会让 Astro 放弃打包、裸 TS 内联进 HTML 整段 SyntaxError -->
+  <script>
+    async function archiveInit() {
+      const input = document.getElementById('searchInput') as HTMLInputElement;
+      if (!input || input.dataset.inited) return;
+      input.dataset.inited = '1';
+      const box = document.getElementById('searchResults')!;
 
     let pagefind: any = null;
     try {
@@ -95,5 +98,11 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))];
         }
       }, 200);
     });
+    }
+    archiveInit();
+    (window as any).__xixiArchiveInit = archiveInit;
+  </script>
+  <script is:inline data-astro-rerun>
+    if (window.__xixiArchiveInit) window.__xixiArchiveInit();
   </script>
 </Base>

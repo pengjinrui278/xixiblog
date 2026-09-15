@@ -93,10 +93,16 @@ const pins = trips.map((t) => ({
     </div>
   </div>
 
-  <!-- data-astro-rerun：地图脚本被打包成外链模块，软切换按 src 去重；不加则第二次进旅程页地图不初始化 -->
-  <script data-astro-rerun>
+  <script>
     import maplibregl from 'maplibre-gl';
     import 'maplibre-gl/dist/maplibre-gl.css';
+
+    /* 初始化包成函数：模块脚本软切换按 src 去重，重访时由下方 is:inline 脚本调 window.__xixiTravelInit 补跑。
+       data-astro-rerun 不能直接加在模块脚本上——会让 Astro 放弃打包，裸 import 内联进 HTML 直接 SyntaxError */
+    function travelInit() {
+      const __mapEl = document.getElementById('map');
+      if (!__mapEl || __mapEl.dataset.inited) return;
+      __mapEl.dataset.inited = '1';
 
     /* ---------- WGS-84 → GCJ-02（火星坐标系），对齐高德瓦片 ---------- */
     const PI = Math.PI;
@@ -378,5 +384,12 @@ ${body}
       } catch { /* 旧 map 已随页面卸载 */ }
     });
     mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    }
+    travelInit();
+    (window as any).__xixiTravelInit = travelInit;
+  </script>
+  <!-- 软切换重访旅程页时上方模块脚本被去重跳过，由此补初始化（纯 JS 内联 + rerun，每次必达） -->
+  <script is:inline data-astro-rerun>
+    if (window.__xixiTravelInit) window.__xixiTravelInit();
   </script>
 </Base>
