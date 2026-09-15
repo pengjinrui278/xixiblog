@@ -15,6 +15,7 @@ export const NAV = [
   { href: '/travel/', label: '旅程' },
   { href: '/board/', label: '灵感墙' },
   { href: '/archive/', label: '归档' },
+  { href: '/calendar/', label: '日历' },
   { href: '/about/', label: '关于' },
 ];
 

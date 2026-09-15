@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { getCollection } from 'astro:content';
+
+const now = new Date();
+const year = now.getFullYear();
+const p2 = (n: number) => String(n).padStart(2, '0');
+const todayYmd = `${year}-${p2(now.getMonth() + 1)}-${p2(now.getDate())}`;
+
+const items = (await getCollection('days')).map((d) => ({
+  title: d.data.title,
+  date: d.data.date,
+  color: d.data.color ?? '#B5432C',
+  note: d.data.note ?? '',
+}));
+
+const WD = ['一', '二', '三', '四', '五', '六', '日'];
+const months: { m: number; cells: (number | null)[] }[] = [];
+for (let m = 0; m < 12; m++) {
+  const dim = new Date(year, m + 1, 0).getDate();
+  const pad = (new Date(year, m, 1).getDay() + 6) % 7; // 周一开头
+  const cells: (number | null)[] = Array.from({ length: pad }, () => null);
+  for (let d = 1; d <= dim; d++) cells.push(d);
+  months.push({ m, cells });
+}
+// 某月某日贴哪些便签（MM-DD 每年重复；YYYY-MM-DD 仅当年）
+const stickersOf = (m: number, d: number) => {
+  const mmdd = `${p2(m + 1)}-${p2(d)}`;
+  const ymd = `${year}-${mmdd}`;
+  return items.filter((it) => it.date === mmdd || it.date === ymd);
+};
+const ymdOf = (m: number, d: number) => `${year}-${p2(m + 1)}-${p2(d)}`;
+---
+<Base title="日历" current="日历" bleed="calendar">
+  <div class="wrap">
+    <div style="padding:52px 0 0">
+      <div class="eyebrow">Calendar</div>
+      <h1 class="pagetitle">{year} 日历墙</h1>
+      <p class="lede">十二个月挂成一面墙。特别的日子是一枚枚便签贴——生日、节日、只属于某一天的纪念。点右上「记一个日子」新增。</p>
+      <a class="btn solid" href="/write/?type=day" style="margin-top:16px"><Icon name="plus" size={14} /> 记一个日子</a>
+    </div>
+
+    <div class="cal-wall">
+      {months.map(({ m, cells }) => (
+        <div class={`cal-month${m === now.getMonth() ? ' cur' : ''}`}>
+          <div class="cal-mh"><b>{m + 1}月</b>{m === now.getMonth() && <span class="cal-tag">本月</span>}</div>
+          <div class="cal-wd">{WD.map((w) => <span>{w}</span>)}</div>
+          <div class="cal-grid">
+            {cells.map((d, i) => d === null ? (
+              <span class="cal-cell empty"></span>
+            ) : (
+              <span class={`cal-cell${ymdOf(m, d) === todayYmd ? ' today' : ''}`}>
+                <i class="d">{d}</i>
+                {stickersOf(m, d).map((s, k) => (
+                  <span class="cal-sticker" style={`--c:${s.color};--r:${((d * 7 + k * 13) % 5) - 2}deg`}
+                    title={s.note || s.title}>{s.title}</span>
+                ))}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

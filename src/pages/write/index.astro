@@ -15,6 +15,7 @@ import Icon from '../../components/Icon.astro';
       <button data-t="trip"><Icon name="send" size={14} /> 旅程</button>
       <button data-t="movie"><Icon name="film" size={14} /> 观影</button>
       <button data-t="memo"><Icon name="pin" size={14} /> 便签</button>
+      <button data-t="day"><Icon name="calendar" size={14} /> 日子</button>
     </div>
 
     <!-- 文章 -->
@@ -67,6 +68,16 @@ import Icon from '../../components/Icon.astro';
       </div>
     </div>
 
+    <!-- 日子 -->
+    <div class="pane" data-p="day" hidden>
+      <div class="write-grid">
+        <label class="wide">日子名 <input id="d_title" placeholder="生日 / 纪念日 / 某个约定" /></label>
+        <label>日期 <input id="d_date" placeholder="09-20 每年重复，或 2026-10-01 仅当年" /></label>
+        <label>颜色 <input id="d_color" placeholder="#B5432C 朱砂（可留空）" /></label>
+        <label class="wide">备注 <input id="d_note" placeholder="一句想说的话（悬停便签时可见）" /></label>
+      </div>
+    </div>
+
     <div id="songBox" class="search-results" style="position:static;width:min(420px,100%);margin:8px 0"></div>
 
     <div class="record-actions" style="max-width:760px">
@@ -91,7 +102,7 @@ import Icon from '../../components/Icon.astro';
       panes.forEach((p) => p.hidden = p.dataset.p !== t);
     }
     tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.t!)));
-    if (['post', 'trip', 'movie', 'memo'].includes(type)) show(type);
+    if (['post', 'trip', 'movie', 'memo', 'day'].includes(type)) show(type);
     ($('p_date') as HTMLInputElement).value = new Date().toISOString().slice(0, 10);
     ($('t_date') as HTMLInputElement).value = new Date().toISOString().slice(0, 10);
 
@@ -204,6 +215,19 @@ watchedDate: ${new Date().toISOString().slice(0, 10)}
 ${$('m_quote').value}`;
         const path = `src/content/movies/${slug($('m_title').value)}.md`;
         return { files: [{ path, content: md, encoding: 'utf8' }], md, path, title: $('m_title').value };
+      }
+      if (type === 'day') {
+        // date 必须带引号输出：YAML 会把未加引号的日期键解析成 Date 对象
+        const md = `---
+title: ${$('d_title').value || '未命名'}
+date: '${$('d_date').value.trim()}'${$('d_color').value.trim() ? `
+color: '${$('d_color').value.trim()}'` : ''}${$('d_note').value.trim() ? `
+note: ${$('d_note').value.trim()}` : ''}
+---
+
+`;
+        const path = `src/content/days/${slug($('d_title').value)}.md`;
+        return { files: [{ path, content: md, encoding: 'utf8' }], md, path, title: $('d_title').value };
       }
       const md = `---
 text: ${$('n_text').value || '空白便签'}

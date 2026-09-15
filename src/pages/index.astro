@@ -29,11 +29,11 @@ const dayItems = (await getCollection('days')).map((d) => ({
   <div class="wrap">
     <!-- B3 · 杂志大留白头版；大标题 = HERO_LINES 随机一句（consts.ts 里维护句池） -->
     <div class="hero" style="min-height:62vh;display:flex;flex-direction:column;justify-content:center;position:relative">
-      <!-- 今日是什么日子：匹配到才显示（数据来自 src/content/days/） -->
-      <div class="day-badge" id="dayBadge" hidden data-days={JSON.stringify(dayItems)}>
-        <span class="dot" style="background:var(--seal)"><Icon name="calendar" size={12} /></span>
-        <span>今天是 <b id="dayTitle"></b></span>
-      </div>
+      <!-- 今日胶囊：当天点亮「今天是 X」，平时显示「距下一个日子还有 N 天」；点它进日历墙 -->
+      <a class="day-badge" id="dayBadge" href="/calendar/" data-days={JSON.stringify(dayItems)} hidden>
+        <span class="dot" id="dayDot" style="background:var(--seal)"><Icon name="calendar" size={12} /></span>
+        <span id="dayText"></span>
+      </a>
       <div class="eyebrow">Under the Lamp · 曦曦</div>
       <div class="hi" id="heroLine" style="max-width:640px" set:html={HERO_LINES[0].replace(/\n/g, '<br/>')}></div>
       <p class="sub">{SITE.description}</p>
@@ -125,15 +125,36 @@ const dayItems = (await getCollection('days')).map((d) => ({
         try { items = JSON.parse(badge.getAttribute('data-days') || '[]'); } catch (e) {}
         var now = new Date();
         var p2 = function (n) { return (n < 10 ? '0' : '') + n; };
+        var today0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
         var mmdd = p2(now.getMonth() + 1) + '-' + p2(now.getDate());
         var ymd = now.getFullYear() + '-' + mmdd;
+        // 今天命中的日子（MM-DD 每年重复；YYYY-MM-DD 仅当年）
         var hits = items.filter(function (d) { return d.date === mmdd || d.date === ymd; });
+        // 每个日子的下一次出现
+        var nextOf = function (d) {
+          if (/^\d{4}-/.test(d.date)) {
+            var t0 = new Date(d.date + 'T00:00:00');
+            return t0 >= today0 ? t0 : null;
+          }
+          var t = new Date(now.getFullYear() + '-' + d.date + 'T00:00:00');
+          if (t < today0) t = new Date((now.getFullYear() + 1) + '-' + d.date + 'T00:00:00');
+          return t;
+        };
+        var upcoming = items
+          .map(function (d) { return { d: d, t: nextOf(d) }; })
+          .filter(function (x) { return x.t; })
+          .sort(function (a, b) { return a.t - b.t; });
+        var textEl = document.getElementById('dayText');
+        var dot = document.getElementById('dayDot');
         if (hits.length) {
           badge.hidden = false;
-          document.getElementById('dayTitle').textContent =
-            hits.map(function (d) { return d.title; }).join(' · ');
-          var dot = badge.querySelector('.dot');
+          textEl.innerHTML = '今天是 <b>' + hits.map(function (d) { return d.title; }).join(' · ') + '</b>';
           if (dot && hits[0].color) dot.style.background = hits[0].color;
+        } else if (upcoming.length) {
+          var n = Math.round((upcoming[0].t - today0) / 86400000);
+          badge.hidden = false;
+          textEl.innerHTML = '距 <b>' + upcoming[0].d.title + '</b> 还有 ' + n + ' 天';
+          if (dot && upcoming[0].d.color) dot.style.background = upcoming[0].d.color;
         }
       }
     })();

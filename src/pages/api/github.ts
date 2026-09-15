@@ -57,7 +57,7 @@ export async function POST({ request }: { request: Request }) {
     const done: string[] = [];
     for (const f of files as FilePayload[]) {
       // 防路径穿越：只允许白名单目录
-      if (!/^(src\/content\/(posts|trips|movies|memos)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/.test(f.path)) {
+      if (!/^(src\/content\/(posts|trips|movies|memos|days)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/.test(f.path)) {
         return Response.json({ error: `路径不被允许: ${f.path}` }, { status: 400 });
       }
       done.push(await putFile(f, message ?? `write: ${f.path}`));
