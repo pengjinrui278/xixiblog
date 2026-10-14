@@ -16,6 +16,7 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/vercel": "^8.0.0",
+    "@capsizecss/unpack": "^4.0.1",
     "astro": "^5.0.0",
     "katex": "^0.16.11",
     "maplibre-gl": "^5.0.0",

@@ -232,6 +232,16 @@ section.block > h2::after { content: ""; flex: 1; height: 1px; background: var(-
 }
 .mermaid-box .mermaid { display: inline-block; min-width: 300px; }
 
+/* 表格：细线 + 隔行底色，长笔记里大量用到 */
+.prose table {
+  width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: 15px;
+}
+.prose th, .prose td {
+  border: 1px solid var(--line); padding: 7px 12px; text-align: left; vertical-align: top;
+}
+.prose th { background: var(--card); font-weight: 700; }
+.prose tbody tr:nth-child(even) { background: color-mix(in srgb, var(--card) 55%, transparent); }
+
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 6px 0; }
 
 .toc {
