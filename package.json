@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node -e \"const fs=require('fs');for(const p of ['.astro','node_modules/.astro'])fs.rmSync(p,{recursive:true,force:true})\"",
     "build": "astro build",
     "postbuild": "pagefind --site dist/client --output-path dist/client/pagefind && node -e \"const fs=require('fs'),dst='.vercel/output/static/pagefind';if(fs.existsSync('.vercel/output')){fs.rmSync(dst,{recursive:true,force:true});fs.cpSync('dist/client/pagefind',dst,{recursive:true});console.log('[postbuild] pagefind → .vercel/output/static')}else{console.log('[postbuild] no .vercel dir, skip copy')}\"",
     "preview": "astro preview"
