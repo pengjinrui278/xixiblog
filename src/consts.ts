@@ -4,7 +4,7 @@ export const SITE = {
   title: '曦曦的博客',
   description: '一盏灯，一页纸，一些正在生长的文字与作品。',
   // 后续买了域名改这里 + astro.config.mjs 的 site
-  url: 'https://xixi-blog.vercel.app',
+  url: 'https://xixiblog.vercel.app',
 };
 
 export const NAV = [

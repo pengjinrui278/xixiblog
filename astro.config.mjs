@@ -6,7 +6,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
-  site: 'https://xixi-blog.vercel.app',
+  site: 'https://xixiblog.vercel.app',
   // Astro 5：static 输出 + 适配器即"旧的 hybrid"——
   // 带 prerender=false 的端点（如 api/qqmusic）会成为 Vercel Serverless Function
   adapter: vercel(),
