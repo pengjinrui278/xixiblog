@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-03T00:00:00.000Z",
+  "folders": [
+    {
+      "id": "introductions-to-algorithm",
+      "name": "Introductions to Algorithm",
+      "parentId": null,
+      "order": 0
+    }
+  ],
+  "items": {
+    "01-导学篇-全书地图与使用说明": { "folderId": "introductions-to-algorithm", "order": 0 },
+    "02-算法基础与渐近分析第1-3章": { "folderId": "introductions-to-algorithm", "order": 1 },
+    "03-分治策略与概率分析第4-5章": { "folderId": "introductions-to-algorithm", "order": 2 },
+    "04-堆排序与快速排序第6-7章": { "folderId": "introductions-to-algorithm", "order": 3 },
+    "05-线性时间排序与顺序统计第8-9章": { "folderId": "introductions-to-algorithm", "order": 4 },
+    "06-基本数据结构与散列表第10-11章": { "folderId": "introductions-to-algorithm", "order": 5 },
+    "07-二叉搜索树与红黑树第12-13章": { "folderId": "introductions-to-algorithm", "order": 6 },
+    "08-动态规划第14章": { "folderId": "introductions-to-algorithm", "order": 7 },
+    "09-贪心算法与摊还分析第15-16章": { "folderId": "introductions-to-algorithm", "order": 8 },
+    "10-高级数据结构第17-19章": { "folderId": "introductions-to-algorithm", "order": 9 },
+    "11-图算法基础第20章": { "folderId": "introductions-to-algorithm", "order": 10 },
+    "12-最小生成树与最短路径第21-23章": { "folderId": "introductions-to-algorithm", "order": 11 },
+    "13-最大流与二分图匹配第24-25章": { "folderId": "introductions-to-algorithm", "order": 12 }
+  }
+}

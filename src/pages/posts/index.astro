@@ -2,41 +2,347 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { getCollection } from 'astro:content';
+import structureSource from '../../content/post-structure.json';
 
 const posts = (await getCollection('posts', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+type ItemPlacement = { folderId: string | null; order: number };
+type Folder = { id: string; name: string; parentId: string | null; order: number };
+const structure = structureSource as {
+  version: number;
+  updatedAt: string;
+  folders: Folder[];
+  items: Record<string, ItemPlacement>;
+};
 const fmt = (d: Date) => d.toISOString().slice(0, 10);
-let n = 0;
+const postData = posts.map((p) => ({
+  id: p.id,
+  title: p.data.title,
+  description: p.data.description ?? '',
+  date: fmt(p.data.pubDate),
+  series: p.data.series ? `${p.data.series.name} ${p.data.series.order}` : '',
+}));
+const orderedFolders = [...structure.folders].sort((a, b) => a.order - b.order);
+const inFolder = (folderId: string | null) => posts
+  .filter((p) => (structure.items[p.id]?.folderId ?? null) === folderId)
+  .sort((a, b) => {
+    const ao = structure.items[a.id]?.order;
+    const bo = structure.items[b.id]?.order;
+    if (Number.isFinite(ao) && Number.isFinite(bo)) return ao - bo;
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  });
+const rootPosts = inFolder(null);
 ---
 <Base title="文章" current="文章" bleed="posts">
   <div class="wrap">
-    <div style="padding:52px 0 0">
-      <div class="eyebrow">Writing</div>
-      <h1 class="pagetitle">文章</h1>
-      <p class="lede">巨型目录：一行一篇。悬停偷看摘要，点击开始读。</p>
-      <a class="btn solid" href="/write/?type=post" style="margin-top:16px"><Icon name="pen" size={14} /> 写一篇</a>
+    <div class="post-directory-head">
+      <div>
+        <div class="eyebrow">Article Directory</div>
+        <h1 class="pagetitle">文章目录</h1>
+        <p class="lede">像整理桌面文件一样整理文章。新文章默认按时间排列；拖动手柄可以排序，拖进文件夹即可归档。</p>
+      </div>
+      <div class="post-directory-actions">
+        <button class="btn" id="newFolderBtn" type="button"><Icon name="folder" size={15} /> 新建文件夹</button>
+        <a class="btn solid" href="/write/?type=post"><Icon name="pen" size={14} /> 写一篇</a>
+      </div>
     </div>
 
-    <div class="giant-list">
-      {posts.map((p) => {
-        n++;
-        return (
-          <a class="row" href={`/posts/${p.id}/`}>
-            <span class="no">{String(n).padStart(2, '0')}</span>
-            <span class="gt">{p.data.title}</span>
-            <span class="meta">{fmt(p.data.pubDate)}{p.data.series ? ` · ${p.data.series.name} ${p.data.series.order}` : ''}</span>
-            {p.data.description && <span class="peek">{p.data.description}</span>}
-          </a>
-        );
-      })}
-    </div>
+    <section
+      class="post-explorer"
+      id="postExplorer"
+      data-posts={JSON.stringify(postData)}
+      data-structure={JSON.stringify(structure)}
+    >
+      <div class="post-explorer-topline">
+        <div class="post-path"><Icon name="folderOpen" size={17} /><span>文章</span><span class="post-count">{posts.length} 篇</span></div>
+        <span class="post-save-status" id="postSaveStatus" role="status" aria-live="polite">默认按时间排序</span>
+      </div>
+
+      <form class="folder-composer" id="folderComposer" hidden>
+        <Icon name="folder" size={17} />
+        <input id="folderName" maxlength="48" placeholder="文件夹名称" autocomplete="off" />
+        <button class="btn solid" type="submit">创建</button>
+        <button class="btn" id="cancelFolder" type="button">取消</button>
+      </form>
+
+      <div class="folder-tree" id="folderTree">
+        {orderedFolders.map((folder) => {
+          const entries = inFolder(folder.id);
+          return (
+            <section class="folder-node" data-folder-id={folder.id}>
+              <button class="folder-head" type="button" aria-expanded="true">
+                <span class="folder-chevron"><Icon name="chevronDown" size={15} /></span>
+                <span class="folder-symbol"><Icon name="folderOpen" size={19} /></span>
+                <strong>{folder.name}</strong>
+                <span class="folder-total">{entries.length}</span>
+              </button>
+              <div class="folder-children">
+                {entries.map((p) => (
+                  <div class="post-file" data-post-id={p.id}>
+                    <button class="post-grip" type="button" draggable="true" aria-label={`拖动《${p.data.title}》`} title="拖动排序"><Icon name="grip" size={17} /></button>
+                    <Icon name="file" size={18} cls="post-file-icon" />
+                    <a class="post-file-main" href={`/posts/${p.id}/`}>
+                      <strong>{p.data.title}</strong>
+                      <span>{p.data.description}</span>
+                    </a>
+                    <time>{fmt(p.data.pubDate)}</time>
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })}
+
+        <section class="folder-node root-folder" data-folder-id="">
+          <button class="folder-head" type="button" aria-expanded="true">
+            <span class="folder-chevron"><Icon name="chevronDown" size={15} /></span>
+            <span class="folder-symbol"><Icon name="folderOpen" size={19} /></span>
+            <strong>未归档</strong>
+            <span class="folder-total">{rootPosts.length}</span>
+          </button>
+          <div class="folder-children">
+            {rootPosts.map((p) => (
+              <div class="post-file" data-post-id={p.id}>
+                <button class="post-grip" type="button" draggable="true" aria-label={`拖动《${p.data.title}》`} title="拖动排序"><Icon name="grip" size={17} /></button>
+                <Icon name="file" size={18} cls="post-file-icon" />
+                <a class="post-file-main" href={`/posts/${p.id}/`}>
+                  <strong>{p.data.title}</strong>
+                  <span>{p.data.description}</span>
+                </a>
+                <time>{fmt(p.data.pubDate)}</time>
+              </div>
+            ))}
+            {!rootPosts.length && <p class="folder-empty">新文章会先出现在这里，并按发布时间从新到旧排列。</p>}
+          </div>
+        </section>
+      </div>
+
+      <noscript>
+        <div class="post-noscript">
+          <p>启用 JavaScript 后可以拖动整理。文章仍可直接阅读：</p>
+          {posts.map((p) => <a href={`/posts/${p.id}/`}>{p.data.title}</a>)}
+        </div>
+      </noscript>
+    </section>
+
     {!posts.length && (
       <div class="tool" style="margin-top:30px;max-width:460px">
         <div class="tt"><Icon name="file" size={18} /> 一盏灯，一页白纸</div>
-        <div class="td">这里还没有文章。第一篇最难得——不需要完美，只需要开始。去写作工作室，或者直接在 <code>src/content/posts/</code> 放一个 Markdown 文件。</div>
+        <div class="td">这里还没有文章。第一篇最难得——不需要完美，只需要开始。</div>
         <div class="tm"><a class="btn solid" href="/write/?type=post">写下第一篇</a></div>
       </div>
     )}
   </div>
+
+  <script is:inline data-astro-rerun>
+    (function () {
+      var explorer = document.getElementById('postExplorer');
+      if (!explorer || explorer.dataset.inited === '1') return;
+      explorer.dataset.inited = '1';
+
+      var posts = JSON.parse(explorer.dataset.posts || '[]');
+      var serverState = JSON.parse(explorer.dataset.structure || '{}');
+      var storageKey = 'xixi-post-structure-v1';
+      var collapsedKey = 'xixi-post-folders-collapsed';
+      var status = document.getElementById('postSaveStatus');
+      var tree = document.getElementById('folderTree');
+      var composer = document.getElementById('folderComposer');
+      var folderName = document.getElementById('folderName');
+      var syncTimer = 0;
+      var collapsed = {};
+      var svg = {
+        folder: '<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>',
+        folderOpen: '<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14 8 9h13l-2 9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v1"/></svg>',
+        chevronRight: '<svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>',
+        chevronDown: '<svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+        file: '<svg class="ic post-file-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>',
+        grip: '<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="9" cy="5" r="1" fill="currentColor"/><circle cx="15" cy="5" r="1" fill="currentColor"/><circle cx="9" cy="12" r="1" fill="currentColor"/><circle cx="15" cy="12" r="1" fill="currentColor"/><circle cx="9" cy="19" r="1" fill="currentColor"/><circle cx="15" cy="19" r="1" fill="currentColor"/></svg>',
+        up: '<svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>',
+        down: '<svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>'
+      };
+
+      try { collapsed = JSON.parse(localStorage.getItem(collapsedKey) || '{}'); } catch (e) {}
+      var state = serverState;
+      try {
+        var localState = JSON.parse(localStorage.getItem(storageKey) || 'null');
+        if (localState && localState.version === serverState.version && Date.parse(localState.updatedAt || 0) > Date.parse(serverState.updatedAt || 0)) state = localState;
+      } catch (e) {}
+      state.folders = Array.isArray(state.folders) ? state.folders : [];
+      state.items = state.items && typeof state.items === 'object' ? state.items : {};
+
+      function esc(value) {
+        return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
+          return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch];
+        });
+      }
+      function slug(value) {
+        var base = value.trim().toLowerCase().replace(/[^a-z0-9一-龥]+/g, '-').replace(/^-|-$/g, '');
+        var id = base || ('folder-' + Date.now());
+        var used = new Set(state.folders.map(function (f) { return f.id; }));
+        var n = 2, candidate = id;
+        while (used.has(candidate)) candidate = id + '-' + n++;
+        return candidate;
+      }
+      function placement(id) { return state.items[id] || { folderId: null, order: null }; }
+      function folderPosts(folderId) {
+        return posts.filter(function (p) { return (placement(p.id).folderId || null) === folderId; }).sort(function (a, b) {
+          var ao = placement(a.id).order;
+          var bo = placement(b.id).order;
+          if (Number.isFinite(ao) && Number.isFinite(bo)) return ao - bo;
+          return String(b.date).localeCompare(String(a.date));
+        });
+      }
+      function folderOptions(selected) {
+        var options = '<option value="">未归档</option>';
+        state.folders.slice().sort(function (a, b) { return a.order - b.order; }).forEach(function (f) {
+          options += '<option value="' + esc(f.id) + '"' + (selected === f.id ? ' selected' : '') + '>' + esc(f.name) + '</option>';
+        });
+        return options;
+      }
+      function fileHtml(p, folderId, index, total) {
+        return '<div class="post-file" data-post-id="' + esc(p.id) + '">' +
+          '<button class="post-grip" type="button" draggable="true" aria-label="拖动《' + esc(p.title) + '》" title="拖动排序">' + svg.grip + '</button>' +
+          svg.file +
+          '<a class="post-file-main" href="/posts/' + encodeURI(p.id) + '/"><strong>' + esc(p.title) + '</strong><span>' + esc(p.description) + '</span></a>' +
+          '<time>' + esc(p.date) + '</time>' +
+          '<select class="post-move" aria-label="移动《' + esc(p.title) + '》到文件夹">' + folderOptions(folderId) + '</select>' +
+          '<span class="post-order-buttons"><button type="button" data-shift="-1" aria-label="上移"' + (index === 0 ? ' disabled' : '') + '>' + svg.up + '</button><button type="button" data-shift="1" aria-label="下移"' + (index === total - 1 ? ' disabled' : '') + '>' + svg.down + '</button></span>' +
+          '</div>';
+      }
+      function folderHtml(folder) {
+        var id = folder ? folder.id : null;
+        var list = folderPosts(id);
+        var key = id || '__root__';
+        var isCollapsed = !!collapsed[key];
+        var name = folder ? folder.name : '未归档';
+        var empty = folder ? '把文章拖到这里，或用每行右侧的文件夹菜单移动。' : '新文章会先出现在这里，并按发布时间从新到旧排列。';
+        return '<section class="folder-node' + (folder ? '' : ' root-folder') + (isCollapsed ? ' is-collapsed' : '') + '" data-folder-id="' + esc(id || '') + '">' +
+          '<button class="folder-head" type="button" aria-expanded="' + (!isCollapsed) + '">' +
+          '<span class="folder-chevron">' + (isCollapsed ? svg.chevronRight : svg.chevronDown) + '</span>' +
+          '<span class="folder-symbol">' + (isCollapsed ? svg.folder : svg.folderOpen) + '</span>' +
+          '<strong>' + esc(name) + '</strong><span class="folder-total">' + list.length + '</span></button>' +
+          '<div class="folder-children">' + (list.length ? list.map(function (p, i) { return fileHtml(p, id, i, list.length); }).join('') : '<p class="folder-empty">' + esc(empty) + '</p>') + '</div></section>';
+      }
+      function render() {
+        var folders = state.folders.slice().sort(function (a, b) { return a.order - b.order; });
+        tree.innerHTML = folders.map(folderHtml).join('') + folderHtml(null);
+        bindDnD();
+      }
+      function renumber(folderId, orderedIds) {
+        orderedIds.forEach(function (id, index) { state.items[id] = { folderId: folderId, order: index }; });
+      }
+      function movePost(id, folderId, beforeId) {
+        var sourceFolder = placement(id).folderId || null;
+        var source = folderPosts(sourceFolder).map(function (p) { return p.id; }).filter(function (x) { return x !== id; });
+        renumber(sourceFolder, source);
+        var target = folderPosts(folderId).map(function (p) { return p.id; }).filter(function (x) { return x !== id; });
+        var index = beforeId ? target.indexOf(beforeId) : -1;
+        if (index < 0) target.push(id); else target.splice(index, 0, id);
+        renumber(folderId, target);
+        persist('整理文章目录');
+        render();
+      }
+      function shiftPost(id, delta) {
+        var folderId = placement(id).folderId || null;
+        var ids = folderPosts(folderId).map(function (p) { return p.id; });
+        var from = ids.indexOf(id), to = from + delta;
+        if (from < 0 || to < 0 || to >= ids.length) return;
+        ids.splice(to, 0, ids.splice(from, 1)[0]);
+        renumber(folderId, ids);
+        persist('调整文章顺序');
+        render();
+      }
+      function persist(message) {
+        state.updatedAt = new Date().toISOString();
+        try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (e) {}
+        status.textContent = '已保存到本机 · 正在同步…';
+        clearTimeout(syncTimer);
+        syncTimer = setTimeout(async function () {
+          try {
+            var response = await fetch('/api/github', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                files: [{ path: 'src/content/post-structure.json', content: JSON.stringify(state, null, 2) + '\n', encoding: 'utf8' }],
+                message: 'organize: ' + message
+              })
+            });
+            var result = await response.json();
+            status.textContent = response.ok ? '已提交 GitHub · 部署后跨设备同步' : (result.code === 'no-token' ? '已保存到本机 · 配置 GITHUB_TOKEN 后可跨设备同步' : '本机已保存 · 云端同步失败');
+          } catch (e) { status.textContent = '已保存到本机 · 暂时无法同步云端'; }
+        }, 700);
+      }
+      function bindDnD() {
+        tree.querySelectorAll('.post-grip').forEach(function (handle) {
+          handle.addEventListener('dragstart', function (event) {
+            var row = handle.closest('.post-file');
+            event.dataTransfer.effectAllowed = 'move';
+            event.dataTransfer.setData('text/plain', row.dataset.postId);
+            row.classList.add('is-dragging');
+          });
+          handle.addEventListener('dragend', function () {
+            tree.querySelectorAll('.is-dragging,.is-drop-target').forEach(function (el) { el.classList.remove('is-dragging', 'is-drop-target'); });
+          });
+        });
+        tree.querySelectorAll('.folder-node').forEach(function (folder) {
+          folder.addEventListener('dragover', function (event) {
+            event.preventDefault();
+            event.dataTransfer.dropEffect = 'move';
+            folder.classList.add('is-drop-target');
+          });
+          folder.addEventListener('dragleave', function (event) {
+            if (!folder.contains(event.relatedTarget)) folder.classList.remove('is-drop-target');
+          });
+          folder.addEventListener('drop', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var id = event.dataTransfer.getData('text/plain');
+            if (!id) return;
+            var row = event.target.closest('.post-file');
+            var beforeId = row && row.dataset.postId !== id ? row.dataset.postId : null;
+            movePost(id, folder.dataset.folderId || null, beforeId);
+          });
+        });
+      }
+
+      tree.addEventListener('click', function (event) {
+        var head = event.target.closest('.folder-head');
+        if (head) {
+          var folder = head.closest('.folder-node');
+          var key = folder.dataset.folderId || '__root__';
+          collapsed[key] = !collapsed[key];
+          try { localStorage.setItem(collapsedKey, JSON.stringify(collapsed)); } catch (e) {}
+          render();
+          return;
+        }
+        var shift = event.target.closest('[data-shift]');
+        if (shift) shiftPost(shift.closest('.post-file').dataset.postId, Number(shift.dataset.shift));
+      });
+      tree.addEventListener('change', function (event) {
+        var select = event.target.closest('.post-move');
+        if (select) movePost(select.closest('.post-file').dataset.postId, select.value || null, null);
+      });
+      document.getElementById('newFolderBtn').addEventListener('click', function () {
+        composer.hidden = false;
+        folderName.focus();
+      });
+      document.getElementById('cancelFolder').addEventListener('click', function () {
+        composer.hidden = true;
+        folderName.value = '';
+      });
+      composer.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var name = folderName.value.trim();
+        if (!name) return;
+        state.folders.push({ id: slug(name), name: name, parentId: null, order: state.folders.length });
+        folderName.value = '';
+        composer.hidden = true;
+        persist('新建文件夹「' + name + '」');
+        render();
+      });
+
+      render();
+    })();
+  </script>
 </Base>

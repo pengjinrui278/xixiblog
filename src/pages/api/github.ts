@@ -59,7 +59,7 @@ async function delFile(path: string, message: string) {
 }
 
 // 防路径穿越：只允许白名单目录（新增与删除共用）
-const PATH_RE = /^(src\/content\/(posts|trips|movies|memos|days)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/;
+const PATH_RE = /^(src\/content\/post-structure\.json|src\/content\/(posts|trips|movies|memos|days)\/[\w\-.一-龥]+\.(md|markdown)|public\/photos\/[\w\-.]+\.(svg|png|jpe?g|webp|gif))$/;
 
 export async function GET() {
   return Response.json({ enabled: Boolean(TOKEN), repo: REPO, branch: BRANCH });

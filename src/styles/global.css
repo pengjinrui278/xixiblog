@@ -768,6 +768,98 @@ a.day-badge:hover { border-color: var(--seal); box-shadow: 0 8px 22px rgba(181, 
 .edit-banner b { color: var(--ink); }
 .edit-banner a { color: var(--seal); font-weight: 600; margin-left: 6px; }
 
+/* ---------- 文章文件夹目录 ---------- */
+.post-directory-head { padding: 52px 0 0; display: flex; align-items: end; justify-content: space-between; gap: 28px; }
+.post-directory-actions { display: flex; align-items: center; gap: 10px; flex: none; padding-bottom: 4px; }
+.post-explorer { margin: 30px 0 24px; border: 1px solid color-mix(in srgb, var(--line) 82%, var(--seal));
+  border-radius: 16px; overflow: hidden; background: color-mix(in srgb, var(--card) 86%, transparent);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 55px rgba(37, 27, 12, .12); }
+.post-explorer-topline { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 0 18px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper2) 70%, transparent); }
+.post-path { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.post-path .ic { color: var(--wood); }
+.post-count, .folder-total { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; height: 20px;
+  border-radius: 999px; padding: 0 7px; background: color-mix(in srgb, var(--ink2) 10%, transparent);
+  color: var(--ink2); font: 11px/1 var(--mono); }
+.post-save-status { color: var(--ink2); font-size: 12px; text-align: right; }
+.folder-composer { display: flex; align-items: center; gap: 10px; padding: 12px 18px;
+  border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--seal) 6%, var(--card)); }
+.folder-composer[hidden] { display: none; }
+.folder-composer > .ic { color: var(--wood); flex: none; }
+.folder-composer input { min-width: 0; flex: 1; max-width: 360px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--paper); color: var(--ink); padding: 9px 12px; font: 14px var(--serif); outline: none; }
+.folder-composer input:focus { border-color: var(--seal); box-shadow: 0 0 0 3px color-mix(in srgb, var(--seal) 13%, transparent); }
+.folder-tree { padding: 12px; }
+.folder-node { border: 1px solid transparent; border-radius: 11px; transition: border-color .18s, background .18s, box-shadow .18s; }
+.folder-node + .folder-node { margin-top: 8px; }
+.folder-node.is-drop-target { border-color: var(--seal); background: color-mix(in srgb, var(--seal) 7%, var(--card));
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--seal) 12%, transparent); }
+.folder-head { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 9px; padding: 8px 12px;
+  border: 0; border-radius: 9px; background: transparent; color: var(--ink); font: inherit; cursor: pointer; text-align: left;
+  transition: background .16s, color .16s; }
+.folder-head:hover { background: color-mix(in srgb, var(--wood) 8%, transparent); }
+.folder-head strong { font-size: 15px; }
+.folder-chevron { width: 18px; display: grid; place-items: center; color: var(--ink2); }
+.folder-symbol { display: grid; place-items: center; color: var(--wood); }
+.folder-total { margin-left: auto; }
+.folder-children { position: relative; margin: 0 8px 8px 28px; padding-left: 18px; border-left: 1px dashed color-mix(in srgb, var(--line) 80%, var(--wood)); }
+.folder-node.is-collapsed .folder-children { display: none; }
+.root-folder { border-top: 1px dashed var(--line); border-radius: 0 0 11px 11px; padding-top: 7px; }
+.root-folder .folder-symbol { color: var(--ink2); }
+.post-file { position: relative; display: grid; grid-template-columns: 28px 22px minmax(0, 1fr) 92px 154px 58px;
+  align-items: center; gap: 9px; min-height: 58px; padding: 7px 8px 7px 3px; border-radius: 8px;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); transition: background .16s, transform .16s, opacity .16s; }
+.post-file:last-child { border-bottom-color: transparent; }
+.post-file:hover { background: color-mix(in srgb, var(--paper2) 72%, transparent); }
+.post-file.is-dragging { opacity: .38; transform: scale(.99); }
+.post-grip { width: 26px; height: 32px; display: grid; place-items: center; border: 0; background: transparent;
+  color: color-mix(in srgb, var(--ink2) 58%, transparent); cursor: grab; border-radius: 6px; }
+.post-grip:hover { color: var(--seal); background: color-mix(in srgb, var(--seal) 9%, transparent); }
+.post-grip:active { cursor: grabbing; }
+.post-file-icon { color: var(--ink2); }
+.post-file-main { min-width: 0; display: block; color: var(--ink); }
+.post-file-main strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14.5px; }
+.post-file-main span { display: block; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  color: var(--ink2); font-size: 11.5px; }
+.post-file-main:hover strong { color: var(--seal); }
+.post-file time { color: var(--ink2); font: 11px/1 var(--mono); text-align: right; }
+.post-move { width: 154px; min-width: 0; border: 1px solid var(--line); border-radius: 7px; padding: 6px 24px 6px 8px;
+  background: color-mix(in srgb, var(--paper) 78%, transparent); color: var(--ink2); font: 11.5px var(--serif); cursor: pointer; }
+.post-move:hover, .post-move:focus { border-color: var(--wood); color: var(--ink); }
+.post-order-buttons { display: flex; gap: 3px; }
+.post-order-buttons button { width: 27px; height: 27px; display: grid; place-items: center; border: 1px solid transparent;
+  border-radius: 6px; background: transparent; color: var(--ink2); cursor: pointer; }
+.post-order-buttons button:hover:not(:disabled) { color: var(--seal); border-color: color-mix(in srgb, var(--seal) 28%, transparent);
+  background: color-mix(in srgb, var(--seal) 7%, transparent); }
+.post-order-buttons button:disabled { opacity: .22; cursor: default; }
+.folder-empty { margin: 4px 0 7px; padding: 15px 13px; border: 1px dashed var(--line); border-radius: 8px;
+  color: var(--ink2); font-size: 12.5px; }
+.post-noscript { display: grid; gap: 7px; margin: 12px; padding: 16px; border: 1px dashed var(--line); border-radius: 10px; }
+.post-noscript a { color: var(--seal); }
+
+@media (max-width: 900px) {
+  .post-file { grid-template-columns: 28px 22px minmax(0, 1fr) 82px 48px; }
+  .post-move { grid-column: 3 / 6; width: 100%; }
+  .post-order-buttons { grid-column: 5; grid-row: 1; }
+}
+@media (max-width: 640px) {
+  .post-directory-head { align-items: start; flex-direction: column; gap: 16px; }
+  .post-directory-actions { width: 100%; padding: 0; }
+  .post-directory-actions .btn { flex: 1; justify-content: center; }
+  .post-explorer-topline { align-items: start; flex-direction: column; gap: 5px; padding-top: 11px; padding-bottom: 11px; }
+  .post-save-status { text-align: left; }
+  .folder-composer { flex-wrap: wrap; }
+  .folder-composer input { flex-basis: calc(100% - 30px); }
+  .folder-tree { padding: 8px; }
+  .folder-children { margin-left: 13px; padding-left: 9px; }
+  .post-file { grid-template-columns: 27px 20px minmax(0, 1fr) 58px; gap: 7px; padding-right: 3px; }
+  .post-file time { display: none; }
+  .post-order-buttons { grid-column: 4; grid-row: 1; }
+  .post-move { grid-column: 3 / 5; width: 100%; }
+  .post-file-main span { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn::after, .writebtn, #player .p-ctrl .play { animation: none !important; }
   .btn, .tool, .desk-item, .ticket, .topnav a::after, .giant-list a.row,
