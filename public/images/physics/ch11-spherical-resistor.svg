@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 540" width="640" height="540" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题 11.6：球层面积随半径改变</title><desc id="desc">习题 11.6：球层面积随半径改变</desc>
+<rect width="640" height="540" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题 11.6：球层面积随半径改变</text>
+<circle cx="320" cy="267" r="158" fill="#e5f0e9" stroke="#287b64" stroke-width="3"/>
+<circle cx="320" cy="267" r="75" fill="#fffdf7" stroke="#b87620" stroke-width="3"/>
+<circle cx="320" cy="267" r="116" fill="none" stroke="#b87620" stroke-width="9"/>
+<circle cx="320" cy="267" r="116" fill="none" stroke="#fffdf7" stroke-width="2"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 385.2788714810226 217.37471472964475 L 436.22823458816214 178.6427847625382" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 385.2788714810226 316.6252852703552 L 436.22823458816214 355.3572152374618" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 254.30622352515144 316.0747158165244 L 203.03303213014766 354.37693303917763" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 250.45579739974653 223.55343644550354 L 196.1773953702804 189.64392342735997" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 272.8644363842719 199.90127689271836 L 236.0757038061427 147.5315417845961" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350.99417490246435 191.08319604912595 L 375.1847504360951 131.83105638015107" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="320" cy="267" r="3" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="302" y="292" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<path d="M 320 267 L 320 192" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="345" y="232" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">R₁</text>
+<path d="M 320 267 L 436 267" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="385" y="253" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">r</text>
+<path d="M 320 267 L 208 379" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="241" y="336" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">R₂</text>
+<path d="M 425 220 L 520 180" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="534" y="160" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">薄层 dr</text>
+<text x="320" y="465" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">薄球层彼此串联：dR = ρ dr / (4πr²)</text>
+<text x="24" y="520" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">截面图：蓝箭头表示内壳电势较高时的径向电流。</text>
+</svg>

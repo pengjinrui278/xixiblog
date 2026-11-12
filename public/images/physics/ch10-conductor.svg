@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 700" width="640" height="700" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">静电平衡：材料内部的合电场为零</title><desc id="desc">静电平衡：材料内部的合电场为零</desc>
+<rect width="640" height="700" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">静电平衡：材料内部的合电场为零</text>
+<rect x="185" y="112" width="270" height="165" rx="20" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<text x="204" y="145" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="435" y="145" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="204" y="195" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="435" y="195" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="204" y="245" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="435" y="245" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 237 170 L 400 170" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="320" y="150" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E₀</text>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 400 230 L 237 230" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="320" y="260" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">E′</text>
+<text x="320" y="94" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">外场向右，电子向左重排</text>
+<text x="320" y="315" font-size="24" text-anchor="middle" fill="#302e2a" font-weight="normal">内部：E = E₀ + E′ = 0</text>
+<path d="M 30 341 L 610 341" fill="none" stroke="#eee8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="35" y="382" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">腔内有 +q：内表面必须感应 −q</text>
+<circle cx="230" cy="520" r="105" fill="#eee8dc" stroke="#77736c" stroke-width="3"/>
+<circle cx="230" cy="520" r="67" fill="#fffdf7" stroke="#77736c" stroke-width="2"/>
+<circle cx="230" cy="520" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="230" y="527" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="306.0" y="527.0" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="346.0" y="527.0" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="268.0" y="592.8179306876174" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="288.0" y="627.4589468389948" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="192.0" y="592.8179306876174" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="172.00000000000003" y="627.4589468389948" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="154.0" y="527.0" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="114.0" y="527.0" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="191.99999999999997" y="461.1820693123827" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="171.99999999999994" y="426.54105316100515" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="268.0" y="461.1820693123827" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="288.0" y="426.54105316100515" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 249.91858428704208 531.5 L 279.363448015713 548.5" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 230.0 543.0 L 230.0 577.0" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 210.08141571295792 531.5 L 180.636551984287 548.5" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 210.08141571295792 508.5 L 180.636551984287 491.5" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 230.0 497.0 L 230.0 463.0" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 249.91858428704208 508.5 L 279.363448015713 491.5" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="448" y="454" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">导体总电荷为 0</text>
+<text x="450" y="501" font-size="24" text-anchor="middle" fill="#302e2a" font-weight="normal">金属内 E = 0</text>
+<path d="M 380 512 L 321 538" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450" y="556" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">外表面总电荷 +q</text>
+<text x="320" y="676" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">空腔里可以有场；“零场”说的是导体材料</text>
+</svg>

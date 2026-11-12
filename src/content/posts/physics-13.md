@@ -41,11 +41,19 @@ $$
 - 均匀外场主要使磁矩转向；要比较材料整体被吸向哪里，应看**不均匀磁场**：顺磁、铁磁材料趋向强场区，抗磁材料趋向弱场区。
 - 超导体有完全抗磁性，但它与普通抗磁材料的机制不同，不能把普通抗磁质理解为“磁场完全进不去”。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-response.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-response.svg" alt="在相同向右磁场强度H下，顺磁材料磁化强度M向右，抗磁材料M向左。" width="640" height="520" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-1　顺磁与抗磁的区别是磁化响应方向；普通材料的响应通常很弱。</figcaption>
+</figure>
+
 ### 思考题13.2｜为什么一种顺磁，一种抗磁？（第199页）
 
-**题意：**解释顺磁质、抗磁质在外场中磁化的原因。
+**题意：** 解释顺磁质、抗磁质在外场中磁化的原因。
 
-**解答：**顺磁质原本就有固有分子磁矩。外场施加磁力矩，使它们更倾向沿场排列；热运动不断打乱排列，所以通常只出现微弱的净同向磁矩。抗磁质的固有分子磁矩为零，外场改变电子运动，产生反向附加磁矩，宏观磁化方向因此反向。不能将两者区别说成“一个有电子运动，一个没有”。
+**解答：** 顺磁质原本就有固有分子磁矩。外场施加磁力矩，使它们更倾向沿场排列；热运动不断打乱排列，所以通常只出现微弱的净同向磁矩。抗磁质的固有分子磁矩为零，外场改变电子运动，产生反向附加磁矩，宏观磁化方向因此反向。不能将两者区别说成“一个有电子运动，一个没有”。
 
 ## 2. 从一个电子，到磁化强度与磁化电流
 
@@ -79,7 +87,7 @@ $$
 \boldsymbol\mu_{\mathrm{orb}}=-\frac{e}{2m_e}\mathbf L.
 $$
 
-**负号表示方向相反：**电子运动方向与等效正电流方向相反。教材还给出自旋磁矩近似关系 $\boldsymbol\mu_s=-e\mathbf S/m_e$；自旋是电子的内禀性质，不应理解成小球在自转。玻尔磁子是常用磁矩尺度：$\mu_B=e\hbar/(2m_e)\approx9.27\times10^{-24}\,\mathrm{A\,m^2}$。
+**负号表示方向相反：** 电子运动方向与等效正电流方向相反。教材还给出自旋磁矩近似关系 $\boldsymbol\mu_s=-e\mathbf S/m_e$；自旋是电子的内禀性质，不应理解成小球在自转。玻尔磁子是常用磁矩尺度：$\mu_B=e\hbar/(2m_e)\approx9.27\times10^{-24}\,\mathrm{A\,m^2}$。
 
 ### 2.2 磁化强度 $\mathbf M$：单位体积的净磁矩
 
@@ -157,7 +165,15 @@ $$
 
 $\chi_m$、$\mu_r$ 无量纲；$\mu$ 的单位是 $\mathrm{H/m}$。各向同性意味着材料不偏爱某个空间方向，因此这些场量可以平行或反平行，磁导率可用标量表示。真空中 $\mathbf M=0$、$\mu_r=1$，但通常 $\mathbf B$ 与 $\mathbf H$ 都不为零。
 
-**解题顺序：**利用对称性从传导电流求 $H$ → 用材料关系求 $B$ → 用 $M=B/\mu_0-H$ 求磁化程度。长螺线管和细螺绕环分别有
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-fields.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-fields.svg" alt="上方首尾相接的蓝色H与红色M箭头之和，等于下方紫色B除以真空磁导率的箭头。" width="640" height="470" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-2　B 与 H 的单位不同；将 B 除以 μ₀ 后，才能与 H、M 在同一尺度上作矢量相加。</figcaption>
+</figure>
+
+**解题顺序：** 利用对称性从传导电流求 $H$ → 用材料关系求 $B$ → 用 $M=B/\mu_0-H$ 求磁化程度。长螺线管和细螺绕环分别有
 
 $$
 H=nI,\qquad H\simeq\frac{NI}{\ell}.
@@ -167,9 +183,17 @@ $n$ 为每米匝数，$N$ 为总匝数，$\ell$ 为环的平均磁路长度。�
 
 ### 习题13.1｜插入铁芯，哪些量改变？（第200页）
 
-**题意：**长直螺线管 $n=1000\,\mathrm{m^{-1}}$，空气中需要 $B_0=4.2\times10^{-4}\,\mathrm T$。求电流；保持电流不变，加入题设 $\mu_r=5000$ 的铁芯，求同一点的 $B$。
+**题意：** 长直螺线管 $n=1000\,\mathrm{m^{-1}}$，空气中需要 $B_0=4.2\times10^{-4}\,\mathrm T$。求电流；保持电流不变，加入题设 $\mu_r=5000$ 的铁芯，求同一点的 $B$。
 
-**解：**空气近似真空，
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-solenoid.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-solenoid.svg" alt="上下两个相同长螺线管，空气芯与铁芯中H均向右且大小相同。" width="640" height="600" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-3　同样的匝密度和电流给出相同 H；加入铁芯后，材料磁化使 B 改变。</figcaption>
+</figure>
+
+**解：** 空气近似真空，
 
 $$
 I=\frac{B_0}{\mu_0n}
@@ -183,13 +207,21 @@ $$
 B=\mu_r B_0=2.10\,\mathrm T.
 $$
 
-**方法：**线圈电流相同，不代表磁感应强度相同。铁芯的 $\mu_r$ 是题目给定工作状态下的值，不能把5000当作铁在所有状态下的固定常数。
+**方法：** 线圈电流相同，不代表磁感应强度相同。铁芯的 $\mu_r$ 是题目给定工作状态下的值，不能把5000当作铁在所有状态下的固定常数。
 
 ### 习题13.4｜从磁通量反求 H、M 和磁导率（第201页）
 
-**题意：**环形铁芯平均周长 $\ell=0.30\,\mathrm m$，截面积 $S=1.0\times10^{-4}\,\mathrm{m^2}$，绕 $N=300$ 匝，电流 $I=0.032\,\mathrm A$，磁通量 $\Phi=2.0\times10^{-6}\,\mathrm{Wb}$。求 $H$、$M$、单位长度磁化电流及 $\mu_r$。
+**题意：** 环形铁芯平均周长 $\ell=0.30\,\mathrm m$，截面积 $S=1.0\times10^{-4}\,\mathrm{m^2}$，绕 $N=300$ 匝，电流 $I=0.032\,\mathrm A$，磁通量 $\Phi=2.0\times10^{-6}\,\mathrm{Wb}$。求 $H$、$M$、单位长度磁化电流及 $\mu_r$。
 
-**解：**用细环、截面磁场近似均匀的模型：
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-toroid.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-toroid.svg" alt="绕线环形铁芯的俯视图，蓝色箭头顺时针沿环向，标出绕组匝数N和铁芯截面S。" width="640" height="530" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-4　环路沿铁芯中心绕一周；截面 S 与环向磁场垂直，磁通近似为 BS。</figcaption>
+</figure>
+
+**解：** 用细环、截面磁场近似均匀的模型：
 
 $$
 B=\frac\Phi S=0.020\,\mathrm T,\qquad
@@ -221,9 +253,9 @@ $$
 
 **题意与解答：**
 
-1. “闭合曲线内没有传导电流，曲线上各点 $H$ 必为零。”**错。**只能推出环流为零；例如在均匀非零 $\mathbf H$ 中取一个小回路，环流也为零。
-2. “闭合曲线上各点 $H$ 都为零，则穿过所围曲面的传导电流代数和为零。”**对。**直接代入环路定理，但仍可能有大小相等、方向相反的电流穿过。
-3. “$\mathbf H$ 只与传导电流有关。”**错。**环流的右端只有传导电流，不代表每一点的场只由它决定。材料形状、磁化状态和边界条件一般也会影响 $\mathbf H$。
+1. “闭合曲线内没有传导电流，曲线上各点 $H$ 必为零。”**错。** 只能推出环流为零；例如在均匀非零 $\mathbf H$ 中取一个小回路，环流也为零。
+2. “闭合曲线上各点 $H$ 都为零，则穿过所围曲面的传导电流代数和为零。”**对。** 直接代入环路定理，但仍可能有大小相等、方向相反的电流穿过。
+3. “$\mathbf H$ 只与传导电流有关。”**错。** 环流的右端只有传导电流，不代表每一点的场只由它决定。材料形状、磁化状态和边界条件一般也会影响 $\mathbf H$。
 
 ## 4. 铁磁质：为什么“断电后仍有磁性”？（§13.4）
 
@@ -235,6 +267,14 @@ $$
 
 超过**居里温度**，热运动破坏这种有序排列，铁磁体转为顺磁质。剧烈机械振动也可能改变磁畴排列，使剩磁减弱。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-domains.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-domains.svg" alt="上下两个分区矩形表示铁磁体，未磁化时各区箭头方向不同，施加向右H后多数磁畴箭头向右。" width="640" height="600" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-5　未磁化时，各磁畴的磁矩相互抵消；磁化过程中，有利方向的磁畴扩展并转向。</figcaption>
+</figure>
+
 ### 4.2 看懂 B–H 曲线
 
 - **起始磁化曲线**：从宏观未磁化状态开始，逐渐增大 $H$ 时的 $B$–$H$ 曲线。
@@ -245,6 +285,14 @@ $$
 - **磁滞损耗**：一次循环中转化成热的能量。按单位体积计算，等于 $B$–$H$ 回线围成的面积 $\lvert\oint H\,\mathrm dB\rvert$。
 
 因此铁磁质不能普遍用一个固定 $\mu$ 描述。指定工作点时可用 $\mu=B/H$；小范围变化对应的斜率 $\mathrm dB/\mathrm dH$ 又是另一个量。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-hysteresis.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-hysteresis.svg" alt="BH磁滞回线，标出正负剩磁与矫顽力；上支箭头向左，下支箭头向右。" width="640" height="570" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-6　从正向磁化状态减小 H，沿红色上支向左；反向磁化后再增大 H，沿蓝色下支向右。</figcaption>
+</figure>
 
 ### 4.3 软磁、硬磁、矩磁材料
 
@@ -258,15 +306,15 @@ $$
 
 ### 思考题13.7｜永久磁铁与电磁铁怎样选材料？（第200页）
 
-**题意：**教材给出两条不同的磁滞回线，判断哪种更适合永久磁铁、哪种更适合电磁铁。
+**题意：** 教材给出两条不同的磁滞回线，判断哪种更适合永久磁铁、哪种更适合电磁铁。
 
-**解答：**永久磁铁优先选择矫顽力大、剩磁稳定的硬磁材料；电磁铁需要通电磁化、断电易退磁，选择矫顽力小的软磁材料。判断图时先比较回线与 $H$ 轴交点的远近，而不是只看最高点的 $B$。
+**解答：** 永久磁铁优先选择矫顽力大、剩磁稳定的硬磁材料；电磁铁需要通电磁化、断电易退磁，选择矫顽力小的软磁材料。判断图时先比较回线与 $H$ 轴交点的远近，而不是只看最高点的 $B$。
 
 ### 习题13.7｜消除剩磁需要多大电流？（第201页）
 
-**题意：**磁棒的矫顽力为 $4.0\times10^3\,\mathrm{A/m}$，放入长 $0.12\,\mathrm m$、绕60匝的长直螺线管，至少通多大电流才能使其沿反向磁化支路的 $B$ 降到零？
+**题意：** 磁棒的矫顽力为 $4.0\times10^3\,\mathrm{A/m}$，放入长 $0.12\,\mathrm m$、绕60匝的长直螺线管，至少通多大电流才能使其沿反向磁化支路的 $B$ 降到零？
 
-**解：**磁场方向必须与原磁化方向相反。由 $H=NI/\ell$，
+**解：** 磁场方向必须与原磁化方向相反。由 $H=NI/\ell$，
 
 $$
 I_{\min}=\frac{H_c\ell}{N}
@@ -305,13 +353,29 @@ $$
 
 推导只需两步：$\tan\theta=B_t/B_n$；再代入 $B_{1n}=B_{2n}$ 和 $B_{1t}/\mu_1=B_{2t}/\mu_2$。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-boundary.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-boundary.svg" alt="磁感应线由下方低磁导率介质斜向上进入高磁导率介质后更加偏离竖直法线，标出入射角与折射角。" width="640" height="520" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-7　进入磁导率较大的介质，磁感应线偏离法线；注意 θ 从法线量起。</figcaption>
+</figure>
+
 高磁导率软磁材料做成外壳，可让磁通更多地经过壳体，削弱腔内磁场，这就是**磁屏蔽**。普通软磁壳内的磁场通常只是减弱，并不严格等于零；它与静电平衡导体的屏蔽机制不同。
 
 ### 习题13.3｜铁环开一道气隙，为什么不能直接套 B=μNI/ℓ？（第201页）
 
-**题意：**铁环平均磁路总长 $0.61\,\mathrm m$，其中空气隙长 $g=0.01\,\mathrm m$，线圈 $N=1000$ 匝、$I=1.5\,\mathrm A$。气隙中 $B=0.18\,\mathrm T$，忽略气隙磁力线发散，求铁的磁导率。
+**题意：** 铁环平均磁路总长 $0.61\,\mathrm m$，其中空气隙长 $g=0.01\,\mathrm m$，线圈 $N=1000$ 匝、$I=1.5\,\mathrm A$。气隙中 $B=0.18\,\mathrm T$，忽略气隙磁力线发散，求铁的磁导率。
 
-**解：**铁中磁路长 $\ell_{\mathrm{Fe}}=0.60\,\mathrm m$。截面相同且不计漏磁时，法向 $B$ 连续，所以铁中与气隙的 $B$ 都是 $0.18\,\mathrm T$。然而两个区域的 $H$ 不相同：
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch13-gap.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch13-gap.svg" alt="带右侧气隙的环形铁芯，蓝色磁场沿磁路顺时针跨越气隙，标出0.60米铁芯磁路和0.01米气隙。" width="640" height="570" loading="lazy" decoding="async" /></a>
+  <figcaption>图13-8　忽略漏磁与发散时，铁芯和气隙中的 B 相同；H 因磁导率不同而不同，必须分段积分。</figcaption>
+</figure>
+
+**解：** 铁中磁路长 $\ell_{\mathrm{Fe}}=0.60\,\mathrm m$。截面相同且不计漏磁时，法向 $B$ 连续，所以铁中与气隙的 $B$ 都是 $0.18\,\mathrm T$。然而两个区域的 $H$ 不相同：
 
 $$
 H_g=\frac B{\mu_0},\qquad

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题13.1：相同电流，比较空气与铁芯</title><desc id="desc">习题13.1：相同电流，比较空气与铁芯</desc>
+<rect width="640" height="600" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题13.1：相同电流，比较空气与铁芯</text>
+<rect x="120" y="150" width="400" height="110" rx="9" fill="#fffdf7" stroke="#77736c" stroke-width="2"/>
+<ellipse cx="145" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="175" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="205" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="235" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="265" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="295" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="325" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="355" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="385" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="415" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="445" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="475" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="505" cy="205" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<rect x="200" y="185" width="260" height="40" rx="0" fill="#fffdf7" stroke="none" stroke-width="2"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 210 205 L 450 205" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="485" y="213" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">H</text>
+<text x="320" y="115" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">空气：B₀ = μ₀nI</text>
+<text x="320" y="310" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">n、I 不变，因此 H = nI 相同</text>
+<rect x="120" y="380" width="400" height="110" rx="9" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<ellipse cx="145" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="175" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="205" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="235" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="265" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="295" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="325" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="355" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="385" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="415" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="445" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="475" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="505" cy="435" rx="10" ry="68" fill="none" stroke="#b87620" stroke-width="2"/>
+<rect x="200" y="415" width="260" height="40" rx="0" fill="#fffdf7" stroke="none" stroke-width="2"/>
+<path d="M 210 435 L 450 435" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="485" y="443" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">H</text>
+<text x="320" y="345" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">铁芯：B = μ₀(H + M)</text>
+<text x="320" y="540" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">n、I 不变，因此 H = nI 相同</text>
+<text x="24" y="580" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">长螺线管中部模型；线圈绕向选成内部 H 向右。</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" width="640" height="470" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题 11.4：串接导线的电流与密度</title><desc id="desc">习题 11.4：串接导线的电流与密度</desc>
+<rect width="640" height="470" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题 11.4：串接导线的电流与密度</text>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 95 110 L 260 110" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<path d="M 365 110 L 535 110" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="320" y="95" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I = 1.3 A，两段相同</text>
+<rect x="75" y="180" width="245" height="140" rx="0" fill="#e2e8ed" stroke="#77736c" stroke-width="3"/>
+<rect x="320" y="200" width="245" height="100" rx="0" fill="#e8c8a5" stroke="#b87620" stroke-width="3"/>
+<text x="190" y="165" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">铝：d = 2.5 mm</text>
+<text x="444" y="185" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">铜：d = 1.8 mm</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 110 215 L 280 215" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 110 250 L 280 250" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 110 285 L 280 285" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350 213 L 525 213" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350 231 L 525 231" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350 250 L 525 250" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350 269 L 525 269" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 350 287 L 525 287" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="195" y="355" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">截面较大</text>
+<text x="445" y="355" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">截面较小</text>
+<text x="320" y="404" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">j = I / S：铜线中的电流密度更大</text>
+<text x="24" y="450" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">箭头疏密表示电流密度；导线几何仅作示意。</text>
+</svg>

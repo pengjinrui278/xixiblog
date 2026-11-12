@@ -83,6 +83,14 @@ $$
 \boxed{\mathbf E(z)=\frac{Qz}{4\pi\varepsilon_0(R^2+z^2)^{3/2}}\mathbf e_z}
 $$
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-ring-disk.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-ring-disk.svg" alt="圆环上两个对称正电荷元到轴上P点，横向场分量抵消，合场向右；下图为圆盘分环。" width="640" height="730" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-1　圆环轴线上的对称叠加，以及把圆盘分成同心圆环的方法。图示 Q&gt;0、z&gt;0。</figcaption>
+</figure>
+
 **短推导**：每个电荷元到轴上点的距离都是 $r=\sqrt{R^2+z^2}$。对称位置的横向分量相消，轴向分量相加：
 
 $$
@@ -103,6 +111,14 @@ $$
 ### 2.3 教材习题 9.5：有限直线电荷的两种观察位置
 
 题意简述（p.47）：均匀带电细直线长 $L=15\,\mathrm{cm}$，$\lambda=5\times10^{-9}\,\mathrm{C/m}$。求延长线上距近端 $R=5\,\mathrm{cm}$ 的点，以及中垂线上距中点 $a=5\,\mathrm{cm}$ 的点的场强。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-ex09-05.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-ex09-05.svg" alt="正电细线延长线上P点场向右；中垂线上Q点对称分量抵消，合场向上。" width="640" height="620" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-2　习题9.5的两种几何位置。上图从近端量 R，下图从中点量 a。</figcaption>
+</figure>
 
 **延长线上的点**：所有电荷元的场同向。以观察点到电荷元的距离 $r$ 积分，
 
@@ -140,6 +156,14 @@ $$
 $$
 
 这是**点乘**，结果是带正负号的标量。$\theta$ 是场与**法线**的夹角，不是与平面的夹角。只有均匀电场穿过平面时，才能直接用 $\Phi_E=ES\cos\theta$。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-flux.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-flux.svg" alt="上图电场与面积外法线夹角theta；下图均匀电场穿入和穿出无电荷球面。" width="640" height="650" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-3　开放面先选法线；闭合面统一取外法线。下图均匀场穿过一个球面，进出通量相抵。</figcaption>
+</figure>
 
 闭合曲面的法线统一向外：穿出贡献为正，穿入为负。通量为零表示进出抵消，不能推出场强处处为零。
 
@@ -180,6 +204,14 @@ $Q_{\text{内}}$ 是闭合曲面内部所有电荷的**代数和**。左边的 $
 ### 4.2 教材习题 9.14：电荷密度不均匀，也能用高斯定理
 
 题意简述（p.48）：半径 $R$ 的非金属球，电荷体密度 $\rho(r)=kr^2$，求球内、球外场强。这里 $k$ 是原题给定的密度系数，与库仑常量 $k_e$ 不同。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-ex09-14.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-ex09-14.svg" alt="非均匀带电球内部取球形高斯面，薄球壳为积分元；下方场强随r先三次增长再平方反比下降。" width="640" height="690" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-4　习题9.14的薄球壳分割及按正文公式绘制的场强曲线。r=R 处两段连续。</figcaption>
+</figure>
 
 电荷仍然球对称，所以取半径 $r$ 的同心球面。半径为 $s$、厚度 $\mathrm ds$ 的薄球壳，体积是 $4\pi s^2\mathrm ds$。
 
@@ -255,6 +287,14 @@ $$
 
 题意简述（p.50）：正方形四个顶点各有 $q=2.0\times10^{-9}\,\mathrm C$，每个顶点距中心 $r=5.0\,\mathrm{cm}$。求中心电势，以及把 $q_0=1.0\times10^{-9}\,\mathrm C$ 从无穷远移到中心时电场力的功和电势能变化。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-ex09-24.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-ex09-24.svg" alt="正方形四角各有正电荷，中心四个对角线方向电场相抵，中心电势为正。" width="640" height="470" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-5　习题9.24。中心处四个电场矢量两两抵消，四个正电势贡献仍然相加。</figcaption>
+</figure>
+
 由对称性，中心的场强相互抵消为零；电势是标量，四项相加：
 
 $$
@@ -271,6 +311,14 @@ $$
 ### 5.4 教材习题 9.28：球壳内部的电势不是零
 
 题意简述（p.50）：两个同心均匀球壳半径为 $0.10\,\mathrm m$、$0.30\,\mathrm m$，分别带正电荷 $Q_1=10^{-8}\,\mathrm C$、$Q_2=1.5\times10^{-8}\,\mathrm C$。求 $r_a=0.20\,\mathrm m$、$r_b=0.50\,\mathrm m$ 处电势。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-ex09-28.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-ex09-28.svg" alt="内壳半径0.1米、外壳半径0.3米，a距中心0.2米，b距中心0.5米。" width="640" height="490" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-6　习题9.28的球壳截面，半径按同一比例绘制。a 在两壳之间，b 在两壳外。</figcaption>
+</figure>
 
 $a$ 在小球壳外、大球壳内；大球壳贡献的是常量 $k_eQ_2/0.30$：
 
@@ -307,6 +355,14 @@ $$
 
 **短推导**：位移很短时，电场做功 $\mathrm dA=q\mathbf E\cdot\mathrm d\mathbf l$；又因 $\mathrm dA=-q\,\mathrm dU$，两式相等并约去 $q$。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-potential.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-potential.svg" alt="四个等间距的竖直等势面截线依次30、20、10、0伏，电场水平向右并与等势面垂直。" width="640" height="370" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-7　均匀电场的等势面。等距离对应相同电势差，电场由高电势指向低电势。</figcaption>
+</figure>
+
 等势面上 $\mathrm dU=0$，所以非零电场垂直等势面。比较相邻等势面的疏密时，要使它们的电势差相同：间距越小，场强越大。
 
 **教材思考题 9.13（p.46）的四个判断：**
@@ -332,6 +388,14 @@ U=\frac{\mathbf p_e\cdot\mathbf e_r}{4\pi\varepsilon_0r^2},\qquad
 $$
 
 场按 $1/r^3$ 衰减，比点电荷的 $1/r^2$ 更快；电势中的点乘决定正负。在中垂面上 $U=0$，但 $\mathbf E=-\mathbf p_e/(4\pi\varepsilon_0r^3)$，仍不为零。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch09-dipole.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch09-dipole.svg" alt="负电荷在左下、正电荷在右上，外电场向右，正电荷受力右、负电荷受力左，力矩向纸内。" width="640" height="470" loading="lazy" decoding="async" /></a>
+  <figcaption>图9-8　倾斜电偶极子在匀强场中的力与力矩。叉乘给出的力矩朝纸内，对应顺时针转动。</figcaption>
+</figure>
 
 放入**均匀**外电场时，两端受力等大反向，合力为零，但一般有力矩：
 

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" width="640" height="470" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">电偶极子：偶极矩从负电荷指向正电荷</title><desc id="desc">电偶极子：偶极矩从负电荷指向正电荷</desc>
+<rect width="640" height="470" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">电偶极子：偶极矩从负电荷指向正电荷</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 70 100 L 570 100" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 70 366 L 570 366" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="590" y="95" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E</text>
+<path d="M 210 294 L 390 174" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 260 261 L 347 203" fill="none" stroke="#7652a4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="280" y="211" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">pₑ</text>
+<circle cx="210" cy="294" r="17" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="210" y="301" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="390" cy="174" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="390" y="181" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 192 294 L 92 294" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="129" y="277" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">F₋</text>
+<path d="M 409 174 L 515 174" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="471" y="154" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">F₊</text>
+<path d="M 300 234 L 402 234" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<path d="M 344 234 A 44 44 0 0 0 337 210" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="365" y="223" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">θ</text>
+<circle cx="489" cy="293" r="15" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 480.75 284.75 L 497.25 301.25" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 480.75 301.25 L 497.25 284.75" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="489" y="334" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">τ 向纸内</text>
+<text x="320" y="415" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">合力为零，力矩使偶极子顺时针转向电场</text>
+<text x="320" y="449" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">稳定取向：pₑ 与 E 同向</text>
+</svg>

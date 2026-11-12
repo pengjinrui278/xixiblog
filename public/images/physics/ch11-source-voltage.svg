@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">电源供电时：非静电作用把电荷送回高电势</title><desc id="desc">电源供电时：非静电作用把电荷送回高电势</desc>
+<rect width="640" height="560" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">电源供电时：非静电作用把电荷送回高电势</text>
+<rect x="70" y="135" width="230" height="310" rx="12" fill="#f0ece3" stroke="#77736c" stroke-width="2"/>
+<text x="185" y="112" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">电源内部</text>
+<path d="M 185 135 L 500 135" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 500 135 L 500 230" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 500 230 L 500.0 252.0 L 492.0 260.25 L 508.0 268.5 L 492.0 276.75 L 508.0 285.0 L 492.0 293.25 L 508.0 301.5 L 492.0 309.75 L 500.0 318.0 L 500 340" fill="none" stroke="#302e2a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 500 340 L 500 445" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 500 445 L 185 445" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="548" y="293" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">R</text>
+<text x="315" y="146" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="315" y="454" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 347 135 L 445 135" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="396" y="117" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I</text>
+<path d="M 440 445 L 350 445" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<path d="M 128 380 L 128 206" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="128" y="191" font-size="23" text-anchor="middle" fill="#bc493d" font-weight="bold">E<tspan baseline-shift="sub" font-size="16">k</tspan></text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 237 207 L 237 380" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="237" y="411" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">E</text>
+<text x="185" y="478" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">电源：ε，内阻 r</text>
+<text x="320" y="516" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">端电压 U₊ − U₋ = ε − Ir</text>
+<text x="24" y="540" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">供电约定：I 从电源正极向外流出。</text>
+</svg>

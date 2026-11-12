@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 490" width="640" height="490" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题9.28：逐个判断壳内、壳外</title><desc id="desc">习题9.28：逐个判断壳内、壳外</desc>
+<rect width="640" height="490" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题9.28：逐个判断壳内、壳外</text>
+<circle cx="220" cy="242" r="140" fill="none" stroke="#b87620" stroke-width="3"/>
+<circle cx="220" cy="242" r="47" fill="none" stroke="#bc493d" stroke-width="3"/>
+<path d="M 95 242 L 525 242" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<circle cx="220" cy="242" r="4" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="202" y="273" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<circle cx="314" cy="242" r="5" fill="#2569a3" stroke="#302e2a" stroke-width="2"/>
+<text x="314" y="221" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">a</text>
+<circle cx="455" cy="242" r="5" fill="#287b64" stroke="#302e2a" stroke-width="2"/>
+<text x="455" y="221" font-size="22" text-anchor="middle" fill="#287b64" font-weight="normal">b</text>
+<text x="220" y="84" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">外壳：R₂ = 0.30 m，+Q₂</text>
+<text x="220" y="175" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">内壳 +Q₁</text>
+<text x="47" y="324" font-size="22" text-anchor="start" fill="#bc493d" font-weight="normal">R₁ = 0.10 m</text>
+<path d="M 172 303 L 188 273" fill="none" stroke="#bc493d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 220 410 L 314 410" fill="none" stroke="#77736c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 220 405 L 220 415" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 314 405 L 314 415" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="225" y="397" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">rₐ = 0.20 m</text>
+<path d="M 220 455 L 455 455" fill="none" stroke="#77736c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 220 450 L 220 460" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 455 450 L 455 460" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="337.5" y="481" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">rᵦ = 0.50 m</text>
+</svg>

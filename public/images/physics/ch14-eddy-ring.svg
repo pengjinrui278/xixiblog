@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 570" width="640" height="570" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">思考题14.6：完整圆环与断口圆环</title><desc id="desc">思考题14.6：完整圆环与断口圆环</desc>
+<rect width="640" height="570" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">思考题14.6：完整圆环与断口圆环</text>
+<text x="320" y="83" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">从磁铁一侧看：N极正在靠近圆环</text>
+<circle cx="175" cy="277" r="82" fill="none" stroke="#b87620" stroke-width="8"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 273.66772518252037 312.9121150491952 L 275.22601237793083 308.30090162948767 L 276.5689245709204 303.6224259132537 L 277.69357598652965 298.8867414454245 L 278.5975498689123 294.1040247064318 L 279.2789036746858 289.28455324403797 L 279.73617324724955 284.4386835879826 L 279.96837596310144 279.5768289949058 L 279.97501284339046 274.7094370713711 L 279.7560696261693 269.84696732307407 L 279.3120167970417 264.9998686784811 L 278.6438085781389 260.17855703519757 L 277.7528808775985 255.39339287731534 L 276.6411482039509 250.6546590118387 L 275.3109995520447 245.97253847202953 L 273.7652932693521 241.35709263515574 L 272.0073509136851 236.81823960166557 L 270.04095011552226 232.36573288224835 L 267.8703164602842 228.0091404385811 L 265.5001144080013 223.7578241228002 L 262.9354372698873 219.62091955988043 L 260.181796263357 215.60731651615208 L 257.2451086690083 211.72563979614188 L 254.13168511501772 207.98423070878886 L 250.84821601627434 204.3911291428617 L 247.40175719739204 200.954056290096 L 243.79971473049568 197.6803980531772 L 240.04982902036267 194.57718917422443 L 236.16015817111924 191.6510981178804 L 232.13906067023476 188.90841274149255 L 227.99517742702457 186.35502678317906 L 223.7374132042579 183.9964271968145 L 219.37491748277344 181.83768236115176" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="175" y="380" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">完整导电环</text>
+<text x="175" y="420" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">感应电流逆时针</text>
+<circle cx="147" cy="250" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 143.15 246.15 L 150.85 253.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 143.15 253.85 L 150.85 246.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="147" cy="305" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 143.15 301.15 L 150.85 308.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 143.15 308.85 L 150.85 301.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="203" cy="250" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 199.15 246.15 L 206.85 253.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 199.15 253.85 L 206.85 246.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="203" cy="305" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 199.15 301.15 L 206.85 308.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 199.15 308.85 L 206.85 301.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 531 229 A 82 82 0 1 0 531 325" fill="none" stroke="#b87620" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="465" y="380" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">有断口</text>
+<text x="465" y="420" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">无整环传导电流</text>
+<circle cx="437" cy="250" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 433.15 246.15 L 440.85 253.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 433.15 253.85 L 440.85 246.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="437" cy="305" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 433.15 301.15 L 440.85 308.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 433.15 308.85 L 440.85 301.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="493" cy="250" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 489.15 246.15 L 496.85 253.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 489.15 253.85 L 496.85 246.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="493" cy="305" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 489.15 301.15 L 496.85 308.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 489.15 308.85 L 496.85 301.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="320" y="476" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">原磁场向纸内且增强；完整环产生向外感应场</text>
+<text x="24" y="550" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">有无闭合导线，都不改变变化磁场会产生电场这一事实。</text>
+</svg>

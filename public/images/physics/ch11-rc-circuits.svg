@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" width="640" height="760" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">RC 的两种接线：充电与放电</title><desc id="desc">RC 的两种接线：充电与放电</desc>
+<rect width="640" height="760" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">RC 的两种接线：充电与放电</text>
+<text x="30" y="83" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">① 充电：接通电源</text>
+<path d="M 130 132 L 255 132" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 255 132 L 278.0 132.0 L 286.625 140.0 L 295.25 124.0 L 303.875 140.0 L 312.5 124.0 L 321.125 140.0 L 329.75 124.0 L 338.375 140.0 L 347.0 132.0 L 370 132" fill="none" stroke="#302e2a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="310" y="115" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">R</text>
+<path d="M 370 132 L 510 132" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 510 132 L 510 210" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 481 210 L 539 210" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 481 230 L 539 230" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="555" y="228" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">C</text>
+<text x="465" y="216" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+</text>
+<text x="465" y="249" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">−</text>
+<path d="M 510 230 L 510 305" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 510 305 L 130 305" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 130 132 L 130 212" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 106 212 L 154 212" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 118 228 L 142 228" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="212" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+</text>
+<text x="92" y="242" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">−</text>
+<text x="170" y="228" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">ε</text>
+<path d="M 130 228 L 130 305" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 395 132 L 470 132" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="420" y="168" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I</text>
+<text x="320" y="345" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I = dq / dt；q 从 0 增加</text>
+<text x="30" y="433" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">② 放电：移去电源后闭合 R–C 回路</text>
+<path d="M 130 482 L 255 482" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 255 482 L 278.0 482.0 L 286.625 490.0 L 295.25 474.0 L 303.875 490.0 L 312.5 474.0 L 321.125 490.0 L 329.75 474.0 L 338.375 490.0 L 347.0 482.0 L 370 482" fill="none" stroke="#302e2a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="310" y="465" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">R</text>
+<path d="M 370 482 L 510 482" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 510 482 L 510 560" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 481 560 L 539 560" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 481 580 L 539 580" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="555" y="578" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">C</text>
+<text x="465" y="566" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+</text>
+<text x="465" y="599" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">−</text>
+<path d="M 510 580 L 510 655" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 510 655 L 130 655" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 130 482 L 130 655" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 470 482 L 395 482" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="420" y="518" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">I放</text>
+<text x="320" y="695" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">I放 = −dq / dt；原正极板的 q 减少</text>
+<text x="24" y="740" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">两图分别表示开关完成切换后的完整连接，电容原正极板均在上。</text>
+</svg>

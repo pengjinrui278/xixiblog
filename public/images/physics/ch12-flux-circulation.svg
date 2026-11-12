@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 710" width="640" height="710" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">磁通看穿过面；环流看沿着路</title><desc id="desc">磁通看穿过面；环流看沿着路</desc>
+<rect width="640" height="710" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">磁通看穿过面；环流看沿着路</text>
+<text x="30" y="83" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">① 闭合曲面：穿入与穿出相抵</text>
+<ellipse cx="320" cy="225" rx="155" ry="100" fill="#eef4f8" stroke="#77736c" stroke-width="2"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 80 175 L 560 175" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 80 225 L 560 225" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 80 275 L 560 275" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="565" y="154" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">B</text>
+<text x="120" y="345" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">穿入：负</text>
+<text x="520" y="345" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">穿出：正</text>
+<text x="320" y="385" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">闭合面的总磁通 = 0</text>
+<path d="M 35 408 L 605 408" fill="none" stroke="#77736c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="454" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">② 闭合路径：B 与 dl 的切向关系</text>
+<circle cx="245" cy="570" r="78" fill="none" stroke="#287b64" stroke-width="2"/>
+<circle cx="245" cy="570" r="16" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="245" cy="570" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<text x="245" y="612" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I 穿出纸面</text>
+<path d="M 287.1435798577149 635.6347368150159 L 289.52132097522156 634.0457022650334 L 291.83921235592163 632.3705714730663 L 294.09413807274836 630.6115963070922 L 296.2830668429878 628.7711413465627 L 298.40305610321377 626.8516807037136 L 300.4512559649576 624.855794697632 L 302.4249130457957 622.7861663855484 L 304.3213741707042 620.6455779560201 L 306.13808993870623 618.4369069888517 L 307.87261815001557 616.1631225867827 L 309.5226270890709 613.8272813841412 L 311.08589865904645 611.4325234378289 L 312.5603313636261 608.982068006162 L 313.94394313203173 606.4792092212424 L 315.2348739835088 603.927311660676 L 316.4313885276869 601.329805824592 L 317.53187829745445 598.6901835240427 L 318.534863911211 596.0119931869835 L 319.4389970615908 593.2988350881429 L 320.243062327984 590.5543565091957 L 320.9459788104192 587.7822468357447 L 321.54680158261067 584.9862325977023 L 322.0447229622165 582.1700724597393 L 322.4390735966016 579.3375521685357 L 322.72932336264364 576.4924794636242 L 322.91508207937494 573.6386789586697 L 322.9961000324999 570.779987000065 L 322.9722683100845 567.9202465097535 L 322.843618948966 565.0633018192137 L 322.610324891686 562.2129935015474" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="355" y="561" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">B、dl</text>
+<text x="440" y="645" font-size="22" text-anchor="middle" fill="#287b64" font-weight="normal">此绕向为逆时针</text>
+<text x="24" y="690" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">闭面法线与回路切线是两种不同方向，不能混用。</text>
+</svg>

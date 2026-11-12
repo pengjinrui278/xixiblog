@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 390" width="640" height="390" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">点乘：只取沿另一个矢量方向的分量</title><desc id="desc">点乘：只取沿另一个矢量方向的分量</desc>
+<rect width="640" height="390" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">点乘：只取沿另一个矢量方向的分量</text>
+<defs><marker id="a302e2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#302e2a"/></marker></defs>
+<path d="M 95 275 L 545 275" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<text x="560" y="284" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">b</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 95 275 L 380 110" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="390" y="100" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">a</text>
+<path d="M 380 110 L 380 275" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+<path d="M 365 275 L 365 260 L 380 260" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 158 275 A 63 63 0 0 0 150 243" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="172" y="251" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">θ</text>
+<path d="M 95 305 L 380 305" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 95 298 L 95 312" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 380 298 L 380 312" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="237" y="338" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">a cos θ</text>
+<text x="70" y="300" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<text x="24" y="370" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">点乘的结果是标量；夹角超过 90° 时，投影为负。</text>
+</svg>

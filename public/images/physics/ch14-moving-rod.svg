@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 530" width="640" height="530" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题14.5：先做叉乘，再沿杆积分</title><desc id="desc">习题14.5：先做叉乘，再沿杆积分</desc>
+<rect width="640" height="530" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题14.5：先做叉乘，再沿杆积分</text>
+<circle cx="205" cy="125" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 201.15 121.15 L 208.85 128.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 201.15 128.85 L 208.85 121.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="205" cy="200" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 201.15 196.15 L 208.85 203.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 201.15 203.85 L 208.85 196.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="205" cy="365" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 201.15 361.15 L 208.85 368.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 201.15 368.85 L 208.85 361.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="125" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 281.15 121.15 L 288.85 128.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 281.15 128.85 L 288.85 121.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="200" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 281.15 196.15 L 288.85 203.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 281.15 203.85 L 288.85 196.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="365" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 281.15 361.15 L 288.85 368.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 281.15 368.85 L 288.85 361.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="365" cy="125" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 361.15 121.15 L 368.85 128.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 361.15 128.85 L 368.85 121.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="365" cy="200" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 361.15 196.15 L 368.85 203.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 361.15 203.85 L 368.85 196.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="365" cy="365" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 361.15 361.15 L 368.85 368.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 361.15 368.85 L 368.85 361.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="445" cy="125" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 441.15 121.15 L 448.85 128.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 441.15 128.85 L 448.85 121.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="445" cy="200" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 441.15 196.15 L 448.85 203.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 441.15 203.85 L 448.85 196.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="445" cy="365" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 441.15 361.15 L 448.85 368.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 441.15 368.85 L 448.85 361.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="525" cy="125" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 521.15 121.15 L 528.85 128.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 521.15 128.85 L 528.85 121.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="525" cy="200" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 521.15 196.15 L 528.85 203.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 521.15 203.85 L 528.85 196.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="525" cy="365" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 521.15 361.15 L 528.85 368.85" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 521.15 368.85 L 528.85 361.15" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 110 90 L 110 390" fill="none" stroke="#302e2a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 110 190 L 110 105" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="77" y="145" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I</text>
+<path d="M 240 255 L 555 255" fill="none" stroke="#b87620" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="240" y="231" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">A</text>
+<text x="555" y="231" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">B</text>
+<circle cx="245" cy="285" r="13" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="245" y="292" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<circle cx="550" cy="285" r="13" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="550" y="292" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 395 241 L 395 160" fill="none" stroke="#287b64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="421" y="171" font-size="22" text-anchor="middle" fill="#287b64" font-weight="bold">v</text>
+<path d="M 446 305 L 330 305" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="387" y="345" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">v × B</text>
+<text x="565" y="125" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">B</text>
+<path d="M 110 396 L 240 396" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 110 390 L 110 402" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 240 390 L 240 402" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="175.0" y="424.0" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">0.10 m</text>
+<path d="M 110 452 L 555 452" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 110 446 L 110 458" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 555 446 L 555 458" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="332.5" y="480.0" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">1.0 m</text>
+<text x="24" y="510" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">电流和运动向上；磁场入纸面 ⊗；A端电势高。</text>
+</svg>

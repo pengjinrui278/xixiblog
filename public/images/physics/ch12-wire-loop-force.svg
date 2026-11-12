@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题 12.25：近边吸力大于远边斥力</title><desc id="desc">习题 12.25：近边吸力大于远边斥力</desc>
+<rect width="640" height="560" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题 12.25：近边吸力大于远边斥力</text>
+<path d="M 110 95 L 110 420" fill="none" stroke="#302e2a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 110 285 L 110 180" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="78" y="160" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I₁</text>
+<rect x="275" y="145" width="250" height="225" rx="0" fill="none" stroke="#302e2a" stroke-width="3"/>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 275 315 L 275 210" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<path d="M 345 145 L 455 145" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<path d="M 525 210 L 525 315" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<path d="M 455 370 L 345 370" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="307" y="270" font-size="22" text-anchor="middle" fill="#287b64" font-weight="normal">I₂</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 275 260 L 155 260" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="195" y="236" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">F近</text>
+<path d="M 525 260 L 590 260" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="573" y="236" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">F远</text>
+<defs><marker id="ab87620" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b87620"/></marker></defs>
+<path d="M 400 145 L 400 95" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ab87620)"/>
+<path d="M 400 370 L 400 420" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ab87620)"/>
+<circle cx="400" cy="260" r="13" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 392.85 252.85 L 407.15 267.15" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 392.85 267.15 L 407.15 252.85" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="403" y="305" font-size="23" text-anchor="middle" fill="#7652a4" font-weight="bold">B</text>
+<path d="M 110 451 L 275 451" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 110 445 L 110 457" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 275 445 L 275 457" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="192.5" y="441" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">x₁</text>
+<path d="M 110 492 L 525 492" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 110 486 L 110 498" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 525 486 L 525 498" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="317.5" y="482" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">x₂</text>
+<text x="554" y="365" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">l</text>
+<text x="24" y="540" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">横边受力上下相抵；两竖边的合力指向长直导线。</text>
+</svg>

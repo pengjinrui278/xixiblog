@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 740" width="640" height="740" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题14.20：按半径分条求磁通</title><desc id="desc">习题14.20：按半径分条求磁通</desc>
+<rect width="640" height="740" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题14.20：按半径分条求磁通</text>
+<circle cx="320" cy="205" r="125" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<circle cx="320" cy="205" r="70" fill="#fffdf7" stroke="#77736c" stroke-width="2"/>
+<path d="M 259.3782217350893 240.0 L 208.19387138813096 260.8962396304635" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 253.42604385933925 226.63118960624632 L 199.0156218590407 236.42897144109824" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 250.38346732422087 212.31699242873577 L 195.12497020216736 210.58810638681956" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 250.38346732422087 197.68300757126426 L 196.69195656433436 184.5030142687273" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 253.42604385933925 183.36881039375368 L 203.64809612228015 159.31373878254163" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 259.3782217350893 170.0 L 215.68937219806156 136.121172138563" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 353.17595390258987 113.8498157837669 L 356.6309620675185 115.18255949979414 L 360.03258189102627 116.64620898264594 L 363.3758556316216 118.238631014577 L 366.6559105851806 119.95750469637174 L 369.8679661867425 121.8003248299736 L 373.00734097801524 123.76440556972314 L 376.06945943043644 125.84688433688383 L 379.0498586138459 128.04472599175017 L 381.9441947010496 130.3547272572572 L 384.7482492987952 132.77352138764434 L 387.4579355959323 135.2975830753693 L 390.0693043197963 137.9232335891199 L 392.57854949213436 140.64664613543593 L 394.9820139761855 143.4638514361264 L 397.2761948068288 146.37074351335292 L 399.4577482960322 149.36308567394855 L 401.52349490616047 152.43651668424909 L 403.47042388403963 155.58655712643835 L 405.2956976490241 158.8086159271422 L 406.99665592867075 162.09799704875687 L 408.5708196359928 165.44990633375903 L 410.0158944826419 168.85945849202201 L 411.329774322753 172.32168422095467 L 412.510544222578 175.8315374480855 L 413.5564832514344 179.38390268553627 L 414.4660669899014 182.9736024856658 L 415.23796975160764 186.59540498701838 L 415.8710665153728 190.2440315395781 L 416.3644345648861 193.9141643982159 L 416.71735483353325 197.60045447311663 L 416.92931295241067 201.2975291258895 L 417.0 205.0" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="320" y="201" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">N 匝</text>
+<text x="320" y="232" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">俯视图</text>
+<text x="320" y="380" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">矩形截面：面积元 dS = h dr</text>
+<rect x="160" y="425" width="330" height="115" rx="0" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<rect x="315" y="425" width="20" height="115" rx="0" fill="#c6dbeb" stroke="#2569a3" stroke-width="2"/>
+<circle cx="210" cy="480" r="9" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 205.05 475.05 L 214.95 484.95" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 205.05 484.95 L 214.95 475.05" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="270" cy="480" r="9" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 265.05 475.05 L 274.95 484.95" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 265.05 484.95 L 274.95 475.05" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="480" r="9" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 380.05 475.05 L 389.95 484.95" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 380.05 484.95 L 389.95 475.05" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="445" cy="480" r="9" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<path d="M 440.05 475.05 L 449.95 484.95" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 440.05 484.95 L 449.95 475.05" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 560 L 520 560" fill="none" stroke="#302e2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="80" y="550" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<path d="M 90 585 L 160 585" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 579 L 90 591" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 160 579 L 160 591" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="125.0" y="613.0" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">a</text>
+<path d="M 90 635 L 490 635" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 629 L 90 641" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 490 629 L 490 641" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="290.0" y="663.0" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">b</text>
+<path d="M 525 425 L 525 540" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 519 425 L 531 425" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 519 540 L 531 540" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="553" y="490" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">h</text>
+<text x="325" y="412" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">dr</text>
+<text x="405" y="605" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">半径 r →</text>
+<text x="24" y="720" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">a = 0.050 m，b = 0.10 m，h = 0.010 m；B ∝ 1/r。</text>
+</svg>

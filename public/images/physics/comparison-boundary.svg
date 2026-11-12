@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">边界条件：用小柱面取法向，用小回路取切向</title><desc id="desc">边界条件：用小柱面取法向，用小回路取切向</desc>
+<rect width="640" height="600" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">边界条件：用小柱面取法向，用小回路取切向</text>
+<rect x="28" y="90" width="584" height="195" rx="0" fill="#f0f4f8" stroke="none" stroke-width="2"/>
+<rect x="28" y="285" width="584" height="220" rx="0" fill="#f4eee6" stroke="none" stroke-width="2"/>
+<path d="M 28 285 L 612 285" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="515" y="126" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">介质 2</text>
+<text x="515" y="475" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">介质 1</text>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 560 280 L 560 210" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="584" y="217" font-size="22" text-anchor="middle" fill="#287b64" font-weight="bold">n</text>
+<rect x="95" y="245" width="150" height="80" rx="0" fill="none" stroke="#2569a3" stroke-width="2"/>
+<ellipse cx="170" cy="245" rx="75" ry="14" fill="none" stroke="#2569a3" stroke-width="2"/>
+<ellipse cx="170" cy="325" rx="75" ry="14" fill="none" stroke="#2569a3" stroke-width="2"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 170 244 L 170 170" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 170 325 L 170 400" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="170" y="148" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">薄小柱面</text>
+<text x="170" y="440" font-size="20" text-anchor="middle" fill="#302e2a" font-weight="normal">上、下表面取通量</text>
+<rect x="340" y="258" width="145" height="54" rx="0" fill="none" stroke="#7652a4" stroke-width="2"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 370 258 L 450 258" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 450 312 L 370 312" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="414" y="180" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="normal">扁小矩形回路</text>
+<text x="414" y="440" font-size="20" text-anchor="middle" fill="#302e2a" font-weight="normal">长边取切向环流</text>
+<text x="320" y="542" font-size="23" text-anchor="middle" fill="#302e2a" font-weight="normal">柱面压薄；回路短边缩短</text>
+<text x="24" y="580" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">法线约定从介质 1 指向介质 2；“连续”针对相应分量。</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 730" width="640" height="730" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">圆环轴线：横向抵消，轴向相加</title><desc id="desc">圆环轴线：横向抵消，轴向相加</desc>
+<rect width="640" height="730" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">圆环轴线：横向抵消，轴向相加</text>
+<ellipse cx="220" cy="250" rx="55" ry="112" fill="none" stroke="#bc493d" stroke-width="3"/>
+<path d="M 110 250 L 575 250" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 6"/>
+<circle cx="220" cy="138" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="220" y="145" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<circle cx="220" cy="362" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="220" y="369" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="180" y="115" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">dq₁</text>
+<text x="180" y="400" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">dq₂</text>
+<path d="M 220 138 L 425 250" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M 220 362 L 425 250" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<circle cx="425" cy="250" r="4" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="418" y="286" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">P</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 425 250 L 510 204" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 425 250 L 510 296" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="531" y="189" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">dE₂</text>
+<text x="531" y="329" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">dE₁</text>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 425 250 L 575 250" fill="none" stroke="#287b64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="585" y="235" font-size="22" text-anchor="middle" fill="#287b64" font-weight="bold">E</text>
+<path d="M 220 250 L 220 145" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="194" y="211" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">R</text>
+<path d="M 220 420 L 425 420" fill="none" stroke="#77736c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 220 415 L 220 425" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 425 415 L 425 425" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="322.5" y="448" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">z</text>
+<text x="220" y="278" font-size="22" text-anchor="end" fill="#302e2a" font-weight="normal">O</text>
+<path d="M 30 477 L 610 477" fill="none" stroke="#eee8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="35" y="514" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">圆盘 = 一圈圈微小圆环</text>
+<ellipse cx="210" cy="610" rx="135" ry="67" fill="#eee8dc" stroke="#b87620" stroke-width="2"/>
+<ellipse cx="210" cy="610" rx="85" ry="42" fill="none" stroke="#bc493d" stroke-width="12"/>
+<ellipse cx="210" cy="610" rx="85" ry="42" fill="none" stroke="#fffdf7" stroke-width="4"/>
+<path d="M 210 610 L 280 586" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="242" y="575" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">r</text>
+<path d="M 293 600 L 365 575" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="400" y="573" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">厚度 dr</text>
+<text x="400" y="619" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">dq = σ · 2πr dr</text>
+<text x="320" y="700" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">先对称分解，再把同向分量积分</text>
+</svg>

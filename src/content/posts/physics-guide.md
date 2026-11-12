@@ -12,6 +12,8 @@ series:
 
 每章按教材小节讲解：先建立直观认识，再给出公式、适用条件和关键推导，最后用相应的课后题检验理解。题目采用题意简述，保留教材编号和必要条件；“思考题”和“习题”分开标注，解答紧跟题目。
 
+图示中的 ⊙ 表示指向纸外，⊗ 表示指向纸内；字母沿用相邻正文的约定。点击图片可以放大，放大后可滑动查看细节。
+
 ## 一、目录与学习路线
 
 | 阅读顺序 | 笔记 | 这一篇解决什么问题 | 教材印刷页码 |
@@ -54,6 +56,12 @@ $$
 
 力沿位移方向的分量才做功。点乘满足 $\mathbf a\cdot\mathbf b=\mathbf b\cdot\mathbf a$。
 
+<figure class="physics-figure">
+  <a href="/images/physics/guide-dot-product.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/guide-dot-product.svg" alt="矢量a斜向右上，b向右，垂足投影长度为a cos theta。" width="640" height="390" loading="lazy" decoding="async" /></a>
+  <figcaption>图导-1　斜向矢量在水平方向的投影，决定点乘的大小与正负。</figcaption>
+</figure>
+
+
 ### 2. 叉乘：结果有方向，交换顺序会变号
 
 $$
@@ -73,6 +81,12 @@ $$
 磁力 $\mathbf F_B=q\mathbf v\times\mathbf B$ 必须先确定 $\mathbf v\times\mathbf B$，再根据 $q$ 的正负决定是否反向。这里的 $\times$ 不是可以省掉的普通乘号。
 
 **小检验（自编）**：正电荷向右运动，磁场垂直纸面向外，磁力向哪里？取右为 $+x$、上为 $+y$、纸外为 $+z$，有 $\hat{\mathbf x}\times\hat{\mathbf z}=-\hat{\mathbf y}$，所以向下。若是电子，则向上。
+
+<figure class="physics-figure">
+  <a href="/images/physics/guide-cross-product.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/guide-cross-product.svg" alt="磁场向纸外，速度向右；正电荷受力向下，负电荷受力向上。" width="640" height="450" loading="lazy" decoding="async" /></a>
+  <figcaption>图导-2　相同速度和磁场下，正、负电荷的磁力方向相反。</figcaption>
+</figure>
+
 
 ## 三、积分：把很多小部分正确地加起来
 
@@ -103,6 +117,12 @@ $\lambda$ 是单位长度电荷量，$\sigma$ 是单位面积电荷量，$\rho$ 
 面积矢量定义为 $\mathrm d\mathbf S=\hat{\mathbf n}\mathrm dS$，方向**垂直于面**。因此 $\mathbf E\cdot\mathrm d\mathbf S=E\cos\theta\,\mathrm dS$ 中的角度是电场与法线的夹角，不是与面的夹角。
 
 积分号上的小圆圈表示“闭合”：$\oint_L$ 沿一圈闭合路径，$\oiint_S$ 对整个封闭曲面。路径是一条线，曲面是一张面，二者不能混用。封闭曲面取向外法线为正；开曲面先选法线，再用右手定则配套规定边界绕行方向。
+
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-flux-circulation.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-flux-circulation.svg" alt="上图显示场与面法线的夹角；下图显示圆路径上沿切线的场与线元。" width="640" height="660" loading="lazy" decoding="async" /></a>
+  <figcaption>图导-3　一个对面求和，一个沿线求和；先看清微元的方向。</figcaption>
+</figure>
+
 
 ### 3. 什么时候可以把场提出积分号
 

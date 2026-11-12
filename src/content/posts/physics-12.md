@@ -36,6 +36,18 @@ $$
 
 其中 $\theta$ 为 $\mathbf v$ 与 $\mathbf B$ 的夹角。先用右手确定 $\mathbf v\times\mathbf B$，再看电荷正负；$q<0$ 时力方向反转。交换叉乘顺序会变号：$\mathbf B\times\mathbf v=-\mathbf v\times\mathbf B$。
 
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-lorentz-direction.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-lorentz-direction.svg" alt="磁场垂直纸面向外，正负电荷速度均向右；正电荷的磁力向下，负电荷的磁力向上。" width="640" height="580" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-1｜叉乘先给出正电荷受力方向，负电荷反向；磁力垂直于速度。</figcaption>
+</figure>
+
 几个直接结论：
 
 - 粒子静止，磁力为零；沿磁场或逆磁场运动，磁力也为零。
@@ -107,6 +119,18 @@ $$
 
 **出处：教材第 168 页；题意简述。** 长 $L$ 的直导线通电流 $I$。$P$ 在中垂线上，距导线 $a$；$Q$ 在 $P$ 正上方 $L/2$，即与上端点同高。求两点磁感应强度。
 
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-finite-wire.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-finite-wire.svg" alt="长度L的直导线电流向上，右侧距离a处的P与导线中点同高，Q在P上方L/2，与导线上端点同高；两点磁场均向纸内。" width="640" height="570" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-2｜先把 P、Q 与导线端点的位置画清，再确定积分上下限。</figcaption>
+</figure>
+
+
+
 **解答。** 令电流沿 $y$ 轴向上，导线从 $y=-L/2$ 到 $L/2$，观察点在右侧 $x=a$，其纵坐标为 $y_0$。叉乘给出磁场向纸内，大小为
 
 $$
@@ -125,6 +149,18 @@ $$
 $$
 
 两者均向纸内。令 $L\gg a$，$B_P\to\mu_0I/(2\pi a)$；$B_Q\to\mu_0I/(4\pi a)$。用无限长与半无限长的极限，可以检查系数是否漏了 2。
+
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-loop-axis.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-loop-axis.svg" alt="圆线圈轴线向右，磁矩向右；观察点P处成对磁场分量一上一下，横向抵消而轴向相加。" width="640" height="540" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-3｜利用成对电流元的对称性，圆线圈轴线上只留下轴向磁场。</figcaption>
+</figure>
 
 ### 圆电流、圆弧和磁矩
 
@@ -209,6 +245,18 @@ $$
 
 **解答。** 它说明磁场是无源场，磁感应线没有孤立起点和终点；不能由此推出曲面上处处 $\mathbf B=0$。例如均匀磁场穿过球面，一边穿入、一边穿出，总磁通为零，但球面各点的磁场都可以不为零。“无源”也不表示电流不能产生磁场。
 
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-flux-circulation.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-flux-circulation.svg" alt="上图均匀磁场从左穿入闭合曲面并从右穿出，净磁通为零；下图电流穿出纸面，磁场与逆时针环路切线同向。" width="640" height="710" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-4｜磁通积分用面法线，环路积分用路径切线。下图电流穿出纸面，正绕向为逆时针。</figcaption>
+</figure>
+
 ### 安培环路定理
 
 真空中的稳恒磁场满足
@@ -260,6 +308,18 @@ $$
 ### 习题 12.17｜同轴电缆：每一段到底包住多少电流
 
 **出处：教材第 171 页；题意简述。** 同轴电缆的实心内导体半径 $a$，外导体为内半径 $b$、外半径 $c$ 的圆筒。两者分别通过等大反向电流 $I$，且电流各自在截面均匀分布。求各区域磁场。
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-coaxial-cable.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-coaxial-cable.svg" alt="同轴电缆截面，内圆半径a、电流出纸面，外圆筒内外半径b和c、电流入纸面；半径r的环路可位于四个区域。" width="640" height="680" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-5｜截面中，外导体的回流方向与内导体相反；虚线环路示范如何计算包围电流。</figcaption>
+</figure>
+
+
 
 **解答。** 令内导体电流沿 $+z$，对应环向单位矢量为 $\mathbf e_\varphi$。各区的穿过电流为
 
@@ -325,6 +385,18 @@ $$
 ### 习题 12.25｜长直线旁的矩形线框为什么被吸过去
 
 **出处：教材第 172～173 页；题意简述。** 长直导线电流 $I_1=20\,\mathrm A$ 向上；旁边矩形线框电流 $I_2=10\,\mathrm A$，近边电流与直线同向。两条平行边距直线分别 $x_1=1.0\,\mathrm{cm}$、$x_2=10\,\mathrm{cm}$，边长 $l=20\,\mathrm{cm}$。求线框合力。
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-wire-loop-force.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-wire-loop-force.svg" alt="左侧长直导线电流向上，右侧矩形线框电流顺时针。近竖边受力向左且大，远竖边受力向右且小，横边受力上下抵消。" width="640" height="560" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-6｜近边与长直导线电流同向，受到较大的吸力；远边受到较小的斥力。</figcaption>
+</figure>
+
+
 
 **解答。** 上下两条横边所受力大小相等、方向相反，互相抵消。近边被吸引，远边被排斥；近处磁场更强，因此
 
@@ -420,6 +492,18 @@ $h$ 是相邻两圈沿轴线相隔的距离；轴向运动朝哪边由 $v_{\para
 
 **出处：教材第 175 页；题意简述。** $m=1.0\times10^{-12}\,\mathrm{kg}$、$q=1.0\times10^{-4}\,\mathrm C$ 的带电质点，以 $v=1.0\times10^4\,\mathrm{m/s}$、与磁场成 $30^\circ$ 的方向进入 $B=1.0\times10^{-3}\,\mathrm T$ 的均匀磁场。求螺旋半径与螺距。
 
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-particle-helix.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-particle-helix.svg" alt="上图把与磁场成30度的速度分成平行和垂直分量，下图螺旋线沿磁场方向前进，标出半径r和螺距h。" width="640" height="720" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-7｜垂直速度决定绕圈半径，平行速度决定每一圈前进的距离；题中夹角为 30°。</figcaption>
+</figure>
+
+
+
 **解答。**
 
 $$
@@ -485,6 +569,18 @@ $$
 ### 习题 12.37｜铜片的霍尔电压
 
 **出处：教材第 175～176 页；题意简述。** 铜片宽 $2.0\times10^{-2}\,\mathrm m$、厚 $1.0\times10^{-3}\,\mathrm m$，通 $200\,\mathrm A$ 电流，置于与薄片大表面垂直的 $1.5\,\mathrm T$ 磁场，电子数密度 $n=8.4\times10^{28}\,\mathrm{m^{-3}}$。求两侧霍尔电势差的大小。
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch12-hall-effect.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch12-hall-effect.svg" alt="铜片电流沿正x向右，磁场沿正z出纸面，电子向左漂移，磁力向下；上侧正电荷高电势，下侧负电荷低电势。厚度d沿磁场。" width="640" height="720" loading="lazy" decoding="async" /></a>
+  <figcaption>图 12-8｜按正文坐标约定绘制铜片。电子向左漂移，磁力把电子推向下侧；建立的霍尔电场向下，电子所受电力向上。</figcaption>
+</figure>
+
+
 
 **解答。**
 

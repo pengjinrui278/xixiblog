@@ -92,6 +92,12 @@ $$
 
 $\mathbf A$ 代表被研究的矢量场。通量累加**法向分量**，环流累加**切向分量**。两者都是标量，正负取决于所选方向。
 
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-flux-circulation.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-flux-circulation.svg" alt="面积微元垂直于面，路径微元沿切线；图示比较通量与环流。" width="640" height="660" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-1　通量与环流的几何对象和取分量方式不同。</figcaption>
+</figure>
+
+
 | 积分 | 几何对象 | 角度、正方向 | 常见化简 |
 | --- | --- | --- | --- |
 | 通量 | 面；高斯定理用闭合面 | 与面法线夹角；闭合面向外为正 | 均匀场穿平面：$AS\cos\theta$ |
@@ -121,6 +127,12 @@ $\mathbf A$ 代表被研究的矢量场。通量累加**法向分量**，环流�
 **辨析小题（自编）**：均匀电场通过一个不含电荷的球面，净通量为零；一个圆环未穿过净电流，磁环流为零。能分别推出 $\mathbf E=\mathbf0$ 和 $\mathbf B=\mathbf0$ 吗？
 
 **答**：都不能。前者是穿入与穿出抵消；后者是切向贡献的积分抵消或处处没有切向分量，都不要求整个场为零。
+
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-zero-flux.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-zero-flux.svg" alt="均匀电场从球面左侧穿入、右侧穿出，两侧通量抵消。" width="640" height="400" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-2　零净通量的反例：没有包围电荷的球面仍可处于非零匀强场中。</figcaption>
+</figure>
+
 
 ## 五、为什么引入 D 和 H：把束缚源换一种记法
 
@@ -178,6 +190,12 @@ $\hat{\mathbf n}$ 为材料表面向外单位法线，$\mathbf K_b$ 是单位横
 
 均匀极化介质的体内正负束缚电荷可相互抵消，只在边界剩下；均匀磁化介质的内部相邻分子电流可相互抵消，只在表面留下等效电流。非均匀极化或磁化时，内部也可能存在束缚源。
 
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-bound-sources.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-bound-sources.svg" alt="均匀极化体左负右正；向右磁化的材料上表面电流向纸外、下表面向纸内。" width="640" height="650" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-3　同样是均匀响应，极化对应表面电荷，磁化对应表面电流。</figcaption>
+</figure>
+
+
 ### 三种磁性与电介质的关键差别
 
 | 性质 | 顺磁质 | 抗磁质 | 铁磁质 |
@@ -232,6 +250,12 @@ $\sigma_f$ 是自由面电荷密度；$\mathbf K_f$ 是自由面电流密度。�
 
 推导的图像相同：用跨界面的薄小柱面消去侧面贡献，得到法向条件；用跨界面的扁小矩形回路消去短边贡献，得到切向条件。
 
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-boundary.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-boundary.svg" alt="薄柱面跨越介质界面，上下法线相反；扁矩形的上下长边绕行方向相反。" width="640" height="600" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-4　电学与磁学的边界关系，都可从这两种跨界面的小几何体出发。</figcaption>
+</figure>
+
+
 **就边界公式而言，对应的是 $D_n\leftrightarrow B_n$、$E_t\leftrightarrow H_t$。** 这与受力角色的 $\mathbf E\leftrightarrow\mathbf B$ 并不矛盾：类比依赖正在比较的性质。
 
 ### 场线“折射”的公式不能反背
@@ -279,6 +303,12 @@ $$
 $$
 
 前者沿径向，适合圆柱高斯面；后者绕导线，适合圆周积分路径。$\hat{\boldsymbol\varphi}$ 是与所定电流方向满足右手关系的环向单位矢量。
+
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-line-sources.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-line-sources.svg" alt="正长直线电荷的电场沿径向向外；向纸外的长直电流产生逆时针环绕磁场。" width="640" height="420" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-5　同样是长直源，场的方向不同，所选积分对象也不同。</figcaption>
+</figure>
+
 
 ## 十、力、做功与偶极矩
 
@@ -379,6 +409,12 @@ I_L(t)=\frac{\mathcal E}{R}(1-e^{-tR/L}).
 $$
 
 移去电源后，若电容或电感仍分别与电阻构成闭合放电回路，电容电压和电感电流分别按 $e^{-t/(RC)}$、$e^{-tR/L}$ 衰减。对照教材 §11.5 与 §14.4，看清一个跟踪电压，一个跟踪电流。
+
+<figure class="physics-figure">
+  <a href="/images/physics/comparison-transients.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/comparison-transients.svg" alt="建立曲线从0升到1，t等于时间常量时达到0.632；衰减曲线从1趋近0。" width="640" height="450" loading="lazy" decoding="async" /></a>
+  <figcaption>图比-6　用各自的时间常量归一化，RC 电压与 RL 电流具有相同的指数变化形式。</figcaption>
+</figure>
+
 
 ## 十三、场能量密度与控制条件
 

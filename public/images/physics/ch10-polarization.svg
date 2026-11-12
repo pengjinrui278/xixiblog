@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 670" width="640" height="670" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">极化：分子尺度的响应与表面束缚电荷</title><desc id="desc">极化：分子尺度的响应与表面束缚电荷</desc>
+<rect width="640" height="670" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">极化：分子尺度的响应与表面束缚电荷</text>
+<text x="35" y="83" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">① 无极分子：正负中心发生相对偏移</text>
+<circle cx="140" cy="177" r="47" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<text x="140" y="185" font-size="30" text-anchor="middle" fill="#302e2a" font-weight="normal">±</text>
+<text x="140" y="255" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">无外场</text>
+<defs><marker id="a77736c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#77736c"/></marker></defs>
+<path d="M 215 177 L 306 177" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a77736c)"/>
+<ellipse cx="433" cy="177" rx="85" ry="48" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<circle cx="397" cy="177" r="17" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="397" y="184" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="467" cy="177" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="467" y="184" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 385 110 L 485 110" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="510" y="117" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E</text>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 411 235 L 454 235" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="485" y="243" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">pₑ</text>
+<path d="M 30 292 L 610 292" fill="none" stroke="#eee8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="35" y="336" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">② 均匀极化：内部抵消，边界留下电荷</text>
+<rect x="130" y="391" width="380" height="157" rx="8" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<path d="M 166 430 L 202 430" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="166" cy="430" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="166" y="437" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="202" cy="430" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="202" y="437" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 261 430 L 297 430" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="261" cy="430" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="261" y="437" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="297" cy="430" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="297" y="437" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 356 430 L 392 430" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="356" cy="430" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="356" y="437" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="392" cy="430" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="392" y="437" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 451 430 L 487 430" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="451" cy="430" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="451" y="437" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="487" cy="430" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="487" y="437" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 166 493 L 202 493" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="166" cy="493" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="166" y="500" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="202" cy="493" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="202" y="500" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 261 493 L 297 493" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="261" cy="493" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="261" y="500" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="297" cy="493" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="297" y="500" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 356 493 L 392 493" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="356" cy="493" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="356" y="500" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="392" cy="493" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="392" y="500" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 451 493 L 487 493" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="451" cy="493" r="12" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="451" y="500" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">-</text>
+<circle cx="487" cy="493" r="12" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="487" y="500" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<path d="M 220 579 L 416 579" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="445" y="586" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">P</text>
+<path d="M 130 468 L 66 468" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a77736c)"/>
+<text x="65" y="450" font-size="22" text-anchor="middle" fill="#77736c" font-weight="bold">n</text>
+<path d="M 510 468 L 574 468" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a77736c)"/>
+<text x="574" y="450" font-size="22" text-anchor="middle" fill="#77736c" font-weight="bold">n</text>
+<text x="109" y="378" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">−σ′</text>
+<text x="531" y="378" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+σ′</text>
+<text x="320" y="640" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">P 向外的一端为正，向内的一端为负</text>
+</svg>

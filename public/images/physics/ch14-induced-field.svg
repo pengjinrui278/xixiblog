@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 650" width="640" height="650" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">涡旋电场：磁场外面也可以有电场</title><desc id="desc">涡旋电场：磁场外面也可以有电场</desc>
+<rect width="640" height="650" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">涡旋电场：磁场外面也可以有电场</text>
+<circle cx="320" cy="275" r="130" fill="#eee8dc" stroke="#2569a3" stroke-width="2"/>
+<circle cx="260" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="260" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="260" cy="275" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="260" cy="275" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="260" cy="340" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="260" cy="340" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="275" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="275" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="340" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="340" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="380" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="380" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="380" cy="275" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="380" cy="275" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="380" cy="340" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="380" cy="340" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="275" r="70" fill="none" stroke="#bc493d" stroke-width="2"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 349.583278321849 211.5584549074345 L 352.15295667016187 212.82132698933907 L 354.6688405450765 214.18822897448175 L 357.1267206712352 215.65687392629138 L 359.52248481820106 217.22480468405954 L 361.8521246805482 218.8893979739671 L 364.11174258407874 220.6478687980317 L 366.29755800694363 222.4972750936326 L 368.40591390475885 224.43452265581712 L 370.4332828291339 226.4563703141536 L 372.3762728293753 228.55943535546922 L 374.2316331274924 230.74019918340042 L 375.99625955700907 232.99501320528634 L 377.66719975648334 235.320104936557 L 379.2416581090444 237.71158431240215 L 380.717000419684 240.16545019616166 L 382.0907583224755 242.67759707354762 L 383.3606334103482 245.24382192149892 L 384.52450108050624 247.85983124017557 L 385.5804140890597 250.52124823632815 L 386.52660580891927 253.22362014602362 L 387.36149318550554 255.9624256844763 L 388.0836793853257 258.7330826105196 L 388.6919561329879 261.5309553930627 L 389.18530573274325 264.35136296670584 L 389.562902771172 267.1895865635375 L 389.8241154981664 270.0408776080116 L 389.9685068838994 272.9004656616949 L 389.99583535001045 275.7635664045928 L 389.9060551737856 278.6253896396999 L 389.69931656465496 281.4811473073841 L 389.3759654128807 284.3260614961934 L 388.93654271085455 287.1553724366851" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<circle cx="320" cy="275" r="175" fill="none" stroke="#bc493d" stroke-width="2"/>
+<path d="M 393.9581958046224 116.39613726858627 L 400.3823916754047 119.5533174733477 L 406.67210136269114 122.97057243620435 L 412.81680167808804 126.64218481572846 L 418.8062120455026 130.56201171014885 L 424.6303117013705 134.72349493491774 L 430.2793564601968 139.11967199507927 L 435.743895017359 143.7431877340815 L 441.01478476189715 148.58630663954278 L 446.08320707283474 153.64092578538396 L 450.94068207343827 158.89858838867306 L 455.57908281873097 164.35049795850102 L 459.9906488925227 169.98753301321582 L 464.16799939120835 175.80026234139245 L 468.10414527261105 181.7789607810054 L 471.79250104921 187.91362549040417 L 475.2268958061888 194.19399268386906 L 478.4015835258705 200.60955480374724 L 481.3112527012656 207.14957810043887 L 483.9510352226491 213.80312059082036 L 486.31651452229823 220.55905036505908 L 488.4037329637639 227.40606421119077 L 490.2091984633142 234.33270652629898 L 491.7298903324697 241.3273884826568 L 492.9632643318581 248.3784074167646 L 493.90725692792995 255.47396640884372 L 494.56028874541596 262.602194020029 L 494.9212672097485 269.7511641542373 L 494.9895883750262 276.9089160114819 L 494.76513793446395 284.06347409924985 L 494.2482914116374 291.20286826846024 L 493.4399135322018 298.3151537404835 L 492.3413567771364 305.3884310917128" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="320" y="85" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">B 向外且增大；Eᵢ 顺时针</text>
+<path d="M 320 275 L 450 275" fill="none" stroke="#2569a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="467" y="306" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">R</text>
+<text x="535" y="268" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">Eᵢ</text>
+<text x="320" y="488" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">r ≤ R：|Eᵢ| = (r / 2) |dB / dt|</text>
+<text x="320" y="534" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">r &gt; R：|Eᵢ| = (R² / 2r) |dB / dt|</text>
+<text x="320" y="582" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">外部 B ≈ 0，Eᵢ 仍可不为零</text>
+<text x="24" y="630" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">蓝色圆域是磁场区域；红色圆是感生电场线。</text>
+</svg>

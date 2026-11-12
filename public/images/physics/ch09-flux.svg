@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 650" width="640" height="650" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">电通量：夹角取场与法线的夹角</title><desc id="desc">电通量：夹角取场与法线的夹角</desc>
+<rect width="640" height="650" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">电通量：夹角取场与法线的夹角</text>
+<path d="M 125 250 L 350 250 L 450 160 L 225 160 L 125 250" fill="#eee8dc" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 285 211 L 285 86" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="272" y="82" font-size="22" text-anchor="end" fill="#7652a4" font-weight="bold">n</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 285 211 L 430 110" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="455" y="111" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E</text>
+<path d="M 285 158 A 53 53 0 0 1 328 180" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="315" y="146" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">θ</text>
+<text x="345" y="238" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">dS</text>
+<text x="320" y="310" font-size="26" text-anchor="middle" fill="#302e2a" font-weight="normal">dΦ = E cosθ dS</text>
+<path d="M 30 340 L 610 340" fill="none" stroke="#eee8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="35" y="381" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">闭合面：穿入为负，穿出为正</text>
+<circle cx="320" cy="498" r="92" fill="none" stroke="#7652a4" stroke-width="2"/>
+<path d="M 90 455 L 235 455" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 240 455 L 390 455" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 405 455 L 555 455" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 90 498 L 235 498" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 240 498 L 390 498" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 405 498 L 555 498" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 90 541 L 235 541" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 240 541 L 390 541" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 405 541 L 555 541" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="154" y="425" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">穿入 −</text>
+<text x="490" y="425" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">穿出 +</text>
+<text x="320" y="625" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">面内无电荷：净通量为零，但 E 不为零</text>
+</svg>

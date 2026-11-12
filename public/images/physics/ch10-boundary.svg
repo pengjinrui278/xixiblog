@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 590" width="640" height="590" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">界面条件：法向看 D，切向看 E</title><desc id="desc">界面条件：法向看 D，切向看 E</desc>
+<rect width="640" height="590" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">界面条件：法向看 D，切向看 E</text>
+<rect x="38" y="91" width="564" height="206" rx="0" fill="#f4eee5" stroke="none" stroke-width="2"/>
+<rect x="38" y="297" width="564" height="210" rx="0" fill="#e9f2f7" stroke="none" stroke-width="2"/>
+<path d="M 38 297 L 602 297" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="74" y="129" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">介质1</text>
+<text x="74" y="166" font-size="22" text-anchor="start" fill="#b87620" font-weight="normal">ε₁ = 2ε₂</text>
+<text x="74" y="350" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">介质2</text>
+<path d="M 302 116 L 302 483" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<defs><marker id="a77736c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#77736c"/></marker></defs>
+<path d="M 551 236 L 551 351" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a77736c)"/>
+<text x="575" y="291" font-size="22" text-anchor="middle" fill="#77736c" font-weight="bold">n</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 302 297 L 423 207" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="455" y="202" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E₁</text>
+<path d="M 181 477 L 302 297" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="161" y="475" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E₂</text>
+<path d="M 423 207 L 423 297" fill="none" stroke="#b87620" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 302 297 L 423 297" fill="none" stroke="#287b64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="384" y="331" font-size="21" text-anchor="middle" fill="#287b64" font-weight="normal">相同切向分量</text>
+<text x="400" y="420" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">无自由面电荷</text>
+<text x="400" y="463" font-size="24" text-anchor="middle" fill="#302e2a" font-weight="normal">D₁ₙ = D₂ₙ</text>
+<text x="320" y="551" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">E₁ₜ = E₂ₜ；较大 ε 内，场更偏离法线</text>
+</svg>

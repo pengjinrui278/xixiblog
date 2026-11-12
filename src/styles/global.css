@@ -876,3 +876,21 @@ a.day-badge:hover { border-color: var(--seal); box-shadow: 0 8px 22px rgba(181, 
 @media (max-width: 900px) {
   .article-layout.physics-notes { grid-template-columns: minmax(0, 1fr); padding-inline: 0; }
 }
+
+/* 物理示意图：原位阅读，并可放大查看箭头与题目尺寸。 */
+.physics-notes .physics-figure { margin: 1.6em 0; }
+.physics-figure > a { display: block; max-width: 640px; margin: 0 auto; cursor: zoom-in; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.physics-figure img { display: block; width: 100%; height: auto; }
+.physics-figure figcaption { margin-top: 10px; color: var(--ink2); font-size: 14px; line-height: 1.7; }
+.physics-figure figcaption::after { content: " · 点图放大"; white-space: nowrap; color: var(--seal); }
+body.diagram-viewer-open { overflow: hidden; }
+.diagram-viewer { width: min(1000px, calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--ink); }
+.diagram-viewer::backdrop { background: rgba(24, 22, 18, .72); }
+.diagram-viewer__toolbar { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.diagram-viewer__hint { flex: 1; font-size: 13px; color: var(--ink2); }
+.diagram-viewer__toolbar button { min-width: 38px; min-height: 38px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); font: inherit; cursor: pointer; }
+.diagram-viewer__toolbar button:focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
+.diagram-viewer__stage { max-height: calc(100dvh - 205px); min-height: 100px; overflow: auto; padding: 12px; overscroll-behavior: contain; }
+.diagram-viewer__stage img { display: block; max-width: none; height: auto; margin: 0 auto; }
+.diagram-viewer__caption { margin: 0; padding: 10px 14px 14px; font-size: 14px; line-height: 1.6; }
+@media (max-width: 460px) { .diagram-viewer__hint { font-size: 11px; max-width: 90px; } }

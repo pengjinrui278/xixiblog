@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 540" width="640" height="540" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">圆线圈：横向分量抵消，轴向分量相加</title><desc id="desc">圆线圈：横向分量抵消，轴向分量相加</desc>
+<rect width="640" height="540" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">圆线圈：横向分量抵消，轴向分量相加</text>
+<ellipse cx="185" cy="275" rx="58" ry="125" fill="none" stroke="#302e2a" stroke-width="3"/>
+<path d="M 100 275 L 570 275" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 185 275 L 320 275" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="295" y="253" font-size="23" text-anchor="middle" fill="#287b64" font-weight="bold">p<tspan baseline-shift="sub" font-size="16">m</tspan></text>
+<circle cx="485" cy="275" r="4" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="503" y="306" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">P</text>
+<path d="M 185 150 L 485 275" fill="none" stroke="#77736c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 185 400 L 485 275" fill="none" stroke="#77736c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 485 275 L 530 167" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 485 275 L 530 383" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="560" y="159" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">dB₁</text>
+<text x="560" y="408" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">dB₂</text>
+<circle cx="185" cy="150" r="10" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="185" cy="150" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="185" cy="400" r="10" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<path d="M 179.5 394.5 L 190.5 405.5" fill="none" stroke="#bc493d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 179.5 405.5 L 190.5 394.5" fill="none" stroke="#bc493d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 440 425 L 572 425" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="506" y="455" font-size="23" text-anchor="middle" fill="#bc493d" font-weight="bold">合场 B 沿轴线</text>
+<text x="325" y="310" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">x</text>
+<path d="M 185 275 L 185 150" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="163" y="218" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">R</text>
+<path d="M 169 154 A 58 125 0 0 1 238 322" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="267" y="195" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I</text>
+<text x="320" y="91" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">从右侧沿轴线看：电流逆时针，磁矩向右</text>
+<text x="320" y="494" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">圆心：B = μ₀NI / (2R)</text>
+<text x="24" y="520" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">线圈透视示意；配对电流元产生的 dB 横向分量反向。</text>
+</svg>

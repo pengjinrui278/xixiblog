@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 570" width="640" height="570" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">磁滞回线：沿箭头读出磁化历史</title><desc id="desc">磁滞回线：沿箭头读出磁化历史</desc>
+<rect width="640" height="570" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">磁滞回线：沿箭头读出磁化历史</text>
+<defs><marker id="a302e2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#302e2a"/></marker></defs>
+<path d="M 70 280 L 575 280" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<path d="M 320 470 L 320 80" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<text x="588" y="288" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">H</text>
+<text x="320" y="69" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">B</text>
+<path d="M 510 125 C 420 125 380 170 320 170 C 245 170 235 260 235 280 C 220 375 190 430 130 435" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 130 435 C 220 435 260 390 320 390 C 395 390 405 300 405 280 C 420 185 450 130 510 125" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 384 147 L 352 161" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 254 413 L 289 397" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="320" cy="170" r="5" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<circle cx="320" cy="390" r="5" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<circle cx="235" cy="280" r="5" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<circle cx="405" cy="280" r="5" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="354" y="194" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">Bᵣ</text>
+<text x="362" y="417" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">−Bᵣ</text>
+<text x="233" y="315" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">−H꜀</text>
+<text x="409" y="315" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">H꜀</text>
+<text x="300" y="309" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<text x="40" y="102" font-size="22" text-anchor="start" fill="#bc493d" font-weight="normal">H 逐渐减小</text>
+<text x="395" y="466" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">H 逐渐增大</text>
+<text x="320" y="513" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">同一个 H，可对应不同的 B</text>
+<text x="24" y="550" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">示意曲线；Bᵣ 为剩磁，H꜀ 为矫顽力的大小。</text>
+</svg>

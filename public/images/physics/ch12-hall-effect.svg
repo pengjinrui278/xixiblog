@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" width="640" height="720" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题 12.37：铜片中的霍尔电荷分离</title><desc id="desc">习题 12.37：铜片中的霍尔电荷分离</desc>
+<rect width="640" height="720" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题 12.37：铜片中的霍尔电荷分离</text>
+<text x="30" y="82" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">俯视铜片：B 沿 +z，垂直纸面向外</text>
+<rect x="100" y="155" width="430" height="250" rx="0" fill="#f4e2c9" stroke="#b87620" stroke-width="3"/>
+<text x="145" y="185" font-size="28" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="145" y="390" font-size="28" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="240" y="185" font-size="28" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="240" y="390" font-size="28" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="335" y="185" font-size="28" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="335" y="390" font-size="28" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="430" y="185" font-size="28" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="430" y="390" font-size="28" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="490" y="185" font-size="28" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="490" y="390" font-size="28" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<circle cx="145" cy="250" r="10" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<circle cx="145" cy="250" r="2.7" fill="#7652a4" stroke="#7652a4" stroke-width="1"/>
+<circle cx="480" cy="250" r="10" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<circle cx="480" cy="250" r="2.7" fill="#7652a4" stroke="#7652a4" stroke-width="1"/>
+<circle cx="145" cy="330" r="10" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<circle cx="145" cy="330" r="2.7" fill="#7652a4" stroke="#7652a4" stroke-width="1"/>
+<circle cx="480" cy="330" r="10" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<circle cx="480" cy="330" r="2.7" fill="#7652a4" stroke="#7652a4" stroke-width="1"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 95 142 L 525 142" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="320" y="125" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I 沿 +x</text>
+<circle cx="320" cy="278" r="17" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<text x="320" y="285" font-size="24" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 300 278 L 205 278" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="237" y="257" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">v<tspan baseline-shift="sub" font-size="16">d</tspan></text>
+<path d="M 320 302 L 320 350" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="373" y="347" font-size="23" text-anchor="middle" fill="#2569a3" font-weight="bold">F<tspan baseline-shift="sub" font-size="16">B</tspan></text>
+<path d="M 320 254 L 320 209" fill="none" stroke="#bc493d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="374" y="226" font-size="23" text-anchor="middle" fill="#bc493d" font-weight="bold">F<tspan baseline-shift="sub" font-size="16">E</tspan></text>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 565 205 L 565 360" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="588" y="285" font-size="23" text-anchor="middle" fill="#287b64" font-weight="bold">E<tspan baseline-shift="sub" font-size="16">H</tspan></text>
+<text x="320" y="441" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">上侧：缺少电子，电势高</text>
+<text x="320" y="476" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">下侧：电子积聚，电势低</text>
+<defs><marker id="a302e2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#302e2a"/></marker></defs>
+<path d="M 85 535 L 180 535" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<text x="200" y="544" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">+x</text>
+<path d="M 85 535 L 85 465" fill="none" stroke="#302e2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<text x="56" y="458" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">+y</text>
+<text x="350" y="535" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">宽 w 沿 y；厚 d 沿 z</text>
+<text x="350" y="574" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">本题 d = 1.0 mm（沿磁场）</text>
+<text x="320" y="621" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">平衡时：电力向上，磁力向下，合力为零</text>
+<text x="320" y="664" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">电压大小 |U_H| = IB / (ned)</text>
+<text x="24" y="700" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">这里画电子型导体；电荷正负与 E_H、F_E 的方向要分开。</text>
+</svg>

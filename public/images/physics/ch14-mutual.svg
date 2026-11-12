@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题14.21：大线圈的磁场穿过小环</title><desc id="desc">习题14.21：大线圈的磁场穿过小环</desc>
+<rect width="640" height="560" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题14.21：大线圈的磁场穿过小环</text>
+<circle cx="320" cy="265" r="155" fill="none" stroke="#b87620" stroke-width="4"/>
+<circle cx="320" cy="265" r="151" fill="none" stroke="#b87620" stroke-width="1.5"/>
+<circle cx="320" cy="265" r="38" fill="none" stroke="#7652a4" stroke-width="4"/>
+<circle cx="290" cy="235" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="290" cy="235" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="290" cy="265" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="290" cy="265" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="290" cy="295" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="290" cy="295" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="235" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="235" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="265" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="265" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="320" cy="295" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="320" cy="295" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="350" cy="235" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="350" cy="235" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="350" cy="265" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="350" cy="265" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="350" cy="295" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="350" cy="295" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 472.2597082221572 335.9998679724375 L 474.50123702805547 330.98005575020846 L 476.57732203951014 325.8895904316619 L 478.48574013269064 320.7339230145632 L 480.22444772570213 315.5185743167179 L 481.7915829669041 310.249129064142 L 483.18546772862794 304.9312299107971 L 484.40460940415767 299.57057139629546 L 485.447702506051 294.1728938480443 L 486.31363006408776 288.74397723435936 L 487.0014648213497 283.28963497513007 L 487.5104702271504 277.815707716664 L 487.8401012257521 272.32805707737646 L 487.99000484002516 266.8325593710226 L 487.9600205494247 261.3350993141937 L 487.7501804618802 255.84156372481493 L 487.36070927941324 250.35783521839343 L 486.79202405752125 244.8897859087663 L 486.0447337585838 239.44327112009398 L 485.1196385997706 234.02412311683256 L 484.0177291961488 228.63814485839873 L 482.7401854999076 223.29110378521568 L 481.28837553683604 217.98872564279333 L 479.6638539414063 212.73668835045672 L 477.8683602920326 207.54061592128767 L 475.903817248287 202.4060724397907 L 473.7723284920671 197.33855610373215 L 471.4761764749211 192.34349333653208 L 469.01781997394124 187.4262329765143 L 466.3998914588439 182.59204054923626 L 463.62519427305506 177.8460926290324 L 460.69669963181974 173.1934712958087 L 457.61754344055066 168.63915869302426" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="528" y="229" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">I₁</text>
+<path d="M 320 265 L 430 375" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="489" y="432" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">R = 0.20 m</text>
+<path d="M 348 242 L 430 155" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="468" y="136" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="normal">小环面积 s</text>
+<text x="175" y="95" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">大线圈：N = 100</text>
+<text x="320" y="466" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">小环置于中心附近，两环共面</text>
+<text x="320" y="505" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">Φ₂₁ ≈ B中心 s；M = μ₀Ns / (2R)</text>
+<text x="24" y="540" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">大线圈电流按逆时针为正，其中心磁场向外 ⊙。</text>
+</svg>

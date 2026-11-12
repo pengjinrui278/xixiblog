@@ -1,0 +1,61 @@
+<dialog class="diagram-viewer" id="physics-diagram-viewer" aria-label="物理示意图大图">
+  <div class="diagram-viewer__toolbar">
+    <span class="diagram-viewer__hint">放大后可滑动查看</span>
+    <button type="button" data-diagram-action="out" aria-label="缩小示意图">−</button>
+    <button type="button" data-diagram-action="in" aria-label="放大示意图">＋</button>
+    <button type="button" data-diagram-action="fit">适配</button>
+    <button type="button" data-diagram-action="close">关闭</button>
+  </div>
+  <div class="diagram-viewer__stage"><img alt="" /></div>
+  <p class="diagram-viewer__caption"></p>
+</dialog>
+<script>
+  let scale = 1;
+  let imageWidth = 640;
+  const findViewer = () => document.querySelector<HTMLDialogElement>('#physics-diagram-viewer');
+  function resizeFigure(next: number) {
+    const viewer = findViewer();
+    const img = viewer?.querySelector<HTMLImageElement>('.diagram-viewer__stage img');
+    if (!img) return;
+    scale = Math.min(3, Math.max(0.25, next));
+    img.style.width = `${imageWidth * scale}px`;
+  }
+  function fitFigure() {
+    const stage = findViewer()?.querySelector<HTMLElement>('.diagram-viewer__stage');
+    if (stage) resizeFigure(Math.min(1, (stage.clientWidth - 24) / imageWidth));
+  }
+  document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const anchor = event.target.closest<HTMLAnchorElement>('.physics-figure a');
+    if (anchor && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+      const viewer = findViewer();
+      const original = anchor.querySelector<HTMLImageElement>('img');
+      const img = viewer?.querySelector<HTMLImageElement>('.diagram-viewer__stage img');
+      if (!viewer || !original || !img) return;
+      event.preventDefault();
+      imageWidth = original.naturalWidth || 640;
+      img.src = original.src;
+      img.alt = original.alt;
+      const caption = viewer.querySelector('.diagram-viewer__caption');
+      if (caption) caption.textContent = anchor.closest('figure')?.querySelector('figcaption')?.textContent || '';
+      viewer.showModal();
+      document.body.classList.add('diagram-viewer-open');
+      fitFigure();
+      const stage = viewer.querySelector('.diagram-viewer__stage');
+      stage?.scrollTo(0, 0);
+      viewer.addEventListener('close', () => document.body.classList.remove('diagram-viewer-open'), { once: true });
+      return;
+    }
+    const action = event.target.closest<HTMLButtonElement>('[data-diagram-action]')?.dataset.diagramAction;
+    if (action === 'in') resizeFigure(scale * 1.4);
+    if (action === 'out') resizeFigure(scale / 1.4);
+    if (action === 'fit') fitFigure();
+    if (action === 'close') findViewer()?.close();
+    const viewer = findViewer();
+    if (event.target === viewer) {
+      const box = viewer.getBoundingClientRect();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) viewer.close();
+    }
+  });
+  document.addEventListener('astro:before-swap', () => document.body.classList.remove('diagram-viewer-open'));
+</script>

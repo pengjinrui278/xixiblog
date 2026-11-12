@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">转动杆：每一小段的速度都不同</title><desc id="desc">转动杆：每一小段的速度都不同</desc>
+<rect width="640" height="520" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">转动杆：每一小段的速度都不同</text>
+<circle cx="120" cy="110" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="120" cy="110" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="120" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="120" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="120" cy="310" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="120" cy="310" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="120" cy="410" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="120" cy="410" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="230" cy="110" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="230" cy="110" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="230" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="230" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="230" cy="310" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="230" cy="310" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="230" cy="410" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="230" cy="410" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="340" cy="110" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="340" cy="110" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="340" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="340" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="340" cy="310" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="340" cy="310" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="340" cy="410" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="340" cy="410" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="450" cy="110" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="450" cy="110" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="450" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="450" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="450" cy="310" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="450" cy="310" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="450" cy="410" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="450" cy="410" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="560" cy="110" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="560" cy="110" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="560" cy="210" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="560" cy="210" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="560" cy="310" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="560" cy="310" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="560" cy="410" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="560" cy="410" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<path d="M 165 365 L 470 145" fill="none" stroke="#b87620" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="165" cy="365" r="8" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="142" y="397" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<text x="565" y="82" font-size="22" text-anchor="end" fill="#302e2a" font-weight="normal">A（高电势）</text>
+<path d="M 515 94 L 478 137" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 165 365 L 307 263" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="224" y="292" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="normal">r</text>
+<path d="M 297 280 L 319 250" fill="none" stroke="#bc493d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="340" y="275" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">dr</text>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 307 263 L 250 183" fill="none" stroke="#287b64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="210" y="165" font-size="22" text-anchor="middle" fill="#287b64" font-weight="bold">v = ωr</text>
+<defs><marker id="a302e2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#302e2a"/></marker></defs>
+<path d="M 232.97308402774874 396.69636963055245 L 234.5234550350125 393.13341785127784 L 235.88721550224508 389.49495209912163 L 237.0607049083011 385.7907385178774 L 238.04077344580003 382.030719727578 L 238.8247904756438 378.22498813713247 L 239.41065158801473 374.38375885490893 L 239.79678425090177 370.5173422699751 L 239.98215203099318 366.6361163775921 L 239.96625737560652 362.75049892324455 L 239.74914294818853 358.8709194399749 L 239.33139151380075 355.0077912540785 L 238.7141243748976 351.17148353430025 L 237.89899836159594 347.3722934595555 L 236.8882013845148 343.6204185798822 L 235.6844465621212 339.9259294448103 L 234.29096493834652 336.29874257261827 L 232.71149681001862 332.74859383303055 L 230.95028168738978 329.28501231480067 L 229.01204691470627 325.91729474832323 L 226.9019949813648 322.65448055192746 L 224.62578955771332 319.5053275688319 L 222.1895402929791 316.4782885598857 L 219.5997864161276 313.58148851519286 L 216.86347918367022 310.82270284551834 L 213.98796322153328 308.20933651201364 L 210.98095681106935 305.74840415027984 L 207.85053117212576 303.4465112421182 L 204.60508879877762 301.30983638550657 L 201.25334090587495 299.3441147103901 L 197.80428404694106 297.55462248480177 L 194.2671759661821 295.9461629526314 L 190.65151074942517 294.52305344105685" fill="none" stroke="#302e2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a302e2a)"/>
+<text x="413" y="354" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">ω：逆时针</text>
+<text x="495" y="390" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">B 向外</text>
+<text x="320" y="467" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">沿杆积分：ε = ∫ Bωr dr = Bωℓ² / 2</text>
+<text x="24" y="500" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">从纸面正面观察；转轴与 B 同向，杆垂直转轴。</text>
+</svg>

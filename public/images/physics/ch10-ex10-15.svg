@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" width="640" height="500" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题10.15：并排介质承受同一电压</title><desc id="desc">习题10.15：并排介质承受同一电压</desc>
+<rect width="640" height="500" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题10.15：并排介质承受同一电压</text>
+<rect x="110" y="143" width="205" height="210" rx="0" fill="#f4eee5" stroke="#77736c" stroke-width="2"/>
+<rect x="315" y="143" width="205" height="210" rx="0" fill="#e9f2f7" stroke="#77736c" stroke-width="2"/>
+<rect x="100" y="133" width="430" height="10" rx="0" fill="#bc493d" stroke="#bc493d" stroke-width="2"/>
+<rect x="100" y="353" width="430" height="10" rx="0" fill="#2569a3" stroke="#2569a3" stroke-width="2"/>
+<text x="125" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="165" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="205" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="245" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="285" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="325" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="365" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="405" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="445" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="485" y="119" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="125" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="165" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="205" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="245" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="285" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="325" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="365" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="405" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="445" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="485" y="393" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">−</text>
+<text x="212" y="185" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">εᵣ₁ = 4</text>
+<text x="418" y="185" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">εᵣ₂ = 6</text>
+<text x="212" y="221" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">面积 S/2</text>
+<text x="418" y="221" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">面积 S/2</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 212 245 L 212 321" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="245" y="289" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E₁</text>
+<path d="M 418 245 L 418 321" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="451" y="289" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E₂</text>
+<path d="M 568 138 L 568 358" fill="none" stroke="#77736c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 563 138 L 573 138" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 563 358 L 573 358" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="590" y="257" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">d</text>
+<text x="50" y="258" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">U</text>
+<text x="320" y="441" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">U = 15 V；d = 3 mm；S = 20 cm²</text>
+<text x="320" y="477" font-size="24" text-anchor="middle" fill="#302e2a" font-weight="normal">E₁ = E₂；D₂ &gt; D₁，P₂ &gt; P₁</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 700" width="640" height="700" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">楞次定律：阻碍的是磁通变化</title><desc id="desc">楞次定律：阻碍的是磁通变化</desc>
+<rect width="640" height="700" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">楞次定律：阻碍的是磁通变化</text>
+<text x="320" y="100" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">原磁场向外，正在增强</text>
+<circle cx="150" cy="160" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="160" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="150" cy="215" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="215" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="150" cy="270" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="270" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="160" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="160" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="215" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="215" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="270" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="270" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="160" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="160" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="215" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="215" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="270" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="270" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="215" r="88" fill="none" stroke="#302e2a" stroke-width="3"/>
+<defs><marker id="abc493d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#bc493d"/></marker></defs>
+<path d="M 233.8599941892412 121.97043054219507 L 238.88110428137284 123.95462817989586 L 243.78658033168114 126.20959858826386 L 248.56183324777152 128.72863539032414 L 253.19266122633556 131.5042468645243 L 257.6652919899124 134.5281782254301 L 261.96642374622184 137.7914361738047 L 266.0832647482549 141.2843156430597 L 270.0035713374682 144.9964286625318 L 273.7156843569403 148.9167352517451 L 277.2085638261953 153.03357625377816 L 280.4718217745699 157.33470801008758 L 283.4957531354757 161.80733877366444 L 286.27136460967586 166.4381667522285 L 288.7904014117361 171.21341966831886 L 291.04537182010415 176.11889571862716 L 293.02956945780494 181.1400058107588 L 294.7370932374887 186.2618169518082 L 296.1628649115129 191.46909665970887 L 297.30264417486484 196.7463582652763 L 298.15304127600723 202.07790697021488 L 298.7115270981422 207.44788652410872 L 298.97644068091097 212.84032638157845 L 298.9469941601602 218.23918919935585 L 298.6232751110828 223.62841853201815 L 298.006246287766 228.99198658453318 L 297.0977427599198 234.3139418795967 L 295.9004664553027 239.57845669799792 L 294.41797812407447 244.76987415092304 L 292.6546867489752 249.8727547442021 L 290.6158364328253 254.871922296015 L 288.3074908023421 259.75250907149524 L 285.7365149746594 264.5" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="420" y="180" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">感应电流 I</text>
+<text x="420" y="220" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">顺时针</text>
+<circle cx="378" cy="275" r="15" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 369.75 266.75 L 386.25 283.25" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 369.75 283.25 L 386.25 266.75" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="422" y="282" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">B感</text>
+<text x="320" y="345" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">感应磁场向内，抵抗增加</text>
+<text x="320" y="390" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">原磁场向外，正在减弱</text>
+<circle cx="150" cy="450" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="450" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="150" cy="505" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="505" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="150" cy="560" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="150" cy="560" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="450" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="450" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="505" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="505" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="560" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="200" cy="560" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="450" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="450" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="505" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="505" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="250" cy="560" r="7" fill="#fffdf7" stroke="#2569a3" stroke-width="2"/>
+<circle cx="250" cy="560" r="2.7" fill="#2569a3" stroke="#2569a3" stroke-width="1"/>
+<circle cx="200" cy="505" r="88" fill="none" stroke="#302e2a" stroke-width="3"/>
+<path d="M 285.7365149746594 554.5 L 288.3074908023421 549.7525090714953 L 290.6158364328253 544.871922296015 L 292.6546867489752 539.8727547442021 L 294.41797812407447 534.769874150923 L 295.9004664553027 529.5784566979979 L 297.0977427599198 524.3139418795967 L 298.006246287766 518.9919865845332 L 298.6232751110828 513.6284185320181 L 298.9469941601602 508.23918919935585 L 298.97644068091097 502.84032638157845 L 298.7115270981422 497.4478865241087 L 298.15304127600723 492.0779069702149 L 297.30264417486484 486.74635826527634 L 296.1628649115129 481.46909665970884 L 294.7370932374887 476.2618169518082 L 293.02956945780494 471.1400058107588 L 291.04537182010415 466.1188957186272 L 288.7904014117361 461.21341966831886 L 286.27136460967586 456.43816675222854 L 283.4957531354757 451.80733877366447 L 280.4718217745699 447.3347080100876 L 277.2085638261953 443.03357625377816 L 273.7156843569403 438.9167352517451 L 270.0035713374682 434.9964286625318 L 266.0832647482549 431.2843156430597 L 261.96642374622184 427.7914361738047 L 257.6652919899124 424.5281782254301 L 253.19266122633556 421.5042468645243 L 248.56183324777152 418.72863539032414 L 243.78658033168114 416.2095985882639 L 238.88110428137284 413.95462817989585 L 233.8599941892412 411.97043054219506" fill="none" stroke="#bc493d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#abc493d)"/>
+<text x="420" y="470" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">感应电流 I</text>
+<text x="420" y="510" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="bold">逆时针</text>
+<circle cx="378" cy="565" r="15" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<circle cx="378" cy="565" r="2.7" fill="#7652a4" stroke="#7652a4" stroke-width="1"/>
+<text x="422" y="572" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">B感</text>
+<text x="320" y="635" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">感应磁场向外，补偿减少</text>
+<text x="24" y="680" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">正法线向外 ⊙，正绕向为逆时针；蓝色点表示原场。</text>
+</svg>

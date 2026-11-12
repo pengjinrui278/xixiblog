@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 680" width="640" height="680" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题 12.17：同轴电缆的四个区域</title><desc id="desc">习题 12.17：同轴电缆的四个区域</desc>
+<rect width="640" height="680" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题 12.17：同轴电缆的四个区域</text>
+<circle cx="320" cy="272" r="174" fill="#e8e2f0" stroke="#7652a4" stroke-width="3"/>
+<circle cx="320" cy="272" r="125" fill="#fffdf7" stroke="#7652a4" stroke-width="3"/>
+<circle cx="320" cy="272" r="67" fill="#f5e4df" stroke="#bc493d" stroke-width="3"/>
+<circle cx="470.0" cy="272.0" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 465.05 267.05 L 474.95 276.95" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 465.05 276.95 L 474.95 267.05" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="426.06601717798213" cy="378.06601717798213" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 421.11601717798214 373.11601717798214 L 431.0160171779821 383.0160171779821" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 421.11601717798214 383.0160171779821 L 431.0160171779821 373.11601717798214" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="320.0" cy="422.0" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 315.05 417.05 L 324.95 426.95" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 315.05 426.95 L 324.95 417.05" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="213.93398282201787" cy="378.06601717798213" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 208.98398282201788 373.11601717798214 L 218.88398282201786 383.0160171779821" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 208.98398282201788 383.0160171779821 L 218.88398282201786 373.11601717798214" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="170.0" cy="272.0" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 165.05 267.05 L 174.95 276.95" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 165.05 276.95 L 174.95 267.05" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="213.93398282201787" cy="165.93398282201787" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 208.98398282201788 160.98398282201788 L 218.88398282201786 170.88398282201786" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 208.98398282201788 170.88398282201786 L 218.88398282201786 160.98398282201788" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="320.0" cy="122.0" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 315.05 117.05 L 324.95 126.95" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 315.05 126.95 L 324.95 117.05" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="426.0660171779821" cy="165.93398282201787" r="9" fill="#fffdf7" stroke="#7652a4" stroke-width="2"/>
+<path d="M 421.1160171779821 160.98398282201788 L 431.01601717798206 170.88398282201786" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 421.1160171779821 170.88398282201786 L 431.01601717798206 160.98398282201788" fill="none" stroke="#7652a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="320" cy="272" r="8" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="320" cy="272" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="290" cy="272" r="8" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="290" cy="272" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="350" cy="272" r="8" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="350" cy="272" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="320" cy="242" r="8" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="320" cy="242" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="320" cy="302" r="8" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="320" cy="302" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<path d="M 320 272 L 320.0 205.0" fill="none" stroke="#302e2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="335.0" y="229.5" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">a</text>
+<path d="M 320 272 L 445.0 272.0" fill="none" stroke="#302e2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="397.5" y="263.0" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">b</text>
+<path d="M 320 272 L 443.0365799264593 395.0365799264593" fill="none" stroke="#302e2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="396.5182899632297" y="324.5182899632297" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">c</text>
+<path d="M 462 272 A 142 142 0 1 0 178 272 A 142 142 0 1 0 462 272" fill="none" stroke="#287b64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 187.0231504047069 222.188781668074 L 185.89719171640803 225.30485238855988 L 184.84424124456356 228.4463448693193 L 183.86487223619906 231.6115488198223 L 182.95961787913856 234.79874104054704 L 182.12897101172672 238.00618636112296 L 181.37338385451778 241.2321385849921 L 180.69326776407797 244.47484144007305 L 180.08899300903457 247.73252953490996 L 179.56088856849453 251.00342931978676 L 179.10924195294183 254.28576005228237 L 178.73429904771095 257.57773476674214 L 178.43626397912206 260.8775612471372 L 178.21529900335068 264.1834430027823 L 178.07152441809222 267.493580246381 L 178.00501849706944 270.8061708738649 L 178.01581744741878 274.11941144549513 L 178.1039153899785 277.43149816769034 L 178.2692643624893 280.74062787504766 L 178.51177434570607 284.0449990120215 L 178.83131331240594 287.34281261372575 L 179.22770729926674 290.63227328532616 L 179.7007405015759 293.9115901794885 L 180.2501553907189 297.1789779713512 L 180.87565285438285 300.4326578304914 L 181.57689235939915 303.6708583893558 L 182.35349213713656 306.8918167076275 L 183.2050293913435 310.09377923200583 L 184.13104052832657 313.2750027508753 L 185.13102140934043 316.43375534334467 L 186.20442762505056 319.5683173221385" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="86" y="238" font-size="22" text-anchor="middle" fill="#287b64" font-weight="normal">L</text>
+<text x="320" y="493" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">⊙ 内导体 +I；⊗ 外导体 −I</text>
+<text x="320" y="532" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">r &lt; a：只包住部分正向电流</text>
+<text x="320" y="570" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">a &lt; r &lt; b：包住全部 +I</text>
+<text x="320" y="608" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">b &lt; r &lt; c：再减去部分反向电流</text>
+<text x="24" y="660" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">r &gt; c：净电流为零；本题的同轴对称性给出 B = 0。</text>
+</svg>

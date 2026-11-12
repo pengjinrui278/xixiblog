@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 570" width="640" height="570" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题13.3：同一磁路中的铁芯与气隙</title><desc id="desc">习题13.3：同一磁路中的铁芯与气隙</desc>
+<rect width="640" height="570" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题13.3：同一磁路中的铁芯与气隙</text>
+<circle cx="320" cy="265" r="150" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<circle cx="320" cy="265" r="92" fill="#fffdf7" stroke="#77736c" stroke-width="2"/>
+<rect x="407" y="240" width="74" height="50" rx="0" fill="#fffdf7" stroke="none" stroke-width="2"/>
+<path d="M 410 240 L 468 240" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 410 290 L 468 290" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 241.19168825561607 310.5 L 184.93819663686222 332.52265747359996" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 234.48797150848236 296.12383304263585 L 175.26490249065264 308.0436005575708" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 230.38249447588908 280.80198416769065 L 169.98931104277133 282.25668561971264" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 229.0 265.0 L 169.27171846978416 255.94543502160388" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 230.38249447588908 249.19801583230932 L 173.13392845890195 229.90930279853262" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 234.48797150848233 233.87616695736415 L 181.4585897139779 204.93938365317848" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 241.1916882556161 219.5 L 193.99276161525836 181.79437594338413" fill="none" stroke="#b87620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 259.5 160.2109261420829 L 262.6701941766853 158.44347338496328 L 265.89197390282254 156.7719005439569 L 269.162440210327 155.19771170585094 L 272.47865032276655 153.72232333098384 L 275.8376203032816 152.34706297870937 L 279.23632773954137 151.0731681128545 L 282.67171446332077 149.90178498824517 L 286.14068930224994 148.83396761930265 L 289.64013086126175 147.87067683163755 L 293.1668903312331 147.01277939749605 L 296.71779432229414 146.2610472558352 L 300.2896477192548 145.61615681772963 L 303.87923655658 145.0786883577348 L 307.4833309103268 144.6491254917538 L 311.09868780444026 144.32785474187847 L 314.72205412879435 144.1151651885952 L 318.35016956635116 144.01124821066958 L 321.9797695268049 144.016197312943 L 325.6075880840712 144.13000804219692 L 329.23036091497823 144.35257799115954 L 332.84482823651535 144.6837068906525 L 336.4477377389969 145.1230967897937 L 340.03584751250116 145.67035232409424 L 343.60592896395156 146.32498107120912 L 347.1547697222155 147.08639399402014 L 350.6791765286067 147.95390597065364 L 354.1759781101897 148.92673641095536 L 357.642028033302 150.0040099588681 L 361.0742075347253 151.18475728007994 L 364.4694283279591 152.46791593423453 L 367.8246353820713 153.85233133091845 L 371.13680967062464 155.33675776856535" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 440 220 L 440 310" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="320" y="253" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">铁芯</text>
+<text x="320" y="290" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">ℓFe = 0.60 m</text>
+<text x="55" y="145" font-size="22" text-anchor="start" fill="#b87620" font-weight="normal">N = 1000</text>
+<text x="55" y="175" font-size="22" text-anchor="start" fill="#b87620" font-weight="normal">I = 1.5 A</text>
+<path d="M 480 240 L 500 240" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 480 290 L 500 290" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 500 240 L 500 290" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 494 240 L 506 240" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 494 290 L 506 290" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="523" y="272" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">g</text>
+<text x="485" y="350" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">g = 0.01 m</text>
+<text x="320" y="458" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">B铁 ≈ B气隙 = 0.18 T</text>
+<text x="320" y="504" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">H铁 ℓFe + H气隙 g = NI</text>
+<text x="24" y="550" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">忽略漏磁与气隙边缘发散；图中气隙被放大。</text>
+</svg>

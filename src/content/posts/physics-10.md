@@ -58,11 +58,27 @@ $$
 - **导体本身总电荷为 $Q$，未接地**：外表面总电荷为 $Q+q$。
 - **外壳接地，且外部无其他电场源**：外表面净电荷可流向大地，外部场为零；内表面的 $-q$ 仍存在。若外部另有电荷，外表面仍可能有感应电荷。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-conductor.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-conductor.svg" alt="导体内外加场向右、感应场向左而总场零；空腔含正电荷时内表面负电、外表面正电，金属内仍无场。" width="640" height="700" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-1　上图用外加场和感应场的相消表示静电平衡；下图为未接地、中性导体的带电空腔截面。</figcaption>
+</figure>
+
 静电屏蔽的关键是导体的静电平衡和闭合外壳。接地使腔内电荷对外部的影响也能被隔离。
 
 ### 1.4 教材习题 10.2：套上球壳与用导线连接是两件事
 
 题意简述（p.88）：半径 $0.10\,\mathrm m$ 的金属球 $A$ 带 $q=10^{-8}\,\mathrm C$，外套半径 $0.20\,\mathrm m$、原来不带电的同心薄金属球壳 $B$。求距球心 $0.15\,\mathrm m$ 的点 $P$ 的电势；再用导线连接 $A,B$ 后求 $P$ 电势。取无穷远电势为零。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-ex10-02.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-ex10-02.svg" alt="两同心导体连接前内球正电、壳内负电壳外正电，连接后只有最外表面带电；观察点在两导体之间。" width="640" height="800" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-2　习题10.2。连接前球壳内外感应电荷等量异号；连接后整个系统成为一个导体。</figcaption>
+</figure>
 
 **未连接**：壳的内、外表面分别感应 $-q,+q$，$A$ 仍带 $q$。在壳内，两层薄球面产生的电势恰好抵消，所以
 
@@ -119,6 +135,14 @@ $$
 
 **教材思考题 10.6（p.87）：把不带电金属板插入平行板电容器，两极板的电荷保持不变，电容和电压怎样变化？**
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-metal-slab.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-metal-slab.svg" alt="正负平行极板之间插入厚度t的金属，电场仅在上下真空间隙内向下，总电势降距离为d减t。" width="640" height="440" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-3　中性金属板上表面感应负电、下表面感应正电。金属内部没有电势降。</figcaption>
+</figure>
+
 设原间距 $d$，插入板厚 $t<d$，且不接触两极板。金属内部无电场，因此有电势降的总距离从 $d$ 变成 $d-t$：
 
 $$
@@ -165,6 +189,14 @@ $$
 $\chi_e$ 是无量纲的电极化率。这里的 $\mathbf E$ 是介质内部的**合电场**，已包含极化电荷的作用，不能偷偷换成只由自由电荷产生的 $\mathbf E_0$。
 
 “线性”表示 $\mathbf P$ 与 $\mathbf E$ 成正比；“各向同性”表示材料对各个方向的响应一样，因此二者同向。在各向异性晶体中，它们未必平行。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-polarization.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-polarization.svg" alt="分子正负中心在外场中分离；多个偶极子平均向右排列，介质左端负束缚电荷右端正束缚电荷。" width="640" height="670" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-4　位移极化与均匀极化的示意。偶极矩从负电荷指向正电荷；边界符号由 P 与外法线的点乘确定。</figcaption>
+</figure>
 
 ### 3.3 束缚电荷的正负如何判断
 
@@ -227,6 +259,14 @@ $$
 
 题意简述（p.91）：内导体半径 $R_1$，外导体内半径 $R_2$，中间充满相对介电常数 $\varepsilon_r$ 的均匀介质。两电极单位长度分别带 $+\lambda_0,-\lambda_0$。求介质中的场、电位移及介质表面束缚电荷。
 
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-ex10-17.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-ex10-17.svg" alt="同轴圆柱横截面，内电极正电外电极负电，介质内边界束缚负电外边界正电，右侧介质内表面外法线向左。" width="640" height="640" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-5　习题10.17。金属电极上的自由电荷与介质边界的束缚电荷成对相邻。底部外法线示意取右侧截点。</figcaption>
+</figure>
+
 取半径 $r$、长 $l$ 的同轴柱面，$R_1<r<R_2$：
 
 $$
@@ -255,6 +295,14 @@ $$
 ## 5. 电场边界条件：跨过介质分界面，哪些量连续
 
 对应教材带星号的 §10.5，书 p.79—81。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-boundary.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-boundary.svg" alt="水平介质界面，上方介电常数为下方两倍，场从下左到上右，切向分量相等而上方法向分量较小。" width="640" height="590" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-6　无自由面电荷的介质界面。图示 ε₁=2ε₂，切向场不变，介质1中的法向场减半。</figcaption>
+</figure>
 
 把场分成垂直界面的**法向分量**和沿界面的**切向分量**。静电场中，令单位法线 $\mathbf n$ 从介质1指向介质2：
 
@@ -299,6 +347,14 @@ $$
 ### 5.2 教材习题 10.15：同样的场强，不同的电位移
 
 题意简述（p.91）：面积 $S=20\,\mathrm{cm^2}$、板距 $d=3\,\mathrm{mm}$ 的电容器，左右各半填入 $\varepsilon_{r1}=4$、$\varepsilon_{r2}=6$ 的介质，电压 $U=15\,\mathrm V$。求各介质中的 $\mathbf D,\mathbf E,\mathbf P$ 和总电容。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-ex10-15.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-ex10-15.svg" alt="两平行板左右各填一半介电常数4和6的介质，上正下负、两区电场同样向下，两介质共同承受15伏。" width="640" height="500" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-7　习题10.15。两块介质左右并排，相当于两个电容器并联；场平行于介质分界面。</figcaption>
+</figure>
 
 令 $\mathbf n$ 从正极板指向负极板。两块介质并排，每块都承受完整电压：
 
@@ -400,6 +456,14 @@ $w_e$ 的单位是 $\mathrm{J/m^3}$。对平行板电容器，$W=\tfrac12CU^2=\t
 ### 7.2 教材习题 10.27：把板距加倍，外力做功多少
 
 题意简述（p.92）：初始电容为 $C$，用电压 $U_0$ 的电源充电。缓慢把板距从 $d$ 拉到 $2d$，分别求断电、接电时外力做的功。忽略边缘效应和动能变化。
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch10-ex10-27.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch10-ex10-27.svg" alt="平行板向外拉开，上图电源开关断开维持电荷，下图连着电源维持电压；外力做功不同。" width="640" height="700" loading="lazy" decoding="async" /></a>
+  <figcaption>图10-8　习题10.27的两种电路条件。上图开关断开，电荷不变；下图闭路，电源维持电压。</figcaption>
+</figure>
 
 **情况一：拉开前断电。** $Q=CU_0$ 不变，最终电容 $C'=C/2$。外力做功转成场能增加：
 

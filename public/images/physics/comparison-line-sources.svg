@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">长直源的场：电场沿径向，磁场沿环向</title><desc id="desc">长直源的场：电场沿径向，磁场沿环向</desc>
+<rect width="640" height="420" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">长直源的场：电场沿径向，磁场沿环向</text>
+<text x="165" y="90" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">正线电荷 λ &gt; 0</text>
+<text x="475" y="90" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">电流 I 向纸外</text>
+<circle cx="165" cy="235" r="82" fill="none" stroke="#77736c" stroke-width="1.5"/>
+<circle cx="165" cy="235" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="165" y="242" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 201.0 235.0 L 287.0 235.0" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 190.45584412271572 209.54415587728428 L 251.2670273047588 148.7329726952412" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 165.0 199.0 L 165.0 113.0" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 139.54415587728428 209.54415587728428 L 78.73297269524122 148.7329726952412" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 129.0 235.0 L 43.0 234.99999999999997" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 139.54415587728428 260.4558441227157 L 78.73297269524119 321.2670273047588" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 165.0 271.0 L 164.99999999999997 357.0" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 190.4558441227157 260.4558441227157 L 251.26702730475876 321.2670273047588" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="277" y="208" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">E</text>
+<circle cx="475" cy="235" r="18" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<circle cx="475" cy="235" r="2.7" fill="#bc493d" stroke="#bc493d" stroke-width="1"/>
+<circle cx="475" cy="235" r="90" fill="none" stroke="#7652a4" stroke-width="2.5"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 565.0 235.0 A 90 90 0 0 0 562.202117953958 212.73364366709293" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 475.0 145.0 A 90 90 0 0 0 452.73364366709296 147.79788204604196" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 385.0 235.0 A 90 90 0 0 0 387.797882046042 257.26635633290704" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 475.0 325.0 A 90 90 0 0 0 497.26635633290704 322.202117953958" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="581" y="218" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">B</text>
+<text x="165" y="373" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="normal">圆柱高斯面求 E</text>
+<text x="475" y="373" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="normal">圆周环路求 B</text>
+<text x="24" y="400" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">这是垂直长直源的截面；两种场的大小均随 1/r 变化。</text>
+</svg>

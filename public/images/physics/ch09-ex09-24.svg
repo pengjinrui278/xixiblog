@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" width="640" height="470" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">习题9.24：场相消，电势相加</title><desc id="desc">习题9.24：场相消，电势相加</desc>
+<rect width="640" height="470" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">习题9.24：场相消，电势相加</text>
+<path d="M 190 115 L 430 115 L 430 355 L 190 355 L 190 115" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<circle cx="190" cy="115" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="190" y="122" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="190" y="88" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+q</text>
+<path d="M 190 115 L 310 235" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 310 235 L 355.96194077712556 280.96194077712556" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="430" cy="115" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="430" y="122" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="430" y="88" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+q</text>
+<path d="M 430 115 L 310 235" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<path d="M 310 235 L 264.03805922287444 280.96194077712556" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="430" cy="355" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="430" y="362" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="430" y="401" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+q</text>
+<path d="M 430 355 L 310 235" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<path d="M 310 235 L 264.03805922287444 189.0380592228744" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="190" cy="355" r="17" fill="#fffdf7" stroke="#bc493d" stroke-width="2"/>
+<text x="190" y="362" font-size="24" text-anchor="middle" fill="#bc493d" font-weight="bold">+</text>
+<text x="190" y="401" font-size="22" text-anchor="middle" fill="#bc493d" font-weight="normal">+q</text>
+<path d="M 190 355 L 310 235" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<path d="M 310 235 L 355.96194077712556 189.0380592228744" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<circle cx="310" cy="235" r="4" fill="#302e2a" stroke="#302e2a" stroke-width="2"/>
+<text x="293" y="221" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">O</text>
+<text x="425" y="205" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">r = 5 cm</text>
+<text x="320" y="431" font-size="25" text-anchor="middle" fill="#302e2a" font-weight="normal">中心：E = 0；U = 4kₑq/r &gt; 0</text>
+</svg>

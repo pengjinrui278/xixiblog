@@ -33,6 +33,18 @@ $$
 
 这是**点乘**：只有垂直穿过截面的那一部分电流有贡献。若 $\mathbf j$ 均匀且垂直截面，才可简化成 $I=jS$；若与法线夹角为 $\theta$，则 $I=jS\cos\theta$。
 
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-current-density.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-current-density.svg" alt="上图电场与电流密度向右，电子漂移向左。下图电流密度与截面法线夹角θ，法向分量为j cosθ。" width="640" height="660" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-1｜电子向左漂移，正电流向右；斜向电流穿过截面时只取法向分量。</figcaption>
+</figure>
+
 ### 漂移速度怎样进入公式
 
 设每立方米有 $n$ 个同类载流子，每个带电量 $q$，平均漂移速度为 $\mathbf v_d$。在 $\mathrm dt$ 内能通过截面的载流子来自长度为 $v_d\mathrm dt$ 的小柱体，因此
@@ -82,6 +94,18 @@ $$
 ### 习题 11.4｜粗铝线接细铜线，哪里流得更密？
 
 **出处：教材第 114 页；题意简述。** 直径 $2.5\,\mathrm{mm}$ 的铝线与直径 $1.8\,\mathrm{mm}$ 的铜线串接，通 $1.3\,\mathrm A$ 稳恒电流。求两者电流密度及铜中电子的漂移速率。铜的质量密度为 $8.96\times10^3\,\mathrm{kg/m^3}$，每个铜原子贡献一个自由电子。
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-series-wire.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-series-wire.svg" alt="粗铝线与细铜线串接，电流均为1.3A；铝线直径2.5mm，铜线直径1.8mm。" width="640" height="470" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-2｜串联导线中的总电流相同，细铜线的电流密度较大。</figcaption>
+</figure>
+
+
 
 **解答。** 串联时两段的 $I$ 相同，而 $j=I/S=4I/(\pi d^2)$：
 
@@ -192,6 +216,18 @@ $$
 
 **出处：教材第 114 页；题意简述。** 半径 $R_1<R_2$ 的同心导体球壳之间充满电阻率为 $\rho$ 的均匀材料。求壳间电阻；内壳比外壳电势高 $U$ 时，求 $\mathbf j(r)$。
 
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-spherical-resistor.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-spherical-resistor.svg" alt="同心内外球壳半径R1和R2，半径r的薄球层厚度dr，电流沿径向向外。" width="640" height="540" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-3｜电流穿过同心球面；半径越大，可通过的面积 4πr² 越大。</figcaption>
+</figure>
+
+
+
 **解答。** 电流沿半径流动，半径 $r$ 处可通过的面积为 $4\pi r^2$。薄球层彼此串联，故
 
 $$
@@ -223,6 +259,18 @@ $$
 电动势的单位是伏特，含义是“每库仑电荷获得的非静电能量”，它不是力，也不是矢量。电池符号旁的方向约定指从负极到正极的升势方向。
 
 静电力绕闭合回路的总功为零；非静电作用可以持续把其他形式的能量转化为电能。这正是电源能维持电流的原因。
+
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-source-voltage.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-source-voltage.svg" alt="电源正极在上、负极在下，外接电阻R；非静电场向上，静电场向下，外电路电流从正极流出。" width="640" height="560" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-4｜供电时电源内部的非静电作用向上输送正电荷，静电场反向；外电路从正极流向负极。</figcaption>
+</figure>
 
 ### 电动势不等于任何时候的端电压
 
@@ -296,6 +344,18 @@ $$
 
 **出处：教材第 114～115 页；题意简述。** 原图的三个支路连接同一上节点 $a$ 和下节点 $b$。各电源均为正极朝上：左支路含两个 $R_1$ 及 $\mathcal E_1$；中支路含 $R_2$ 及 $\mathcal E_2$；右支路含两个 $R_1$ 及 $\mathcal E_3$。已知 $R_1=1\,\Omega$、$R_2=2\,\Omega$、$\mathcal E_1=2\,\mathrm V$、$\mathcal E_2=\mathcal E_3=4\,\mathrm V$，内阻忽略。原图 $I_1$ 向下，$I_2,I_3$ 向上。
 
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-three-branches.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-three-branches.svg" alt="三条并联支路，上节点a下节点b。左支路两个R1和电源ε1，电流向下；中支路R2和ε2、右支路两个R1和ε3，电流向上。" width="640" height="640" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-5｜按原题连接关系重绘。三电源正极均朝上，箭头与正文假设的电流方向一致。</figcaption>
+</figure>
+
+
+
 **解答。** 令 $V=U_a-U_b$，按每条支路的电势变化得到
 
 $$
@@ -322,6 +382,18 @@ $$
 ## 6. §11.5 RC 充放电：电流为什么逐渐变小
 
 $R$ 与电容 $C$ 串联，忽略电源内阻，或将内阻计入总电阻 $R$。记 $q$ 为约定正极板上的电荷，电容电压 $U_C=q/C$。**电容电压不能瞬间突变**；否则有限电容会要求无限大的瞬时电流。
+
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-rc-circuits.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-rc-circuits.svg" alt="上图电源、电阻、电容串联充电，电流从电源正极流向电容上极板。下图电源移去，电容通过电阻放电，电流从上极板流出。" width="640" height="760" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-6｜充电时电流流入正极板；放电时电流从原正极板流出。两图是切换完成后的不同电路。</figcaption>
+</figure>
 
 ### 从未充电开始充电
 
@@ -366,6 +438,18 @@ $$
 $$
 
 若仍使用“流入正极板”的有向电流 $I$，则放电时 $I=-I_{\text{放}}<0$。公式前的负号来自方向定义。
+
+
+
+
+
+
+
+
+<figure class="physics-figure">
+  <a href="/images/physics/ch11-rc-curves.svg" target="_blank" rel="noopener" title="打开大图"><img src="/images/physics/ch11-rc-curves.svg" alt="归一化RC曲线，红线由0趋向1，蓝线由1趋向0；t等于τ时分别为0.632和0.368。" width="640" height="560" loading="lazy" decoding="async" /></a>
+  <figcaption>图 11-7｜充电电压逐渐上升，电流逐渐衰减；放电电荷也沿蓝线衰减。</figcaption>
+</figure>
 
 ### 时间常数与能量
 

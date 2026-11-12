@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">磁场边界：Bn 连续，无面电流时 Ht 连续</title><desc id="desc">磁场边界：Bn 连续，无面电流时 Ht 连续</desc>
+<rect width="640" height="520" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">磁场边界：Bn 连续，无面电流时 Ht 连续</text>
+<rect x="30" y="80" width="580" height="210" rx="0" fill="#eee8dc" stroke="none" stroke-width="2"/>
+<path d="M 30 290 L 610 290" fill="none" stroke="#77736c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 300 95 L 300 450" fill="none" stroke="#77736c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 300 290 L 545 125" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<path d="M 205 455 L 300 290" fill="none" stroke="#2569a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="55" y="120" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">介质 2：μ₂ &gt; μ₁</text>
+<text x="55" y="340" font-size="22" text-anchor="start" fill="#302e2a" font-weight="normal">介质 1</text>
+<text x="335" y="103" font-size="22" text-anchor="middle" fill="#77736c" font-weight="bold">法线 n</text>
+<path d="M 300 220 A 70 70 0 0 1 358 251" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="339" y="218" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">θ₂</text>
+<path d="M 300 365 A 75 75 0 0 1 262 355" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="276" y="398" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">θ₁</text>
+<text x="515" y="189" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">B₂</text>
+<text x="200" y="410" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">B₁</text>
+<text x="440" y="360" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">进入更大 μ：</text>
+<text x="440" y="398" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">偏离法线</text>
+<text x="24" y="500" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">角度均对法线；界面无自由面电流。</text>
+</svg>

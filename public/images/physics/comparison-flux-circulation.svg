@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 660" width="640" height="660" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">通量看穿面，环流看沿路径前进</title><desc id="desc">通量看穿面，环流看沿路径前进</desc>
+<rect width="640" height="660" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">通量看穿面，环流看沿路径前进</text>
+<text x="28" y="83" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">① 通量：取法向分量</text>
+<path d="M 175 285 L 385 285 L 465 235 L 255 235 Z" fill="#f0ede4" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a287b64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#287b64"/></marker></defs>
+<path d="M 320 260 L 320 125" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="307" y="115" font-size="22" text-anchor="end" fill="#287b64" font-weight="bold">dS</text>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 320 260 L 430 152" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="452" y="149" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">A</text>
+<path d="M 320 209 A 51 51 0 0 1 356 224" fill="none" stroke="#b87620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="343" y="196" font-size="22" text-anchor="middle" fill="#b87620" font-weight="normal">θ</text>
+<text x="480" y="283" font-size="22" text-anchor="middle" fill="#77736c" font-weight="normal">面 S</text>
+<text x="320" y="324" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">角度 θ 从法线量起，不从平面量起</text>
+<path d="M 25 350 L 615 350" fill="none" stroke="#eee8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="388" font-size="22" text-anchor="start" fill="#302e2a" font-weight="bold">② 环流：取路径的切向分量</text>
+<circle cx="255" cy="505" r="80" fill="none" stroke="#77736c" stroke-width="2"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 335 505 A 80 80 0 0 0 255 425" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 330 494 L 330 419" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="359" y="443" font-size="22" text-anchor="middle" fill="#7652a4" font-weight="bold">A</text>
+<path d="M 352 505 L 352 460" fill="none" stroke="#287b64" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a287b64)"/>
+<text x="396" y="490" font-size="22" text-anchor="middle" fill="#287b64" font-weight="bold">dℓ</text>
+<text x="255" y="513" font-size="21" text-anchor="middle" fill="#302e2a" font-weight="normal">闭合路径 L</text>
+<text x="468" y="550" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="normal">先选绕行正向</text>
+<text x="24" y="640" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">面积矢量垂直于面；线元矢量沿着路径。</text>
+</svg>

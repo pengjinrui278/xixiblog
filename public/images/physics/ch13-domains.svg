@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<title id="title">磁畴：未磁化不等于内部没有磁矩</title><desc id="desc">磁畴：未磁化不等于内部没有磁矩</desc>
+<rect width="640" height="600" rx="14" fill="#fffdf7"/>
+<text x="24" y="36" font-size="23" text-anchor="start" fill="#302e2a" font-weight="bold">磁畴：未磁化不等于内部没有磁矩</text>
+<text x="320" y="95" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">宏观未磁化：各磁畴方向不同</text>
+<rect x="80" y="120" width="480" height="150" rx="0" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<path d="M 200 120 L 200 270" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 320 120 L 320 270" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 440 120 L 440 270" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 80 195 L 560 195" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs><marker id="a7652a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#7652a4"/></marker></defs>
+<path d="M 117.0 157.0 L 163.0 157.0" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 260.0 180.0 L 260.0 134.0" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 403.0 157.0 L 357.0 157.0" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 500.0 134.0 L 500.0 180.0" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 156.2634559672906 215.73654403270942 L 123.7365440327094 248.26345596729058" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 243.73654403270942 248.26345596729058 L 276.2634559672906 215.73654403270942" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 396.2634559672906 248.26345596729058 L 363.7365440327094 215.73654403270942" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 483.7365440327094 215.7365440327094 L 516.2634559672906 248.2634559672906" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<text x="320" y="335" font-size="22" text-anchor="middle" fill="#302e2a" font-weight="bold">外场磁化后：有利方向的磁畴扩展</text>
+<rect x="80" y="360" width="480" height="150" rx="0" fill="#eee8dc" stroke="#77736c" stroke-width="2"/>
+<path d="M 440 360 L 440 510" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 440 435 L 560 435" fill="none" stroke="#77736c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 115 400 L 165 400" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 115 470 L 165 470" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 225 400 L 275 400" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 225 470 L 275 470" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 335 400 L 385 400" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 335 470 L 385 470" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 480 413 L 520 383" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<path d="M 480 470 L 520 490" fill="none" stroke="#7652a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a7652a4)"/>
+<defs><marker id="a2569a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2569a3"/></marker></defs>
+<path d="M 400 300 L 550 300" fill="none" stroke="#2569a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a2569a3)"/>
+<text x="365" y="308" font-size="22" text-anchor="middle" fill="#2569a3" font-weight="bold">H</text>
+<text x="24" y="580" font-size="18" text-anchor="start" fill="#77736c" font-weight="normal">分区和箭头为磁畴模型示意，并非显微照片。</text>
+</svg>

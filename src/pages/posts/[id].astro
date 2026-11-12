@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import PhysicsDiagramViewer from '../../components/PhysicsDiagramViewer.astro';
 import { getCollection, render } from 'astro:content';
 import { GISCUS } from '../../consts';
 
@@ -89,6 +90,8 @@ const giscusOn = Boolean(GISCUS.repo && GISCUS.repoId);
       )}
     </div>
   </div>
+
+  {post.id.startsWith("physics-") && <PhysicsDiagramViewer />}
 
   <!-- data-astro-rerun：内联脚本按内容去重，文章页之间互跳时必须重跑，否则代码块增强不生效 -->
   <script is:inline data-astro-rerun>
