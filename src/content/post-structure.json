@@ -1,12 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T00:00:00.000Z",
+  "updatedAt": "2026-11-12T13:48:06.140Z",
   "folders": [
     {
       "id": "introductions-to-algorithm",
       "name": "Introductions to Algorithm",
       "parentId": null,
       "order": 0
+    },
+    {
+      "id": "university-physics-electromagnetism",
+      "name": "大学物理（中册）· 电磁学",
+      "parentId": null,
+      "order": 1
     }
   ],
   "items": {
@@ -22,6 +28,14 @@
     "10-高级数据结构第17-19章": { "folderId": "introductions-to-algorithm", "order": 9 },
     "11-图算法基础第20章": { "folderId": "introductions-to-algorithm", "order": 10 },
     "12-最小生成树与最短路径第21-23章": { "folderId": "introductions-to-algorithm", "order": 11 },
-    "13-最大流与二分图匹配第24-25章": { "folderId": "introductions-to-algorithm", "order": 12 }
+    "13-最大流与二分图匹配第24-25章": { "folderId": "introductions-to-algorithm", "order": 12 },
+    "physics-guide": { "folderId": "university-physics-electromagnetism", "order": 0 },
+    "physics-09": { "folderId": "university-physics-electromagnetism", "order": 1 },
+    "physics-10": { "folderId": "university-physics-electromagnetism", "order": 2 },
+    "physics-11": { "folderId": "university-physics-electromagnetism", "order": 3 },
+    "physics-12": { "folderId": "university-physics-electromagnetism", "order": 4 },
+    "physics-13": { "folderId": "university-physics-electromagnetism", "order": 5 },
+    "physics-14": { "folderId": "university-physics-electromagnetism", "order": 6 },
+    "physics-comparison": { "folderId": "university-physics-electromagnetism", "order": 7 }
   }
 }

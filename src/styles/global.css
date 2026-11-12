@@ -866,3 +866,13 @@ a.day-badge:hover { border-color: var(--seal); box-shadow: 0 8px 22px rgba(181, 
   .orbit-item a, .write-tabs button, #themeBtn { transition: none !important; }
 }
 
+
+/* 电磁学笔记：长公式与对照表在自身区域滚动，不撑宽手机正文。 */
+.article-layout.physics-notes { grid-template-columns: minmax(0, 1fr) 190px; }
+.physics-notes .prose { min-width: 0; overflow-wrap: break-word; }
+.physics-notes .prose .katex { position: relative; }
+.physics-notes .prose table { display: block; max-width: 100%; overflow-x: auto; }
+.physics-notes .prose th, .physics-notes .prose td { min-width: 110px; }
+@media (max-width: 900px) {
+  .article-layout.physics-notes { grid-template-columns: minmax(0, 1fr); padding-inline: 0; }
+}

@@ -51,7 +51,7 @@ const giscusOn = Boolean(GISCUS.repo && GISCUS.repoId);
       </div>
     </div>
 
-    <div class="article-layout">
+    <div class:list={["article-layout", { "physics-notes": post.id.startsWith("physics-") }]}>
       <article class="prose">
         <Content />
       </article>
